@@ -13,11 +13,11 @@ In sum, I am excited about opportunities in the data science space, where I can 
 <div id="contactme-section">
 <h1 id="contact">Contact</h1>
 
-<p> For Machine Learning and Data Science consultation, feel free to get in touch. Let's discuss your Machine Learning needs and potential solutions.<\p>
+<p> For Machine Learning and Data Science consultation, feel free to get in touch. Let's discuss your Machine Learning needs and potential solutions. </p>
 
 <p>You could set up a meeting with me below based on your availability. </p>
 
-
+<div id="services">
 <a href="http://eekwedike.github.io/contact" class="contact-me-btn actionbtn">
 <span class="fa fa-envelope-o" aria-hidden="true"></span>
 CONTACT EMMANUEL
@@ -27,7 +27,7 @@ CONTACT EMMANUEL
 <span class="fa fa-calendar-check-o" aria-hidden="true"></span>
 SCHEDULE MEETING
 </a>
-
+</div>
 
 
 <form action="https://formspree.io/mvobeyer" method="POST" class="form" id="contact-form">
