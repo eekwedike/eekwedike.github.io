@@ -31,9 +31,9 @@ description: A virtual proof that I'm awesome
 navbar-links:
   About Me: "aboutme"
   Resume: "resume"
-  Projects:
-    - Network Optimization: "https://eekwedike.github.io" 
-    - Recommder System: "https://eekwedike.github.io"
+  # Projects:
+  #   - Network Optimization: "https://eekwedike.github.io" 
+  #   - Recommder System: "https://eekwedike.github.io"
   #Author's home: "https://eekwedike.github.io"
 # Resources:
 #   - Machine Learning: "https://eekwedike.github.io"
