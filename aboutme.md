@@ -15,7 +15,7 @@ In sum, I am excited about opportunities in the data science space, where I can 
 
 <p> For Machine Learning and Data Science consultation, feel free to get in touch. Let's discuss your Machine Learning needs and potential solutions.<\p>
 
-<p>You could set up a meeting with me below based on your availability. </p>>
+<p>You could set up a meeting with me below based on your availability. </p>
 
 
 <a href="http://eekwedike.github.io/contact" class="contact-me-btn actionbtn">
@@ -48,4 +48,6 @@ SCHEDULE MEETING
   <br>
   <button type="submit" class="btn btn-lg btn-primary">Submit</button>
 </form>
+
+</div>
 
