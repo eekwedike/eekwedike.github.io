@@ -13,7 +13,7 @@ In sum, I am excited about opportunities in the data science space, where I can 
 For free consultation and appointments visit: <a href="https://calendly.com/viraldatasolutions/30min" target="_blank"> viraldatasolutions </a>.
 
 
-<form action="https://formspree.io/emmanuelworld@gmail.com" method="POST" class="form" id="contact-form">
+<form action="https://formspree.io/mvobeyer" method="POST" class="form" id="contact-form">
   <p>You can also send me a quick message using the form below:</p>
   <div class="row">
     <div class="col-xs-6">
