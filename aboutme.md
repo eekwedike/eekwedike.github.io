@@ -10,7 +10,24 @@ Strong experience in building data products and solving business problems using 
 
 In sum, I am excited about opportunities in the data science space, where I can leverage my strong data analytics background to help build better products and empower optimal business decision making.
 
-For free consultation and appointments visit: <a href="https://calendly.com/viraldatasolutions/30min" target="_blank"> viraldatasolutions </a>.
+<div id="contactme-section">
+<h1 id="contact">Contact</h1>
+
+<p> For Machine Learning and Data Science consultation, feel free to get in touch. Let's discuss your Machine Learning needs and potential solutions.<\p>
+
+<p>You could set up a meeting with me below based on your availability. </p>>
+
+</div>
+<a href="http://eekwedike.github.io/contact" class="contact-me-btn actionbtn">
+<span class="fa fa-envelope-o" aria-hidden="true"></span>
+CONTACT EMMANUEL
+</a>
+<div class="btns-sep"></div>
+<a href="https://calendly.com/viraldatasolutions/30min" class="schedule-btn actionbtn">
+<span class="fa fa-calendar-check-o" aria-hidden="true"></span>
+SCHEDULE MEETING
+</a>
+</div>
 
 
 <form action="https://formspree.io/mvobeyer" method="POST" class="form" id="contact-form">
@@ -28,7 +45,7 @@ For free consultation and appointments visit: <a href="https://calendly.com/vira
   <input type="text" name="_gotcha" style="display:none">
   <input type="hidden" name="_next" value="?message=Your message was sent successfully, thanks!" />
   
-  
+  <br>
   <button type="submit" class="btn btn-lg btn-primary">Submit</button>
 </form>
 
