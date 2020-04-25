@@ -1,0 +1,44 @@
+
+.contact-me-btn {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.contact-me-btn .fa {
+  width: 21px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5px;
+}
+
+.actionbtn {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: arial;
+  text-align: center;
+  vertical-align: middle;
+  padding: 15px 30px;
+  border-radius: 2px;
+  background: #4fc949;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none !important;
+  cursor: pointer;
+  letter-spacing: 1px;
+  text-shadow: none;
+}
+.actionbtn:hover,
+.actionbtn:focus {
+  background: #3fb13a;
+  color: #fff;
+}
+.schedule-btn {
+  background: #ea9920;
+}
+.schedule-btn:hover,
+.schedule-btn:focus {
+  background: #ca8219;
+}
+.btns-sep {
+  display: none;
+}

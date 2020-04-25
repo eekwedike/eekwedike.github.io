@@ -2,6 +2,7 @@
 layout: page
 title: About me
 subtitle: Welcome to my page
+css: "/css/aboutme.css"
 ---
 
 My academic background is in Operations Research (also known as Management Science) and Applied Mathematics. I am completing my Ph.D. in Operations research where my research focuses on optimal decision making via stochastic modeling and machine learning with applications to sequential decision problems. I am advised by <a href="http://magics.cs.northwestern.edu/people.html" target="_blank">Prof. Han Liu</a> and <a href="https://wmassey.princeton.edu/" target="_blank">Prof. William Massey</a>. Before joining Princeton, I earned a masters and a bachelors degree in Mathematics from the City University of New York.
@@ -17,7 +18,7 @@ In sum, I am excited about opportunities in the data science space, where I can 
 
 <p>You could set up a meeting with me below based on your availability. </p>
 
-<div id="services">
+
 <a href="http://eekwedike.github.io/contact" class="contact-me-btn actionbtn">
 <span class="fa fa-envelope-o" aria-hidden="true"></span>
 CONTACT EMMANUEL
@@ -49,5 +50,5 @@ SCHEDULE MEETING
   <button type="submit" class="btn btn-lg btn-primary">Submit</button>
 </form>
 
-</div>
+
 
