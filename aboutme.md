@@ -14,21 +14,23 @@ In sum, I am excited about opportunities in the data science space, where I can 
 <div id="contactme-section">
 <h1 id="contact">Contact</h1>
 
-<p> For Machine Learning and Data Science consultation, feel free to get in touch. Let's discuss your Machine Learning needs and potential solutions. </p>
+<p> For machine learning and data science consultation, feel free to get in touch. Let's discuss your machine learning needs and potential solutions. </p>
 
 <p>You could set up a meeting with me below based on your availability. </p>
 
-
+<div >
 <a href="http://eekwedike.github.io/contact" class="contact-me-btn actionbtn">
 <span class="fa fa-envelope-o" aria-hidden="true"></span>
 CONTACT EMMANUEL
 </a>
 <div class="btns-sep"></div>
-<a href="https://calendly.com/viraldatasolutions/30min" class="schedule-btn actionbtn">
+<a href="https://calendly.com/viraldatasolutions/30min" class="schedule-btn actionbtn" target="_blank">
 <span class="fa fa-calendar-check-o" aria-hidden="true"></span>
-SCHEDULE MEETING
+SCHEDULE MEETING 
 </a>
 </div>
+
+
 
 
 <form action="https://formspree.io/mvobeyer" method="POST" class="form" id="contact-form">
@@ -50,5 +52,5 @@ SCHEDULE MEETING
   <button type="submit" class="btn btn-lg btn-primary">Submit</button>
 </form>
 
-
+</div>
 
