@@ -32,7 +32,7 @@ navbar-links:
   About Me: "aboutme"
   Resume: "resume"
   Blog: "blog"
-  nav-search: "search"
+  Search: "search"
   # Projects:
   #   - Network Optimization: "https://eekwedike.github.io" 
   #   - Recommder System: "https://eekwedike.github.io"
