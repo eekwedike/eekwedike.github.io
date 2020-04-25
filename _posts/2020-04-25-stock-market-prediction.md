@@ -1,3 +1,4 @@
+---
 layout: post
 title: "Stock Market Prediction"
 subtitle: "Life prediction stock model"
@@ -7,3 +8,4 @@ layout: post
 comments: true
 show-share: true
 carbonads-sm-horizontal: true
+---
