@@ -5,7 +5,7 @@ subtitle: Welcome to my page
 css: "/css/aboutme.css"
 ---
 
-My academic background is in Operations Research (also known as Management Science) and Applied Mathematics. My Ph.D. thesis focused on optimal decision making for inventory management problems and sequential decision problems and was advised by <a href="http://magics.cs.northwestern.edu/people.html" target="_blank">Prof. Han Liu</a> and <a href="https://wmassey.princeton.edu/" target="_blank">Prof. William Massey</a>. Before joining Princeton, I earned a masters and a bachelors degree in Mathematics from the City University of New York.
+My academic background is in Operations Research (also known as Management Science) and Applied Mathematics. My Ph.D. thesis focused on optimal decision making for inventory management problems and sequential decision problems and was advised by <a href="http://magics.cs.northwestern.edu/people.html" target="_blank">Prof. Han Liu</a> and <a href="https://wmassey.princeton.edu/" target="_blank">Prof. William Massey</a>. Before joining Princeton University, I earned a masters and a bachelors degree in Mathematics from the City University of New York.
 
 Strong experience in building data products and solving business problems using machine learning, statistics, and optimization. These practical skills were obtained through rigorous projects.
 

@@ -31,6 +31,7 @@ description: A virtual proof that I'm awesome
 navbar-links:
   About Me: "aboutme"
   Resume: "resume"
+  Blog: "blog"
   # Projects:
   #   - Network Optimization: "https://eekwedike.github.io" 
   #   - Recommder System: "https://eekwedike.github.io"
@@ -82,7 +83,7 @@ author:
 social-network-links:
 #  rss: true
 #  email: "emmanuelworld@gmail.com"
-#  facebook: deanattali
+#  facebook: 
   github: eekwedike
 #  twitter: daattali
 #  reddit: yourname
