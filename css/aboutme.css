@@ -42,3 +42,10 @@
 .btns-sep {
   display: none;
 }
+
+#services {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #615d6d;
+  text-shadow: 0 1px #fff;
+}
