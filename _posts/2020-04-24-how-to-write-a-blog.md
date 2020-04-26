@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
-tag: [data science, intro]
+tag: [data science, intro, tutorial]
 comments: true
 show-share: true
 show-subscribe: true
