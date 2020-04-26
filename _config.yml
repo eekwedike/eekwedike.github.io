@@ -27,12 +27,7 @@ description: "Data strategist and Machine learning expert"
 
 # --- Outputting options --- #
 # More information can be found on Jekyll's site
-timezone: "America/New_York"
-markdown: kramdown
-highlighter: rouge
-permalink: /blog/:title/
-paginate: 10
-paginate_path: "/page:num/"
+
 
 
 # --- Navigation bar options --- #
@@ -184,12 +179,12 @@ date_format: "%B %-d, %Y"
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
+timezone: "America/New_York"
 markdown: kramdown
 highlighter: rouge
-permalink: /:year-:month-:day-:title/
-paginate: 5
-
+permalink: /blog/:title/
+paginate: 10
+paginate_path: "/page:num/"
 kramdown:
   input: GFM
 
