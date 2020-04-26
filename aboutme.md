@@ -8,7 +8,7 @@ css: "/css/aboutme.css"
 Emmanuel Ekwedike is a consultant, data strategist, machine learning expert with strong data analytics skills. As a data scientist, his strengths help build better products and empower businesses to make sustainable decisions that increase profits and marketability. </p>
 
 <p>
-Emmanuel is currently attending Princeton University where he is completing his Ph.D. in Operations Research (also known as Management Science). His thesis focuses on developing an optimization framework for solving inventory management problems. Prior to attending Princeton University, Emmanuel earned multiple degrees in Applied Mathematics from the City University of NY.
+Emmanuel is currently attending Princeton University where he is completing his Ph.D. in Operations Research (also known as Management Science). His thesis focuses on developing an optimization framework for solving inventory management problems. Prior to attending Princeton University, Emmanuel earned multiple degrees in Applied Mathematics from the City University of New York.
 </p>
 
 <p>
@@ -16,6 +16,12 @@ Emmanuel frequently travels the world looking at different cultures for inspirat
 In addition, He enjoys working on meaningful projects that not only focus on addressing the client's needs but also have a social impact. His passion for data science stems from the ability to create tools, products, and services that solve real-life problems.
 </p> 
 
+
+<div style="text-align: center; margin-top: 90px;">
+  <iframe src="https://eekwedike.github.io/files/Resume.pdf" scrolling="no" width="850px" height="2200px" frameBorder="0"></iframe>
+</div>
+
+<!--  
 
 <div id="contactme-section">
 <h1 id="contact">Contact</h1>
@@ -59,4 +65,6 @@ SCHEDULE MEETING
 </form>
 
 </div>
+
+-->
 

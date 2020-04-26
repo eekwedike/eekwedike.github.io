@@ -8,7 +8,7 @@ css: "/css/aboutme.css"
 
 
 <div id="contactme-section">
-<h1 id="contact">Contact</h1>
+<!-- <h1 id="contact">Contact</h1> -->
 
 <p> For machine learning and data science consultation, feel free to get in touch. Let's discuss your machine learning needs and potential solutions. </p>
 
