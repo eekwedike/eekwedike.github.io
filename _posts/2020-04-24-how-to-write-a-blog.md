@@ -1,7 +1,10 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
-categories: [blog, travel]
+tag: [data science, intro]
+comments: true
+show-share: true
+show-subscribe: true
 
 ---
 
