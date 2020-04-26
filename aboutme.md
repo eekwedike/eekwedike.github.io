@@ -4,12 +4,18 @@ title: About me
 subtitle: Welcome to my page
 css: "/css/aboutme.css"
 ---
+<p>
+Emmanuel Ekwedike is a consultant, data strategist, machine learning expert with strong data analytics skills. As a data scientist, his strengths help build better products and empower businesses to make sustainable decisions that increase profits and marketability. </p>
 
-My academic background is in Operations Research (also known as Management Science) and Applied Mathematics. My Ph.D. thesis focused on optimal decision making for inventory management problems and sequential decision problems and was advised by <a href="http://magics.cs.northwestern.edu/people.html" target="_blank">Prof. Han Liu</a> and <a href="https://wmassey.princeton.edu/" target="_blank">Prof. William Massey</a>. Before joining Princeton University, I earned a masters and a bachelors degree in Mathematics from the City University of New York.
+<p>
+Emmanuel is currently attending Princeton University where he is completing his Ph.D. in Operations Research (also known as Management Science). His thesis focuses on developing an optimization framework for solving inventory management problems. Prior to attending Princeton University, Emmanuel earned multiple degrees in Applied Mathematics from the City University of NY.
+</p>
 
-Strong experience in building data products and solving business problems using machine learning, statistics, and optimization. These practical skills were obtained through rigorous projects.
+<p>
+Emmanuel frequently travels the world looking at different cultures for inspiration to build useful context around data. Understanding people helps to bring data to life and builds a global approach to data science.
+In addition, He enjoys working on meaningful projects that not only focus on addressing the client's needs but also have a social impact. His passion for data science stems from the ability to create tools, products, and services that solve real-life problems.
+</p> 
 
-In sum, I am excited about opportunities in the data science space, where I can leverage my strong data analytics background to help build better products and empower optimal business decision making.
 
 <div id="contactme-section">
 <h1 id="contact">Contact</h1>
