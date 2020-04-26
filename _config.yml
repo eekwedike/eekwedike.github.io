@@ -25,12 +25,22 @@ description: "Data strategist and Machine learning expert"
 # baseurl should be an empty string
 #baseurl: ""
 
+# --- Outputting options --- #
+# More information can be found on Jekyll's site
+timezone: "America/New_York"
+markdown: kramdown
+highlighter: rouge
+permalink: /blog/:title/
+paginate: 10
+paginate_path: "/page:num/"
+
+
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
+  Blog: ""
   Services: "https://eekwedike.github.io"
-  Blog: "blog"
   About Me: "aboutme"
   Contact: "contactme"
   nav-search: "search"
