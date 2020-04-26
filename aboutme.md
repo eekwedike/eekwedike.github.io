@@ -5,7 +5,8 @@ subtitle: Welcome to my page
 css: "/css/aboutme.css"
 ---
 <p>
-Emmanuel Ekwedike is a consultant, data strategist, machine learning expert with strong data analytics skills. As a data scientist, his strengths help build better products and empower businesses to make sustainable decisions that increase profits and marketability. </p>
+Emmanuel Ekwedike is a consultant, data strategist, machine learning expert with strong data analytics skills. As a data scientist, his strengths help build better products and empower businesses to make sustainable decisions that increase profits and marketability. 
+</p>
 
 <p>
 Emmanuel is currently attending Princeton University where he is completing his Ph.D. in Operations Research (also known as Management Science). His thesis focuses on developing an optimization framework for solving inventory management problems. Prior to attending Princeton University, Emmanuel earned multiple degrees in Applied Mathematics from the City University of New York.
