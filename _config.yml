@@ -30,11 +30,12 @@ description: A virtual proof that I'm awesome
 # List of links in the navigation bar
 navbar-links:
   Services: "https://eekwedike.github.io"
-  About Me: "aboutme"
-  Resume: "resume"
-  Contact: "contactme"
   Blog: "blog"
-  Search: "search"
+  About Me: "aboutme"
+  Contact: "contactme"
+  nav-search: "search"
+  #Resume: "resume"
+
   # Projects:
   #   - Network Optimization: "https://eekwedike.github.io" 
   #   - Recommder System: "https://eekwedike.github.io"

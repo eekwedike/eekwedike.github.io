@@ -10,9 +10,13 @@ css: "/css/aboutme.css"
 <div id="contactme-section">
 <!-- <h1 id="contact">Contact</h1> -->
 
-<p> For machine learning and data science consultation, feel free to get in touch. Let's discuss your machine learning needs and potential solutions. </p>
+<p> 
+  For product development, analytic marketing, and customer insights, feel free to get in touch.  Let's help you develop and execute high-impact analytics solutions and help you make better fact-based decisions. 
 
-<p>You could set up a meeting with me below based on your availability. </p>
+</p>
+
+<p>
+You could set up a meeting with me below based on your availability. </p>
 
 <div >
 <a href="http://eekwedike.github.io/contact" class="contact-me-btn actionbtn">
