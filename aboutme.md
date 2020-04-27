@@ -18,8 +18,9 @@ In addition, He enjoys working on meaningful projects that not only focus on add
 </p> 
 
 
-<h1 id="contact">Contact</h1>
+
 <div style="text-align: center; margin-top: 90px;">
+  <h1 id="resume">Resume</h1>
   <iframe src="https://eekwedike.github.io/files/Resume.pdf" scrolling="no" width="850px" height="2200px" frameBorder="0"></iframe>
 </div>
 
