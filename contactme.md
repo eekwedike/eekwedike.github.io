@@ -19,7 +19,7 @@ css: "/css/aboutme.css"
 You could set up a meeting with me below based on your availability. </p>
 
 <div >
-<a href="http://eekwedike.github.io/contact" class="contact-me-btn actionbtn">
+<a href="mailto:ekwedike.emmanuel@gmail.com?subject=Hello from eekwedike.github.io" class="contact-me-btn actionbtn">
 <span class="fa fa-envelope-o" aria-hidden="true"></span>
 CONTACT EMMANUEL
 </a>
