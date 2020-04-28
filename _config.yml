@@ -38,7 +38,7 @@ navbar-links:
   Services: "https://eekwedike.github.io"
   About Me: "aboutme"
   Contact: "contactme"
-  nav-search: "search"
+nav-search: "search"
   #Resume: "resume"
 
   # Projects:
@@ -116,7 +116,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-# url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "eekwedike.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
@@ -141,7 +141,7 @@ google_analytics: "UA-157957744-1"
 # --- Comments --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-# disqus: ""
+disqus: "ece-site"
 
 # If you want to use JustComments fill with the API Key
 #just-comments: "ABCD-EFGH-IJKL"
