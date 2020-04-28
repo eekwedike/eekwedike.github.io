@@ -84,7 +84,7 @@ footer-link-col: "#404040"
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
   name: Emmanuel Ekwedike
-  email: "emmanuelworld@gmail.com"
+#  email: "ekwedike.emmanuel@gmail.com"
   calendly: "viraldatasolutions/30min"
   github: eekwedike
   linkedin: eekwedike
@@ -112,7 +112,7 @@ author:
 footer-links-active:
   # rss: false
   # facebook: true
-  email: true
+  email: false
   twitter: false
   github: true
   linkedin: true
