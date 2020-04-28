@@ -84,19 +84,16 @@ footer-link-col: "#404040"
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
   name: Emmanuel Ekwedike
-
-# Select your active Social Network Links.
-# Uncomment the links you want to show in the footer and add your information to each link.
-# You can reorder the items to define the link order.
-# If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
-footer-links-active:
-#  rss: true
-#  email: "emmanuelworld@gmail.com"
-#  facebook: 
+  email: "emmanuelworld@gmail.com"
+  calendly: "viraldatasolutions/30min"
   github: eekwedike
-#  twitter: iamKingECE
-#  reddit: yourname
   linkedin: eekwedike
+#  rss: true
+#  twitter: iamKingECE
+#  facebook: 
+#  reddit: yourname
+  
+
 #  xing: yourname
 #  stackoverflow: "3943160/yourname"
 #  snapchat: yourname
@@ -108,10 +105,25 @@ footer-links-active:
 #  twitch: yourname
 #  yelp: yourname
 
+# Select your active Social Network Links.
+# Uncomment the links you want to show in the footer and add your information to each link.
+# You can reorder the items to define the link order.
+# If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
+footer-links-active:
+  # rss: false
+  # facebook: true
+  email: true
+  twitter: false
+  github: true
+  linkedin: true
+  stackoverflow: false
+  calendly: true
+  telephone: false
+
 # Select which share links to show in posts
 share-links-active:
   twitter: true
-  facebook: true
+  facebook: false
   linkedin: true
 
 # How to display the link to the website in the footer
