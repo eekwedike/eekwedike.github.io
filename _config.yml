@@ -35,7 +35,7 @@ description: "Data strategist and Machine learning expert"
 # List of links in the navigation bar
 navbar-links:
   Blog: "https://eekwedike.github.io"
-  Services: "https://eekwedike.github.io"
+  #Services: "https://eekwedike.github.io"
   About Me: "aboutme"
   Contact: "contactme"
 nav-search: "search"
