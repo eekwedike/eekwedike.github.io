@@ -9,13 +9,11 @@ Emmanuel Ekwedike is a consultant, data strategist, machine learning expert with
 </p>
 
 <p>
-Emmanuel is currently attending Princeton University where he is completing his Ph.D. in Operations Research (also known as Management Science). His thesis, "Optimal Decision Making via Stochastic Modeling and Machine Learning,"  focuses on developing an optimization framework for efficiently solving inventory allocation problems.
-Prior to attending Princeton University, Emmanuel earned multiple degrees in Applied Mathematics from the City University of New York.
+Emmanuel is currently attending Princeton University where he is completing his Ph.D. in Operations Research (also known as Management Science). His thesis focuses on developing an optimization framework for solving inventory allocation problems efficiently. Before attending Princeton University, Emmanuel earned multiple degrees in Applied Mathematics from the City University of New York.
 </p>
 
 <p>
-Emmanuel frequently travels the world looking at different cultures for inspiration to build useful context around data. Understanding people helps to bring data to life and builds a global approach to data science.
-In addition, He enjoys working on meaningful projects that not only focus on addressing the client's needs but also have a social impact. His passion for data science stems from the ability to create tools, products, and services that solve real-life problems.
+Emmanuel frequently travels the world looking at different cultures for inspiration to build useful context around data. Understanding people helps to bring data to life and builds a global approach to data science. Besides, He enjoys working on meaningful projects that not only focus on addressing the client's needs but also have a social impact. His passion for data science stems from the ability to create tools, products, and services that solve real-life problems.
 </p> 
 
 
