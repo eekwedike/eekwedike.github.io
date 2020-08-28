@@ -38,7 +38,7 @@ navbar-links:
   #Services: "https://eekwedike.github.io"
   About Me: "aboutme"
   Contact: "contactme"
-nav-search: "search"
+#nav-search: "search"
   #Resume: "resume"
 
   # Projects:
