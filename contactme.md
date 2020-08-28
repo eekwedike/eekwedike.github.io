@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Contact me
-subtitle: Welcome to my page
+title: Contact
+subtitle: Please complete the form below
 css: "/css/aboutme.css"
 ---
 
@@ -10,14 +10,15 @@ css: "/css/aboutme.css"
 <div id="contactme-section">
 <!-- <h1 id="contact">Contact</h1> -->
 
+<!-- 
 <p> 
   For product development, analytic marketing, and customer insights, feel free to get in touch.  Let's help you develop and execute high-impact analytics solutions and help you make better fact-based decisions. 
 
-</p>
+</p> 
 
 <p>
-You could set up a meeting with me below based on your availability. </p>
-
+You could set up a quick meeting with Emmanuel below based on your availability. </p>
+ 
 <div >
 <a href="mailto:ekwedike.emmanuel@gmail.com?subject=Hello from eekwedike.github.io" class="contact-me-btn actionbtn">
 <span class="fa fa-envelope-o" aria-hidden="true"></span>
@@ -28,13 +29,16 @@ CONTACT EMMANUEL
 <span class="fa fa-calendar-check-o" aria-hidden="true"></span>
 SCHEDULE MEETING 
 </a>
-</div>
+</div> -->
 
 
 
 
 <form action="https://formspree.io/mvobeyer" method="POST" class="form" id="contact-form">
-  <p>You can also send me a quick message using the form below:</p>
+  <h2> How can we help?</h2>
+  <p>Let's build a customized solution that meets all of your needs.</p>
+  <br>
+  
   <div class="row">
     <div class="col-xs-6">
       <input type="email" name="_replyto" class="form-control input-lg" placeholder="Email" title="Email">
