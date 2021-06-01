@@ -5,7 +5,7 @@ subtitle: Welcome to my page
 css: "/css/aboutme.css"
 ---
 <p>
-Emmanuel Ekwedike is a consultant, data strategist, machine learning expert with strong data analytics skills. As a data scientist, his strengths help build better products and empower businesses to make sustainable decisions that increase profits and marketability. 
+Emmanuel Ekwedike is a machine learning research scientist with strong data analytics skills. As a data scientist, his strengths help build better products and empower businesses to make sustainable decisions that increase profits and marketability. 
 </p>
 
 <p>
