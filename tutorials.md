@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Hi, I'm Emmanuel
-subtitle: Data Scientist / Machine Learning Consultant / Ph.D. Candidate 
+subtitle: Machine Learning Research Scientist 
 css: "/css/index.css"
 use-site-title: true
 bigimg:
