@@ -94,5 +94,5 @@ yelp:
 googlescholar:
   name: "GoogleScholar"
   baseURL: "https://scholar.google.com/citations?hl=en&user="
-  #icon: "fa-googlescholar"
-  icon: "fa-linkedin"
+  icon: "ai-googlescholar"
+
