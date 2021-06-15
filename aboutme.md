@@ -16,8 +16,7 @@ Emmanuel graduated with a Ph.D. in Operations Research and Financial Engineering
 Emmanuel frequently travels the world looking at different cultures for inspiration to build useful context around data. Understanding people helps to bring data to life and builds a global approach to data science. Besides, He enjoys working on meaningful projects that not only focus on addressing the client's needs but also have a social impact. His passion for data science stems from the ability to create tools, products, and services that solve real-life problems.
 </p> 
 
-      <div class="col-md-7">
-        <div class="section-subheading">Education</div>
+        <!-- <div class="section-subheading">Education</div>
         <ul class="ul-edu fa-ul">
           
           <li>
@@ -35,7 +34,6 @@ Emmanuel frequently travels the world looking at different cultures for inspirat
               <p class="institution">Princeton University</p>
             </div>
           </li>
-
           <li>
             <i class="fa-li fas fa-graduation-cap"></i>
             <div class="description">
@@ -52,8 +50,7 @@ Emmanuel frequently travels the world looking at different cultures for inspirat
             </div>
           </li>
           
-        </ul>
-      </div>
+        </ul> -->
 
 
 <!-- 
