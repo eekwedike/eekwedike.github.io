@@ -3,8 +3,8 @@ layout: page
 title: About me
 subtitle: Welcome to my page
 css: "/css/aboutme.css"
-css: "https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css"
-css: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+# css: "https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css"
+# css: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
 ---
 <p>
 Emmanuel Ekwedike is a machine learning research scientist with strong data analytics skills. As a data scientist, his strengths help build better products and empower businesses to make sustainable decisions that increase profits and marketability. 
@@ -20,7 +20,7 @@ Emmanuel frequently travels the world looking at different cultures for inspirat
 
 <!-- <div class="section-subheading">Education </div> -->
 
-<h2 >Education </h2>
+<h2 class="has-text-align-center">Education </h2>
 <ul class="ul-edu fa-ul">
   <li>
     <i class="fa-li fas fa-graduation-cap"></i>
@@ -56,6 +56,8 @@ Emmanuel frequently travels the world looking at different cultures for inspirat
     
 </ul> 
 
+
+<p><img style="float: left;" src="/img/sch-imgs/PU_logo.jpeg" width="90" height="53" /> <b>&nbsp;PhD in Operations Research and Financial Engineering, 2020</b> <br />&nbsp;Princeton University</p>
 
 
 <!-- 
