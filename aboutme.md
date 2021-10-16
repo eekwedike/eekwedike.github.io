@@ -3,8 +3,6 @@ layout: page
 title: About me
 subtitle: Welcome to my page
 css: "/css/aboutme.css"
-# css: "https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css"
-# css: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
 ---
 <p>
 Emmanuel Ekwedike is a machine learning research scientist with strong data analytics skills. As a data scientist, his strengths help build better products and empower businesses to make sustainable decisions that increase profits and marketability. 
@@ -20,47 +18,14 @@ Emmanuel frequently travels the world looking at different cultures for inspirat
 
 
 <h2 class="has-text-align-center">Education </h2>
-<!-- <div class="section-subheading">Education </div> -->
-<!-- 
 
+<p><img style="float: left;" width="90" height="90" src="/img/sch-imgs/PU_logo.jpeg" /> <b>&nbsp;PhD in Operations Research and Financial Engineering, 2020</b> <br />&nbsp;Princeton University</p>
 
-<ul class="ul-edu fa-ul">
-  <li>
-    <i class="fa-li fas fa-graduation-cap"></i>
-    <div class="description">
-      <p class="course">PhD in Operations Research and Financial Engineering, 2020</p>
-      <p class="institution">Princeton University</p>
-    </div>
-  </li>
-    
-  <li>
-    <i class="fa-li fas fa-graduation-cap"></i>
-    <div class="description">
-      <p class="course">M.A. in Operations Research and Financial Engineering, 2017</p>
-      <p class="institution">Princeton University</p>
-    </div>
-  </li>
+<p><img style="float: left;" width="90" height="90" src="/img/sch-imgs/PU_logo.jpeg" /> <b>&nbsp;M.A. in Operations Research and Financial Engineering, 2017</b> <br />&nbsp;Princeton University</p>
 
-  <li>
-    <i class="fa-li fas fa-graduation-cap"></i>
-    <div class="description">
-      <p class="course">M.S. in Applied Mathematics, 2015</p>
-      <p class="institution">City College</p>
-    </div>
-  </li>
-    
-  <li>
-    <i class="fa-li fas fa-graduation-cap"></i>
-    <div class="description">
-      <p class="course">B.A. in Mathematics, 2013</p>
-      <p class="institution">Brooklyn College</p>
-    </div>
-  </li>
-    
-</ul> 
- -->
+<p><img style="float: left;" width="90" height="53" src="/img/sch-imgs/CCNY_logo.jpeg" /> <b>&nbsp;M.S. in Applied Mathematics, 2015</b> <br />&nbsp;City College</p>
 
-<p><img style="float: left;" width="90" height="53" src="/img/sch-imgs/PU_logo.jpeg" /> <b>&nbsp;PhD in Operations Research and Financial Engineering, 2020</b> <br />&nbsp;Princeton University</p>
+<p><img style="float: left;" width="90" height="53" src="/img/sch-imgs/BC_logo.png" /> <b>&nbsp;B.A. in Mathematics, 2013</b> <br />&nbsp;Brooklyn College</p>
 
 
 <!-- 
