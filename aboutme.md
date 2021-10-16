@@ -4,6 +4,7 @@ title: About me
 subtitle: Welcome to my page
 css: "/css/aboutme.css"
 css: "https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css"
+css: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
 ---
 <p>
 Emmanuel Ekwedike is a machine learning research scientist with strong data analytics skills. As a data scientist, his strengths help build better products and empower businesses to make sustainable decisions that increase profits and marketability. 
@@ -34,7 +35,7 @@ Emmanuel frequently travels the world looking at different cultures for inspirat
       <p class="institution">Princeton University</p>
     </div>
   </li>
-  
+
   <li>
     <i class="fa-li fas fa-graduation-cap"></i>
     <div class="description">
