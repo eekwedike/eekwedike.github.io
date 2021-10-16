@@ -19,8 +19,9 @@ Emmanuel frequently travels the world looking at different cultures for inspirat
 </p> 
 
 <!-- <div class="section-subheading">Education </div> -->
-
+<!-- 
 <h2 class="has-text-align-center">Education </h2>
+
 <ul class="ul-edu fa-ul">
   <li>
     <i class="fa-li fas fa-graduation-cap"></i>
@@ -57,9 +58,9 @@ Emmanuel frequently travels the world looking at different cultures for inspirat
 </ul> 
 
 
-<p><img style="float: left;" src="/img/sch-imgs/PU_logo.jpeg" width="90" height="53" /> <b>&nbsp;PhD in Operations Research and Financial Engineering, 2020</b> <br />&nbsp;Princeton University</p>
+<p><img style="float: left;" width="90" height="53" src="/img/sch-imgs/PU_logo.jpeg" /> <b>&nbsp;PhD in Operations Research and Financial Engineering, 2020</b> <br />&nbsp;Princeton University</p>
 
-
+ -->
 <!-- 
 <div style="text-align: center; margin-top: 90px;">
   <h1 id="resume">Resume</h1>
