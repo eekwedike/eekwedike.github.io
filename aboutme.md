@@ -18,7 +18,9 @@ Emmanuel graduated with a Ph.D. in Operations Research and Financial Engineering
 Emmanuel frequently travels the world looking at different cultures for inspiration to build useful context around data. Understanding people helps to bring data to life and builds a global approach to data science. Besides, He enjoys working on meaningful projects that not only focus on addressing the client's needs but also have a social impact. His passion for data science stems from the ability to create tools, products, and services that solve real-life problems.
 </p> 
 
-<div class="section-subheading">Education </div>
+<!-- <div class="section-subheading">Education </div> -->
+
+<h2 >Education </h2>
 <ul class="ul-edu fa-ul">
   <li>
     <i class="fa-li fas fa-graduation-cap"></i>
