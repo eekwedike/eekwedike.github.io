@@ -19,6 +19,7 @@ Emmanuel frequently travels the world looking at different cultures for inspirat
 </p> 
 
 
+
 <h2 class="has-text-align-center">Education </h2>
 
 <p><img style="float: left;" width="50" height="50" src="/img/sch-imgs/PU_logo.jpeg" /> <b>&nbsp;PhD in Operations Research and Financial Engineering, 2020</b> <br />&nbsp;Princeton University</p>
@@ -27,7 +28,7 @@ Emmanuel frequently travels the world looking at different cultures for inspirat
 
 <p><img style="float: left;" width="50" height="50" src="/img/sch-imgs/CCNY_logo.jpeg" /> <b>&nbsp;M.S. in Applied Mathematics, 2015</b> <br />&nbsp;City College</p>
 
-<p><img style="float: left;" width="50" height="50" src="/img/sch-imgs/BC_logo.png" /> <b>&nbsp;B.A. in Mathematics, 2013</b> <br />&nbsp;Brooklyn College</p>
+<p><img style="float: left;" width="50" height="50" src="/img/sch-imgs/BC_logo.png" /> <b>&nbsp;B.S. in Mathematics, 2013</b> <br />&nbsp;Brooklyn College</p>
 
 
 <!-- 
