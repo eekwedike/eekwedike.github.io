@@ -32,8 +32,9 @@ Emmanuel frequently travels the world looking at different cultures for inspirat
 
 
 
-
-
+<br>
+<br>
+<br>
 
 <h2 class="text-center">HONORS and AWARDS: </h2>
 
