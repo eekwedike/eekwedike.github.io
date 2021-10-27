@@ -91,9 +91,7 @@ ul.ul-edu li .description p.institution {
   text-align: center;
 }
 
-img.left-sized{
+img.align-left{
   float: left;
-  width: 50%;
-  height: 50%;
 }
 
