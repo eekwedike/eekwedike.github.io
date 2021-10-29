@@ -39,6 +39,15 @@ Emmanuel frequently travels the world looking at different cultures for inspirat
 <p class="text-center">Albert Shanker Undergraduate Scholarship (2009 -2013) </p>
 <p class="text-center">One Hundred Black Men Undergraduate Scholarship  (2011- 2013)</p>
 <p class="text-center"> Furman Study Abroad Grant (Summer 2011) </p>
+
+
+
+<p><img style="float: center" src="/img/brand/skills.webp"> </p>
+
+
+
+
+
 <!-- 
 <div style="text-align: center; margin-top: 90px;">
   <h1 id="resume">Resume</h1>
