@@ -42,7 +42,7 @@ Emmanuel frequently travels the world looking at different cultures for inspirat
 
 
 
-<div class="text-center">
+<div >
   <img src="/img/brand/skills.webp"> 
 </div>
 
