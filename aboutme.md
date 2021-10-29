@@ -43,7 +43,7 @@ Emmanuel frequently travels the world looking at different cultures for inspirat
 
 
 <div >
-  <img style="float:center; display:block;" src="/img/brand/skills.webp" alt="SKILLS" > 
+  <img style="float:center; display:block;" src="/img/brand/skills.webp" alt="SKILLS" width="90" height="80"> 
 </div>
 
 
