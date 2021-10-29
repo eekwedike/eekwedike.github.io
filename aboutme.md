@@ -32,7 +32,7 @@ Emmanuel frequently travels the world looking at different cultures for inspirat
 <p class="text-center">NOAA CREST Fellowship (2014-2015) </p>
 <p class="text-center">DHS Team Research Fellowship (Summer 2014)</p>
 <p class="text-center">Adobe GEM Graduate Fellowship, Adobe Foundation (2013-2015) </p>
-<p class="text-center">Institute for the Recruitment of Teachers (Summer 2012) </p>
+<p class="text-center">IRT Associate Undergraduate Fellowship (Summer 2012) </p>
 <p class="text-center">Mellon Mays Undergraduate Fellowship (2011-2013)</p>
 <p class="text-center"> LAMP Undergraduate Fellowship Fellowship (2011-2013)</p>
 <p class="text-center">Albert Shanker Graduate Scholarship (2013 - 2015) </p>
