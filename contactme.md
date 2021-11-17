@@ -35,8 +35,9 @@ SCHEDULE MEETING
 
 
 <form action="https://formspree.io/mvobeyer" method="POST" class="form" id="contact-form">
-  <h2> How can we help?</h2>
-  <p>Let's build a customized solution that meets all of your needs.</p>
+<!--   <h2> How can we help?</h2> -->
+  <p>Thanks for visiting my site. Do you have a question or want to book me as a speaker at your event? Please fill out the form and I’ll get back to you.
+</p>
   <br>
   
   <div class="row">
