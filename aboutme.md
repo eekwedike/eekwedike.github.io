@@ -7,15 +7,15 @@ css: "/css/aboutme.css"
 
 <h2>Introduction: </h2>
 <p>
-Emmanuel Ekwedike is a machine learning research scientist with strong data analytics skills. As a data scientist, his strengths help build better products and empower businesses to make sustainable decisions that increase profits and marketability. 
+Emmanuel Ekwedike, Ph.D., is a Machine Learning Research Scientist and a collaborative problem-solver with 6+ years of research experience and a track record of delivering quality results in all facets of product development for businesses with either B2B or B2C business models. As a Machine Learning Research Scientist, his strengths help build better products and empower businesses to make sustainable business decisions.
 </p>
 
 <p>
-Emmanuel graduated with a Ph.D. in Operations Research and Financial Engineering from Princeton University. During graduate studies, he developed love and passion for working on interdisciplinary real-life problems that involve decision making. Before attending Princeton University, Emmanuel earned multiple degrees in Applied Mathematics from the City University of New York.
+Emmanuel's passion for solving interdisciplinary real-world problems that involve decision-making prompted him to study applied mathematics and Operations Research, the study of how to make good decisions with limited information in uncertain environments. Originally from Nigeria, he moved to the US when he was 18 and graduated from Princeton University with a Ph.D. and M.A in Operations Research and Financial Engineering, specializing in Machine Learning and Data Science. He also earned a master's degree in Applied mathematics from City College of New York and a bachelor's degree in mathematics from Brooklyn College, where he graduated Magna cum Laude.
 </p>
 
 <p>
-Emmanuel frequently travels the world looking at different cultures for inspiration to build useful context around data. Understanding people helps to bring data to life and builds a global approach to data science. Besides, He enjoys working on meaningful projects that not only focus on addressing the client's needs but also have a social impact. His passion for data science stems from the ability to create tools, products, and services that solve real-life problems.
+Emmanuel frequently travels the world looking at different cultures for inspiration to build useful context around data. Understanding people helps to bring data to life and builds a global approach to data science. Besides, He enjoys working on meaningful projects that both address the client's needs and have a positive societal impact. His passion for data science stems from the ability to create tools, products, and services that solve interdisciplinary real-world problems.
 </p> 
 
 
