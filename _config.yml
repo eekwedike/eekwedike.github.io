@@ -5,7 +5,7 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (https://username.github.io) then use these settings:
-url: "https://eekwedike.github.io"
+url: "https://emmanuelekwedike.com/"
 baseurl: ""
 
 
@@ -13,7 +13,7 @@ baseurl: ""
 title: Emmanuel Ekwedike, Ph.D.
 
 # Short description of your site
-description: "Machine learning expert and Data scientist"
+description: "Emmanuel Ekwedike is a Machine Learning Research Scientist and a collaborative problem solver."
 
 # --- Local development options ---
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
@@ -34,7 +34,7 @@ description: "Machine learning expert and Data scientist"
 
 # List of links in the navigation bar
 navbar-links:
-  Blog: "https://eekwedike.github.io"
+  Blog: "https://emmanuelekwedike.com/"
   #Services: "https://eekwedike.github.io"
   Publications: "publications"
   About Me: "aboutme"
@@ -132,7 +132,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "eekwedike.github.io"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "emmanuelekwedike.com"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
