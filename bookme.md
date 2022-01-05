@@ -5,9 +5,9 @@ subtitle: Please use the form below to complete your booking request.
 ---
 <div>
 <h2 class="text-center">Work with Me</h2>
-<form id="fs-frm" name="registration-form" accept-charset="utf-8" action="https://formspree.io/f/mknygpvb" method="post">
-<p> Book me as your next keynote, moderator, host, or panelist. Use the form to work with my team on getting me to your next event. </p>
-<br>
+<form id="fs-frm" name="registration-form" accept-charset="utf-8" action="https://formspree.io/f/mknygpvb" class="form" method="POST">
+<!-- <p> Book me as your next keynote, moderator, host, or panelist. Use the form to work with my team on getting me to your next event. </p>
+<br> -->
   <fieldset id="fs-frm-inputs">
     <label for="full-name">Full Name *</label>
     <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
