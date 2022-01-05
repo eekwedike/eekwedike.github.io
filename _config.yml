@@ -37,7 +37,7 @@ navbar-links:
   Home: "https://emmanuelekwedike.com/"
   About Me: "aboutme"
   Publications: "publications"
-  Book Me: "bookme"
+  # Book Me: "bookme"
   # Contact: "contactme"
   #Services: "https://eekwedike.github.io"
 #nav-search: "search"
