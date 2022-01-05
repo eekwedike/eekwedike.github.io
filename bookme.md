@@ -3,9 +3,14 @@ layout: page
 # title: Book Me
 # subtitle: Please use the form below to complete your booking request.
 ---
-<div>
+
+
+<div style="width: 60%; float:left">
+   #left content in here
+</div>
+<div style="width: 40%; float:right">
 <h2 class="text-center">Work with Me</h2>
-<form id="fs-frm" name="registration-form" accept-charset="utf-8" action="https://formspree.io/f/mknygpvb" class="form" method="POST">
+<form id="fs-frm" name="booking-form" accept-charset="utf-8" action="https://formspree.io/f/mknygpvb" method="POST">
 <p> Book me as your next keynote, moderator, host, or panelist. Use the form to work with my team on getting me to your next event. </p>
 <br>
   <fieldset id="fs-frm-inputs">
@@ -56,7 +61,10 @@ layout: page
     <label for="budget">Budget *</label>
     <br>
     <input type="text" name="budget" id="budget-id" pattern="[$0-9]+" placeholder="E.g. $1000" required="">
+    <br>
+    <br>
       <label for="aboutus">How did you hear about us?</label>
+      <br>
        <select name="aboutus" >
         <option value="" selected="" disabled="">Select an option</option>
       	<option value="PW">Personal Website</option>
@@ -75,4 +83,5 @@ layout: page
   <input type="submit" value="Submit">
 </form>
 </div>
+
 
