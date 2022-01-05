@@ -34,12 +34,12 @@ description: "Emmanuel Ekwedike is a Machine Learning Research Scientist and a c
 
 # List of links in the navigation bar
 navbar-links:
-  Blog: "https://emmanuelekwedike.com/"
-  #Services: "https://eekwedike.github.io"
-  Publications: "publications"
+  Home: "https://emmanuelekwedike.com/"
   About Me: "aboutme"
+  Publications: "publications"
   Book Me: "bookme"
-  Contact: "contactme"
+  # Contact: "contactme"
+  #Services: "https://eekwedike.github.io"
 #nav-search: "search"
   #Resume: "resume"
 

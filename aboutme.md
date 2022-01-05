@@ -48,6 +48,34 @@ Emmanuel frequently travels the world looking at different cultures for inspirat
 
 
 
+<br>
+<h2 class="text-center">Contact: </h2>
+<form action="https://formspree.io/mvobeyer" method="POST" class="form" id="contact-form">
+<!--   <h2> How can we help?</h2> -->
+  <p>Thank you for visiting my site. Do you have a question or want to book me as a speaker at your event? Please fill out this form and I’ll get back to you!
+</p>
+  <br>
+  
+  <div class="row">
+    <div class="col-xs-6">
+      <input type="email" name="_replyto" class="form-control input-lg" placeholder="Email" title="Email">
+    </div>
+    <div class="col-xs-6">
+      <input type="text" name="name" class="form-control input-lg" placeholder="Name" title="Name">
+    </div>
+  </div>
+  <input type="hidden" name="_subject" value="New submission from eekwedike.github.io">
+  <textarea type="text" name="content" class="form-control input-lg" placeholder="Message" title="Message" required="required" rows="3"></textarea>
+  <input type="text" name="_gotcha" style="display:none">
+  <input type="hidden" name="_next" value="?message=Your message was sent successfully, thanks!" />
+  
+  <br>
+  <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+</form>
+
+</div>
+
+
 <!-- 
 <div style="text-align: center; margin-top: 90px;">
   <h1 id="resume">Resume</h1>
