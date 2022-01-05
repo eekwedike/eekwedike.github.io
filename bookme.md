@@ -3,7 +3,7 @@ layout: page
 title: Book Me
 subtitle: Please use the form below to complete your booking request.
 ---
-
+<div>
 <h2 class="text-center">Work with Me</h2>
 <form id="fs-frm" name="registration-form" accept-charset="utf-8" action="https://formspree.io/f/mknygpvb" method="post">
 <p> Book me as your next keynote, moderator, host, or panelist. Use the form to work with my team on getting me to your next event. </p>
@@ -50,4 +50,5 @@ subtitle: Please use the form below to complete your booking request.
   </fieldset>
   <input type="submit" value="Submit">
 </form>
+</div>
 
