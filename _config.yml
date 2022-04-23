@@ -89,6 +89,7 @@ author:
   calendly: "viraldatasolutions/30min"
   github: eekwedike
   linkedin: eekwedike
+  instagram: eekwedike
   googlescholar: GMzu11wAAAAJ
 #  rss: true
 #  twitter: iamKingECE
@@ -121,6 +122,7 @@ footer-links-active:
   stackoverflow: false
   calendly: true
   telephone: false
+  instagram: true
   googlescholar: true
 
 # Select which share links to show in posts
