@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+      <!-- Favicons -->
+  <link href="./images/logoFav.png" rel="icon">
+  <title>Contact</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"  rel="stylesheet"  type='text/css'>
+  </head>
+  <body>
+    <!--navbar-->
+    <nav style="background-color: #004489; color: white; "  class="navbar navbar-expand-lg sticky-top ">
+        <a class="navbar-brand" href="home.html"><img src="./images/logo.png" width="200px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span style="color: white;" class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div style=" margin-left: 18%; "  class="collapse navbar-collapse" id="navbarSupportedContent">
+         
+            <ul class="navbar-nav mr-auto">
+                <li style=" padding: 20px;"  class="nav-item active">
+                  <a style="color:white ;" class="nav-link hover-underline-animation home" href="home.html"><b>HOME</b> </a>
+                </li>
+                
+                  <li style=" padding: 20px;"   class="nav-item active">
+                    <a style="color:white ;"class="nav-link hover-underline-animation speaker" href="speaker.html"><b>SPEAKER</b> </a>
+                  </li>
+                  <li style=" padding: 20px;"   class="nav-item active">
+                    <a style="color:white ;" class="nav-link hover-underline-animation blog" href="Blog.html"><b>BLOG</b> </a>
+                  </li>
+                  <li style=" padding: 20px;"   class="nav-item active">
+                    <a style="color:white; border-radius: 4px;" class="nav-link hover-underline-animation contact" href="publication.html"><b>Publications</b> </a>
+                  </li>
+                  <li style=" padding: 20px;"   class="nav-item active">
+                    <a style="color:white ;" class="nav-link hover-underline-animation about" href="about.html"><b>ABOUT</b> </a>
+                  </li>
+                  <li style=" padding: 20px;"   class="nav-item active">
+                    <a style="color:white;  border-radius: 4px;" class="nav-link hover-underline-animation contact" href="contact.html"><b>CONTACT</b>  </a>
+                  </li>
+                
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                
+                <a style="color:white;  background-color: #0087ca; border-radius: 4px;" class="nav-link hover-underline-animation contact" href="book.html"><b>BOOK EMMANUEL</b>  </a>
+                
+              </form>
+         
+        </div>
+      </nav>
+
+<br><br>
+      <!--contact Form-->
+    <div  class="container-fluid shadow p-3 mb-5 bg-white " style="width:95%; border-radius: 10px;">
+        
+        <br>
+        <center> <h2><b>Contact Emmmanuel</b></h2></center>
+        <br><br>
+        <div class="row">
+          
+            <div  style="align-items:center; text-align: center; justify-content: center;"class="col-lg-4">
+                <br><br>
+                <p>
+                    <b> <i style="padding: 10px;"  class="fa fa-location-arrow fa-lg" aria-hidden="true"></i>New Jersey  </b>
+                    </p>
+               
+                    <p>
+                        <b> <i style="padding: 10px;"  class="fa fa-phone fa-lg" aria-hidden="true"></i>  555-555-5555</b>
+                    </p>
+                       
+                        <p>
+                            <b><i style="padding: 10px;"  class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>   emmanuel@emmanuelekwedike.com</b>
+                        </p>
+                     
+                       
+                           
+                                 <a href="#" class="fa fa-facebook"></a>
+                                <a href="#" class="fa fa-twitter"></a>
+                                <a href="#" class="fa fa-google"></a>
+                                <a href="#" class="fa fa-linkedin"></a> </b>
+                      
+            </div>
+            <div class="col-lg-8"> <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">First Name</label>
+                    <input type="text" class="form-control" id="inputEmail4" placeholder="Emmanuel">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">Last Name</label>
+                    <input type="text" class="form-control" id="inputEmail4" placeholder="Ekwedike">
+                  </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress">Email</label>
+                    <input type="Email" class="form-control" id="inputAddress" placeholder="Email">
+                  </div>
+                <div class="form-group">
+                  <label for="inputAddress">Address</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                  </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Check me out
+                    </label>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-primary  btn-block">SEND</button>
+                
+              </form></div>
+              
+           
+        </div>
+    </div>
+
+   <!--Footer-->
+   <div style="background-color: #004489;">      
+    <div class="container">
+     
+      <div style="align-items:center; text-align: center; justify-content: center;">
+          
+              <img src="./images/logo.png"  width="380px">
+            <br>
+         
+<div  class="input-group mb-3">
+<input style="box-shadow: none;" type="text" class="form-control" placeholder="Name"  aria-describedby="basic-addon2"> <input style="box-shadow: none;" type="text" class="form-control" placeholder="Email"  aria-describedby="basic-addon2">
+<div class="input-group-append">
+<button class="btn btn-outline-light" type="button">Suscribe</button>
+</div>
+</div>
+<div style="color: white ;" class="footer-copyright text-center py-3">© 2022 Emmanuel Ekwedike. AllRight Reserved | Emmanuel@EmmanuelEkwedike.com</div>
+<div  style="align-items:center; text-align: center; justify-content: center;">
+<br>
+
+<a style="text-decoration: none;" href="https://www.linkedin.com/in/eekwedike" class="fa fa-linkedin fa-2x"></a> 
+<a style="text-decoration: none;" href="https://www.instagram.com/eekwedike/" class="fa fa-instagram fa-2x"></a>
+<a style="text-decoration: none;" href="https://github.com/eekwedike" class="fa fa-github fa-2x"></a> 
+
+</div>  
+  </div>
+  
+     </div> 
+  <br>
+
+  </div>
+
+    <!-- Optional JavaScript -->
+    <script>
+   
+    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
