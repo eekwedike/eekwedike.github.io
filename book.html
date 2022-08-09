@@ -7,36 +7,51 @@
   <meta name="keywords" content="​Preparing For Your Success,We Provide Truly Prominent IT Solutions.">
   <meta name="description" content="">
   <title>Book Emmanuel</title>
-  <link rel="stylesheet" href="nicepage.css" media="screen">
-  <link rel="stylesheet" href="Home.css" media="screen">
+  <link rel="stylesheet" href="css/Home.css" media="screen">
   <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
-  <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+  <script class="u-script" type="text/javascript" src="js/nicepage.js" defer=""></script>
   <meta name="generator" content="Nicepage 4.14.1, nicepage.com">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel=”stylesheet”
-    href=”https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.min.css” />
-  <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+  <link rel="stylesheet" href="css/styles.css">
   <!-- Favicons -->
   <link href="./images/logoFav.png" rel="icon">
   <!-- Bootstrap CSS -->
-
   <script type="application/ld+json">{
 		"@context": "http://schema.org",
 		"@type": "Organization",
 		"name": "",
-		"logo": "images/default-logo.png"
-}</script>
+		"logo": "images/default-logo.png"}
+</script>
   <meta name="theme-color" content="#478ac9">
   <meta property="og:title" content="Home">
   <meta property="og:type" content="website">
+  <style>
+    /* Style for positioning toast */
+    .toast{
+       float: right;
+         top: 10px;
+        right: 10px;
+        position:fixed;
+        z-index: 1000; 
+        margin-top: 80px;
+        background-color: #D4EDDA;
+        margin-right: 8px;
+        animation: 3s;
+    }
+    </style>
 </head>
 
 <body data-home-page="Home.html" data-home-page-title="Home" class="u-body u-xl-mode" data-lang="en">
   <header class="u-clearfix u-header u-header" id="sec-8d68">
-
-
     <!--navbar-->
     <nav style="background-color: #004489;" class="navbar navbar-expand-lg navbar-dark sticky-top  ">
       <a class="navbar-brand" href="index.html"><img src="./images/logo.png" width="200px"></a>
@@ -44,14 +59,12 @@
         aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav mx-auto">
           <li style="margin-left: 15px;" class="nav-item active">
             <a style="color:white ;    padding: 10px; " class="nav-link hover-underline-animation home"
               href="index.html"><b>HOME</b> </a>
           </li>
-
           <li style="margin-left: 15px;" class="nav-item active">
             <a style="color:white ; padding: 10px;" class="nav-link hover-underline-animation speaker"
               href="speaker.html"><b>SPEAKER</b> </a>
@@ -72,18 +85,19 @@
             <a style="color:white;  padding: 10px;" class="nav-link hover-underline-animation contact"
               href="contact.html"><b>CONTACT</b> </a>
           </li>
-
         </ul>
         <form class="form-inline my-2 my-lg-0">
           <a style="color:white; background-color: #0087ca; border-radius: 4px; padding: 10px;"
             class="nav-link hover-underline-animation contact" href="book.html"><b>BOOK EMMANUEL</b> </a>
-
         </form>
       </div>
     </nav>
-
-
-    <section class="u-clearfix u-image u-section-1" id="carousel_beb0" data-image-width="1600" data-image-height="1067">
+    <div class="toast" id="myToast">
+      <div class="toast-body">
+         <span><img src="images/alertImg.png"></span> &nbsp;  Contact request submitted successfully.
+      </div>
+  </div>
+    <section style="background-image: url(images/pexels-photo-301930copy.jpg);" class="u-clearfix u-image u-section-1"  id="carousel_beb0" data-image-width="1600" data-image-height="1067">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
           <div class="u-layout">
@@ -108,85 +122,67 @@
                   <p class="u-text u-text-body-alt-color u-text-default u-text-3"> Get in touch and discover how we can
                     help. We aim to be in touch</p>
                   <div style="background-color:#004489 ;" class="u-form u-palette-1-base u-radius-30 u-form-1">
-                    <form action="#" method="POST" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form"
-                      source="email" name="form" style="padding: 40px;">
+                    
+                    <!--book me form-->
+                    <form id="BookMeForm"  action="https://formspree.io/f/xjvzbllg"
+                    method="POST" style="padding: 40px;">
                       <div class="form-group u-form-group">
-                        <input style="border-radius: 16px;" type="text" class="form-control" id="exampleInputEmail1"
+                        <input style="border-radius: 16px;" name="Name" type="text" class="form-control" id="exampleInputEmail1" required
                           aria-describedby="emailHelp" placeholder="Enter name">
                       </div>
                       <div class="form-group u-form-group">
-                        <input style="border-radius: 16px;" type="email" class="form-control" id="exampleInputEmail1"
+                        <input style="border-radius: 16px;" name="Email" type="email" class="form-control" id="exampleInputEmail1" required
                           aria-describedby="emailHelp" placeholder="Enter email">
                       </div>
                       <div class="form-group u-form-group">
                         <input type="text" name="phone" placeholder="(xxx)xxx-xxx" onclick="myFunction1()" id="phone"
-                          style="border-radius: 16px;" type="number" class="form-control" id="exampleInputEmail1"
-                          aria-describedby="emailHelp" />
-
-                        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-
-                        <script>
-
-                          $("input[name='phone']").keyup(function () {
-                            $(this).val($(this).val().replace(/^(\d{3})(\d{3})(\d+)$/, "($1)$2-$3"));
-                          });
-
-                        </script>
+                          style="border-radius: 16px;" type="number" class="form-control" id="exampleInputEmail1" required
+                          aria-describedby="emailHelp"/>
+                        
                       </div>
                       <div class="form-group u-form-group">
-                        <input style="border-radius: 16px;" type="text" class="form-control" id="exampleInputEmail1"
+                        <input style="border-radius: 16px;" name="Company Name"  type="text" class="form-control" id="exampleInputEmail1" required
                           aria-describedby="emailHelp" placeholder="Company Name">
                       </div>
                       <div class="form-group u-form-group">
-                        <input style="border-radius: 16px;" type="datetime-local" class="form-control"
+                        <input style="border-radius: 16px;" name="Event Date" type="datetime-local" class="form-control" required
                           id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="12/01/2022 12:00PM">
                       </div>
                       <div class="row">
                         <div class="col-lg-6">
                           <div class="form-group u-form-group">
-                            <select s class="form-control" style="color: black;border-radius: 16px; font-size: medium;"
+                            <select  class="form-control" style="color: black;border-radius: 16px; font-size: medium;" required name="Event Budget"
                               class="form-select">
                               <option disabled selected>Event Budget&nbsp;&nbsp;&nbsp;
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; </option>
-                              <option value="1">50k+</option>
-                              <option value="2">40k - 49k</option>
-                              <option value="3">30k -39k</option>
-                              <option value="1">20k -29k</option>
-                              <option value="3">10k -19k</option>
-                              <option value="2">0 - 9k</option>
+                              <option value="50k+">50k+</option>
+                              <option value="40k - 49k">40k - 49k</option>
+                              <option value="30k -39k">30k -39k</option>
+                              <option value="20k -29k">20k -29k</option>
+                              <option value="10k -19k">10k -19k</option>
+                              <option value="0 - 9k">0 - 9k</option>
                             </select>
                           </div>
                         </div>
                         <div class="col-lg-6">
-
                           <div class="form-group u-form-group">
-                            <select class="form-control" style="color: black;border-radius: 16px; font-size: medium;"
+                            <select class="form-control" style="color: black;border-radius: 16px; font-size: medium;" required name="Event Type"
                               class="form-select">
-                              <option disabled selected>Event Type </option>
-                              <option value="1">In-Person</option>
-                              <option value="2">Virtual</option>
+                              <option disabled selected>Event Type</option>
+                              <option value="In-Person">In-Person</option>
+                              <option value="Virtual">Virtual</option>
                             </select>
                           </div>
                         </div>
-
                       </div>
-
                       <div class="u-form-group u-form-message">
                         <label for="message-2137" class="u-form-control-hidden u-label"></label>
-                        <textarea placeholder="Enter your message" rows="4" cols="50" id="message-2137" name="message"
-                          class="u-input u-input-rectangle u-radius-20 u-white" required=""></textarea>
-                      </div>
+                        <textarea placeholder="Enter your message" rows="4" cols="50" id="message-2137" name="Message"
+                          class="u-input u-input-rectangle u-radius-20 u-white" required></textarea>
+                      </div> <br>
                       <div class="u-align-left u-form-group u-form-submit">
-                        <a style="background-color:white; color: #989898; box-shadow: none;" href="#"
-                          class="u-btn u-btn-round u-btn-submit  u-radius-20 ">Submit</a>
-                        <input type="submit" value="submit" class="u-form-control-hidden">
+                        <button style="background-color: white; border-radius: 10px; color: black;" type="submit" id="myBtn" class="btn btn-primary  btn-block">SUBMIT</button> 
                       </div>
-                      <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent.
-                      </div>
-                      <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors
-                        then try again. </div>
-                      <input type="hidden" value="" name="recaptchaResponse">
                     </form>
                   </div>
                 </div>
@@ -202,7 +198,6 @@
           <div class="u-layout">
             <div class="u-layout-row">
               <img src="./images/bootImage.jpg " height="400px" class="u-container-style u-image u-layout-cell ">
-
               <div class="u-align-center u-container-style u-layout-cell u-size-30 u-layout-cell-2">
                 <div class="u-container-layout u-valign-middle u-container-layout-2">
                   <h2 class="u-text u-text-default u-text-1">Hi,</h2>
@@ -214,45 +209,114 @@
         </div>
       </div>
     </section>
-
-
     <!--Footer-->
     <div style="background-color: #004489;">
       <div class="container">
-
         <div style="align-items:center; text-align: center; justify-content: center;">
           <br><br>
-          <img src="./images/logo.png" width="380px">
+          <a style="text-decoration:none ;" href="index.html"><img src="./images/logo.png" width="380px"></a>
           <br>
-          <br>
-          <div class="input-group mb-3">
-            <input style="box-shadow: none;" type="text" class="form-control" placeholder="Name"
-              aria-describedby="basic-addon2"> <input style="box-shadow: none;" type="text" class="form-control"
-              placeholder="Email" aria-describedby="basic-addon2">
-            <div class="input-group-append">
-              <button style="background-color: #004489;" class="btn btn-outline-light" type="button">Suscribe</button>
-            </div>
-          </div>
-          <div style="color: white ;" class="footer-copyright text-center py-3">© 2022 Emmanuel Ekwedike. AllRight
-            Reserved | Emmanuel@EmmanuelEkwedike.com</div>
-          <div style="align-items:center; text-align: center; justify-content: center;">
-            <br>
-
-            <a style="text-decoration: none;" href="https://www.linkedin.com/in/eekwedike"
-              class="fa fa-linkedin fa-2x"></a>
-            <a style="text-decoration: none;" href="https://www.instagram.com/eekwedike/"
-              class="fa fa-instagram fa-2x"></a>
-            <a style="text-decoration: none;" href="https://github.com/eekwedike" class="fa fa-github fa-2x"></a>
-
+          <br>  <center>
+          <form  action="https://formspree.io/f/xnqraypl"
+          method="POST" id="FooterForm">
+        <div class="input-group mb-3">
+          <input style="box-shadow: none;" name="Name" type="text" class="form-control" placeholder="Name" required
+            aria-describedby="basic-addon2"> 
+            <input name="Email"  style="box-shadow: none;" type="text" class="form-control" required
+            placeholder="Email" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <button type="submit" id="myBtn" style="background-color: #004489; font-family:MyWebFont; padding: 8px;" class="btn btn-outline-light" type="button">Suscribe</button>
           </div>
         </div>
-
+       </form>
+      </center>
+          <div style="color: white ;" class="footer-copyright text-center py-3">© 2022 Emmanuel Ekwedike. AllRight
+            Reserved | Emmanuel@EmmanuelEkwedike.com</div>
+            <div style="align-items:center; text-align: center; justify-content: center;">
+              <br>
+              <a style="text-decoration: none; padding: 5px;" href="https://www.linkedin.com/in/eekwedike">
+              <img src="images/linkedin.png"></a>
+              <a style="text-decoration: none;  padding: 5px;" href="https://www.instagram.com/eekwedike/">  
+                <img src="images/insta.png"></a>
+              <a style="text-decoration: none;  padding: 5px;" href="https://github.com/eekwedike">
+                <img src="images/github.png" width="40px"></a>
+            </div>
+        </div>
       </div>
       <br>
-
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                        <script>
+                          $("input[name='phone']").keyup(function () {
+                            $(this).val($(this).val().replace(/^(\d{3})(\d{3})(\d+)$/, "($1)$2-$3"));
+                          });
 
 
+
+    var form = document.getElementById("BookMeForm");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("myToast");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          $("#myToast").toast("show");
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+
+
+   
+var form = document.getElementById("FooterForm");
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+         
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+
+    </script>
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
   integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
