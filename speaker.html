@@ -53,6 +53,10 @@
             class="nav-link hover-underline-animation speaker" href="speaker"><b>SPEAKER</b> </a>
         </li>
         <li style="margin-left: 15px;" class="nav-item active">
+          <a style="color:white; padding: 10px;" class="nav-link hover-underline-animation moments"
+            href="moments"><b>MOMENTS</b> </a>
+        </li>
+        <li style="margin-left: 15px;" class="nav-item active">
           <a style="color:white ;  padding: 10px;" class="nav-link hover-underline-animation blog"
             href="blog"><b>BLOG</b> </a>
         </li>
@@ -76,24 +80,43 @@
     </div>
   </nav>
   <div style="background-color:#004489;" class="img-fluid"  alt="Responsive image">
-	
+  
     <div id="carouselExampleIndicators" class="carousel slide img-fluid" >
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>
       <center>
-        <div   class="carousel-inner">
-          <div class="carousel-item active">
-            <video class="img-fluid" style="border-radius: 12px;" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-              <source   src="./images/speakerpageVideo.mp4" type="video/mp4">
-              </video>
-          
+        <div class="carousel-inner" style="height:560px;">
+          <div class="carousel-item active" style="height:560px;">
+            <video style="height:560px; " playsinline autoplay muted loop>
+              <source src="./images/speakerpageVideo.mp4" type="video/mp4">
+            </video>
           </div>
-          <div class="carousel-item">
-            <img class="img-fluid" style="border-radius: 12px;" height="350px" src="./images/speakerpageBanner.png" alt="First slide">
+          <div class="carousel-item" style="height:560px;">
+            <img src="./images/speakerpageBanner.png" alt="First slide"
+              style="height:560px; ">
           </div>
-      
+          <div class="carousel-item" style="height:560px;">
+            <a href="https://www.youtube.com/watch?v=8uQQDno0Djs" target="_blank" rel="noopener"
+              style="display:flex; align-items:center; justify-content:center; height:560px; background:#000; border-radius:12px; overflow:hidden; position:relative;">
+              <img src="https://img.youtube.com/vi/8uQQDno0Djs/maxresdefault.jpg"
+                onerror="this.src='https://img.youtube.com/vi/8uQQDno0Djs/hqdefault.jpg'"
+                alt="Watch on YouTube"
+                style="height:560px; width:auto; max-width:100%; display:block; opacity:0.85;">
+              <div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px;">
+                <div style="width:80px; height:80px; background:rgba(255,0,0,0.92); border-radius:50%;
+                  display:flex; align-items:center; justify-content:center;
+                  box-shadow:0 4px 24px rgba(0,0,0,0.5);">
+                  <i class="fa fa-youtube-play" style="font-size:2.2rem; color:#fff; margin-right:2px;"></i>
+                </div>
+                <span style="color:#fff; font-size:0.95rem; font-weight:600; letter-spacing:0.5px;
+                  background:rgba(0,0,0,0.45); padding:5px 16px; border-radius:20px;">Watch on YouTube</span>
+              </div>
+            </a>
+          </div>
+
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>

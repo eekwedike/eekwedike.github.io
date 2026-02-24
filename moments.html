@@ -1,0 +1,1049 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Moments | Emmanuel Ekwedike, Ph.D</title>
+  <meta name="description" content="Relive the speaking engagements, events, and lifestyle moments of Emmanuel Ekwedike, Ph.D — AI leader, keynote speaker, and innovator.">
+  <link href="./images/logoFav.png" rel="icon">
+  <!-- DNS preconnect for faster external resource resolution -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy:    #004489;
+      --sky:     #0087ca;
+      --cream:   #F3F2F1;
+      --gold:    #C9984A;
+      --charcoal:#1e1e2e;
+      --white:   #ffffff;
+      --ease:    cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    body { background-color: var(--cream); font-family: 'DM Sans', sans-serif; }
+
+    /* ── HERO ── */
+    .moments-hero {
+      background: linear-gradient(150deg, var(--navy) 0%, #003370 45%, #005aa8 100%);
+      padding: 90px 20px 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .moments-hero::after {
+      content: '';
+      position: absolute;
+      bottom: -2px; left: 0; right: 0;
+      height: 54px;
+      background: var(--cream);
+      clip-path: ellipse(55% 100% at 50% 100%);
+    }
+    .moments-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 70% 30%, rgba(201,152,74,0.2) 0%, transparent 55%);
+    }
+    .moments-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.8rem, 6vw, 5rem);
+      font-weight: 900;
+      color: var(--white);
+      letter-spacing: -1.5px;
+      line-height: 1.1;
+      position: relative;
+    }
+    .moments-hero h1 em {
+      color: var(--gold);
+      font-style: italic;
+      font-weight: 700;
+    }
+    .moments-hero .sub {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.68);
+      margin-top: 14px;
+      font-weight: 300;
+      letter-spacing: 1px;
+      position: relative;
+    }
+    .hero-divider {
+      width: 48px; height: 3px;
+      background: var(--gold);
+      border-radius: 2px;
+      margin: 22px auto 0;
+      position: relative;
+    }
+
+    /* ── MASONRY GRID ── */
+    .moments-section {
+      padding: 60px clamp(16px, 4vw, 60px) 80px;
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+    .masonry-grid {
+      columns: 4 260px;
+      column-gap: 20px;
+    }
+    .masonry-item {
+      break-inside: avoid;
+      margin-bottom: 20px;
+      border-radius: 14px;
+      overflow: hidden;
+      cursor: pointer;
+      background: var(--white);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+      transition: transform 0.32s var(--ease), box-shadow 0.32s var(--ease);
+      animation: fadeUp 0.55s ease both;
+    }
+    .masonry-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 18px 45px rgba(0,0,0,0.16);
+    }
+    .tile-img-wrap {
+      position: relative;
+      overflow: hidden;
+    }
+    .tile-img-wrap img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+      transition: transform 0.5s var(--ease);
+    }
+    .masonry-item:hover .tile-img-wrap img {
+      transform: scale(1.05);
+    }
+    .tile-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to top,
+        rgba(0,30,70,0.9) 0%,
+        rgba(0,30,70,0.55) 40%,
+        transparent 70%
+      );
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 18px 16px;
+      opacity: 0;
+      transition: opacity 0.3s var(--ease);
+    }
+    .masonry-item:hover .tile-overlay { opacity: 1; }
+    .tile-overlay-tag {
+      font-size: 0.68rem;
+      font-weight: 600;
+      color: var(--gold);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+    .tile-overlay-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.35;
+      margin-bottom: 10px;
+    }
+    .view-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.73rem;
+      font-weight: 600;
+      color: var(--white);
+      background: var(--gold);
+      padding: 5px 13px;
+      border-radius: 20px;
+      width: fit-content;
+      transform: translateY(6px);
+      transition: transform 0.3s var(--ease);
+      letter-spacing: 0.3px;
+    }
+    .masonry-item:hover .view-chip { transform: translateY(0); }
+    .tile-info {
+      padding: 13px 15px 15px;
+    }
+    .tile-info-title {
+      font-size: 0.87rem;
+      font-weight: 600;
+      color: var(--charcoal);
+      line-height: 1.4;
+      margin-bottom: 4px;
+    }
+    .tile-info-cat {
+      font-size: 0.7rem;
+      font-weight: 500;
+      color: var(--sky);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* ── MODAL ── */
+    .moments-modal .modal-dialog { max-width: 760px; }
+    .moments-modal .modal-content {
+      border: none;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 40px 100px rgba(0,0,0,0.35);
+    }
+    .moments-modal .modal-header {
+      background: var(--navy);
+      border: none;
+      padding: 20px 28px 16px;
+    }
+    .moments-modal .modal-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.3;
+    }
+    .moments-modal .close {
+      color: rgba(255,255,255,0.7);
+      font-size: 1.6rem;
+      transition: color 0.2s;
+    }
+    .moments-modal .close:hover { color: var(--white); }
+
+    /* Slider */
+    .media-slider-wrap {
+      position: relative;
+      background: #060a14;
+      overflow: hidden;
+    }
+    .m-slide { display: none; }
+    .m-slide.active { display: block; }
+    .m-slide img {
+      width: 100%;
+      height: 400px;
+      object-fit: contain;
+      display: block;
+    }
+    .m-slide iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      display: block;
+    }
+    .slider-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 10px;
+      pointer-events: none;
+    }
+    .s-btn {
+      pointer-events: all;
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: white;
+      font-size: 0.9rem;
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.2s;
+    }
+    .s-btn:hover { background: rgba(255,255,255,0.28); }
+    .slider-dots {
+      position: absolute;
+      bottom: 10px; left: 50%;
+      transform: translateX(-50%);
+      display: flex; gap: 6px;
+    }
+    .sdot {
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.35);
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .sdot.active { background: var(--gold); transform: scale(1.4); }
+
+    .moments-modal .modal-body {
+      padding: 26px 30px 30px;
+      background: var(--white);
+    }
+    .event-metas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 18px;
+    }
+    .emeta {
+      display: inline-flex; align-items: center; gap: 5px;
+      font-size: 0.74rem; font-weight: 600;
+      letter-spacing: 0.8px; text-transform: uppercase;
+      padding: 4px 11px; border-radius: 16px;
+    }
+    .emeta.ev  { background: rgba(0,68,137,0.09);   color: var(--navy); }
+    .emeta.dt  { background: rgba(201,152,74,0.12); color: #8a6010; }
+    .emeta.loc { background: rgba(0,135,202,0.09);  color: #006899; }
+    .modal-desc {
+      font-size: 0.95rem;
+      line-height: 1.82;
+      color: #3d3d50;
+      font-weight: 300;
+    }
+    .modal-tags {
+      margin-top: 18px;
+      display: flex; flex-wrap: wrap; gap: 7px;
+    }
+    .mtag {
+      font-size: 0.72rem; font-weight: 500;
+      color: var(--sky);
+      background: rgba(0,135,202,0.08);
+      padding: 3px 11px;
+      border-radius: 10px;
+    }
+    .modal-yt-link {
+      margin-top: 20px; padding-top: 18px;
+      border-top: 1px solid #edf0f4;
+    }
+    .yt-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: #ff0000; color: white;
+      font-size: 0.83rem; font-weight: 600;
+      padding: 9px 20px; border-radius: 7px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .yt-btn:hover { background: #cc0000; color: white; text-decoration: none; }
+
+    /* ── YT THUMBNAIL PREVIEW ── */
+    .yt-preview-wrap {
+      position: relative;
+      cursor: pointer;
+      display: block;
+      background: #000;
+    }
+    .yt-preview-wrap img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      display: block;
+      transition: opacity 0.2s;
+    }
+    .yt-preview-wrap:hover img { opacity: 0.85; }
+    .yt-play-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none;
+    }
+    .yt-play-btn {
+      width: 72px; height: 72px;
+      background: rgba(255,0,0,0.92);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.9rem;
+      color: #fff;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.45);
+      transition: transform 0.2s, background 0.2s;
+    }
+    .yt-preview-wrap:hover .yt-play-btn {
+      background: #ff0000;
+      transform: scale(1.12);
+    }
+    @media (max-width: 768px) {
+      .yt-preview-wrap img { height: 260px; }
+    }
+
+    /* ── PARALLAX ── */
+    .parallax {
+      background-image: url("images/speakerbottom.jpg");
+      min-height: 350px;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* ── LOGO WATERMARK ── */
+    .slide-logo {
+      position: absolute;
+      bottom: 12px;
+      right: 12px;
+      width: 120px !important;
+      height: auto !important;
+      max-width: 120px !important;
+      opacity: 0.85;
+      pointer-events: none;
+      z-index: 3;
+      filter: brightness(0) invert(1) drop-shadow(0 1px 4px rgba(0,0,0,0.6));
+    }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .masonry-item:nth-child(1)  { animation-delay: 0.04s; }
+    .masonry-item:nth-child(2)  { animation-delay: 0.09s; }
+    .masonry-item:nth-child(3)  { animation-delay: 0.14s; }
+    .masonry-item:nth-child(4)  { animation-delay: 0.19s; }
+    .masonry-item:nth-child(5)  { animation-delay: 0.24s; }
+    .masonry-item:nth-child(6)  { animation-delay: 0.29s; }
+    .masonry-item:nth-child(7)  { animation-delay: 0.34s; }
+    .masonry-item:nth-child(8)  { animation-delay: 0.39s; }
+    .masonry-item:nth-child(9)  { animation-delay: 0.44s; }
+    .masonry-item:nth-child(10) { animation-delay: 0.49s; }
+
+    @media (max-width: 992px) { .masonry-grid { columns: 3 220px; } }
+    @media (max-width: 768px) {
+      .masonry-grid { columns: 2 180px; }
+      .m-slide img, .m-slide iframe { height: 260px; }
+    }
+    @media (max-width: 480px) { .masonry-grid { columns: 1; } }
+  </style>
+</head>
+
+<body style="background-color:#F3F2F1;">
+
+  <!--navbar-->
+  <nav style="background-color: #004489;" class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <a class="navbar-brand" href="home"><img src="./images/logo.png" width="200px"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mx-auto">
+        <li style="margin-left: 15px;" class="nav-item active">
+          <a style="color:white; padding: 10px;" class="nav-link hover-underline-animation home"
+            href="home"><b>HOME</b></a>
+        </li>
+        <li style="margin-left: 15px;" class="nav-item active">
+          <a style="color:white; padding: 10px;" class="nav-link hover-underline-animation speaker"
+            href="speaker"><b>SPEAKER</b></a>
+        </li>
+        <li style="margin-left: 15px;" class="nav-item active">
+          <a style="color:white; background-color: #0087ca; border-radius: 4px; padding: 10px;"
+            class="nav-link hover-underline-animation moments" href="moments"><b>MOMENTS</b></a>
+        </li>
+        <li style="margin-left: 15px;" class="nav-item active">
+          <a style="color:white; padding: 10px;" class="nav-link hover-underline-animation blog"
+            href="blog"><b>BLOG</b></a>
+        </li>
+        <li style="margin-left: 15px;" class="nav-item active">
+          <a style="color:white; padding: 10px;" class="nav-link hover-underline-animation contact"
+            href="publication"><b>PUBLICATIONS</b></a>
+        </li>
+        <li style="margin-left: 15px;" class="nav-item active">
+          <a style="color:white; padding: 10px;" class="nav-link hover-underline-animation about"
+            href="about"><b>ABOUT</b></a>
+        </li>
+        <li style="margin-left: 15px;" class="nav-item active">
+          <a style="color:white; padding: 10px;" class="nav-link hover-underline-animation contact"
+            href="contact"><b>CONTACT</b></a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <a style="color:white; padding: 10px;" class="nav-link hover-underline-animation contact"
+          href="book"><b>BOOK EMMANUEL</b></a>
+      </form>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="moments-hero">
+    <div class="container">
+      <h1>Captured <em>Moments</em></h1>
+      <p class="sub">Speaking Engagements &nbsp;&middot;&nbsp; Events &nbsp;&middot;&nbsp; Lifestyle</p>
+      <div class="hero-divider"></div>
+    </div>
+  </div>
+
+  <!-- MASONRY GRID -->
+  <section class="moments-section">
+    <div class="masonry-grid" id="masonryGrid"></div>
+  </section>
+
+  <!-- MODAL -->
+  <div class="modal fade moments-modal" id="momentModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="momentModalTitle"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="media-slider-wrap">
+          <div id="sliderInner"></div>
+          <div class="slider-nav">
+            <button class="s-btn" id="sPrev"><i class="fa fa-chevron-left"></i></button>
+            <button class="s-btn" id="sNext"><i class="fa fa-chevron-right"></i></button>
+          </div>
+          <div class="slider-dots" id="sliderDots"></div>
+        </div>
+        <div class="modal-body">
+          <div class="event-metas" id="modalMetas"></div>
+          <div class="modal-desc"  id="modalDesc"></div>
+          <div class="modal-tags"  id="modalTags"></div>
+          <div id="modalYt"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PARALLAX -->
+  <!-- <div class="parallax"></div> -->
+
+  <!-- FOOTER -->
+  <div style="background-color: #004489;">
+    <div class="container">
+      <div style="align-items:center; text-align: center; justify-content: center;">
+        <br><br>
+        <a style="text-decoration:none;" href="home"><img src="./images/logo.png" width="380px"></a>
+        <br><br>
+        <center>
+          <form action="https://formspree.io/f/xnqraypl" method="POST" id="FooterForm">
+            <div class="input-group mb-3">
+              <input style="box-shadow: none;" name="Name" type="text" class="form-control" placeholder="Name" required aria-describedby="basic-addon2">
+              <input name="Email" style="box-shadow: none;" type="email" class="form-control" required placeholder="Email" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button type="submit" id="myBtn2"
+                  style="background-color: #004489; font-family:MyWebFont; padding: 8px;"
+                  class="btn btn-outline-light">Subscribe</button>
+              </div>
+            </div>
+          </form>
+        </center>
+        <div style="color: white;" class="footer-copyright text-center py-3">
+          &copy; 2022 Emmanuel Ekwedike. All Right Reserved | Emmanuel@EmmanuelEkwedike.com
+        </div>
+        <div style="align-items:center; text-align: center; justify-content: center;">
+          <br>
+          <a style="text-decoration: none; padding: 5px;" href="https://www.linkedin.com/in/eekwedike">
+            <img src="images/linkedin.png"></a>
+          <a style="text-decoration: none; padding: 5px;" href="https://www.instagram.com/eekwedike/">
+            <img src="images/insta.png"></a>
+          <a style="text-decoration: none; padding: 5px;" href="https://github.com/eekwedike">
+            <img src="images/github.png" width="40px"></a>
+          <a style="text-decoration: none; padding: 5px;" href="https://youtube.com/@eekwedike">
+            <img src="images/youtube.png" width="40px"></a>
+        </div>
+      </div>
+    </div>
+    <br>
+  </div>
+
+  <!-- Scripts -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script>
+  /* ════════════════════════════════════════
+     MOMENTS DATA  (UPDATED CONTENT)
+     NOTE: `fileName` is ONLY for your reference.
+           It is NOT used anywhere in the UI.
+     ════════════════════════════════════════ */
+  const moments = [
+    {
+      id: 1,
+      fileName: "Afrotech",
+      title: "Leading GenAI workshop at Afrotech Conference 2025",
+      caption: "AfroTech 2025 · Houston, TX",
+      category: "Speaking Engagement",
+      date: "November 2025",
+      location: "Houston, Texas",
+      description: "It was an absolute pleasure to kick off AfroTech Conference with my GenAI workshop! My goal is simple: to make cutting-edge GenAI tools accessible to everyone. We’re living in a time when anyone can create with AI — no coding required. I’m beyond excited for the future and for what people will build next. Huge thanks to @afro.tech and @afrotech.conference for believing in the vision! This week, over 30,000 innovators are converging in Houston for the largest gathering of Black technologists, investors, founders, and Fortune 500 leaders in the world.",
+      tags: ["#AfroTech2025", "#GenAI", "#Speaker", "#Houston"],
+      youtubeLink: "https://www.youtube.com/shorts/J4hsjjnwNnE",
+      media: [
+        { type: "image",   src: "MOMENTS/Afrotech%202025/1_Ismael%20Quintanilla%20III_Turn%20Your%20Imagination%20into%20Reality%20with%20GenAI_ATC25_Halo_IQ32533.jpg" },
+        { type: "image",   src: "MOMENTS/Afrotech%202025/4_Ismael%20Quintanilla%20III_Turn%20Your%20Imagination%20into%20Reality%20with%20GenAI_ATC25_Halo_DSC6651.jpg" },
+        { type: "image",   src: "MOMENTS/Afrotech%202025/11_Ismael%20Quintanilla%20III_Turn%20Your%20Imagination%20into%20Reality%20with%20GenAI_ATC25_Halo_DSC6636.jpg" },
+        { type: "youtube", src: "https://www.youtube.com/embed/J4hsjjnwNnE?autoplay=0" }
+      ],
+      thumbH: 280,
+      thumbSrc: "MOMENTS/Afrotech%202025/1_Ismael%20Quintanilla%20III_Turn%20Your%20Imagination%20into%20Reality%20with%20GenAI_ATC25_Halo_IQ32533.jpg"
+    },
+    {
+      id: 2,
+      fileName: "ASF",
+      title: "Moderating Africa Venture Capital Conversation at ASF 2025",
+      caption: "Africa Startup Festival · Lagos",
+      category: "Moderation",
+      date: "2025",
+      location: "Lagos, Nigeria",
+      description: "A few weeks ago, I had the pleasure of moderating a conversation on African venture capital at the Africa Startup Festival in Lagos, with Haïle Amegashie and Olu Oyinsan, MBA as panelists. We explored what’s truly working in Africa’s venture ecosystem, what’s broken, and what must change for African startups to grow with integrity and impact—drawing from both global and local perspectives. Thank you, Haile and Olu, for bringing such honesty and depth to the conversation. Moderating this session reinforced how critical nuance is in Africa’s venture ecosystem—from resisting one-size-fits-all narratives to prioritising fundamentals, realistic market sizing, and sustainable exits. If Africa’s startup ecosystem is to compound over time, we must keep asking hard questions and grounding ambition in context, discipline, and long-term thinking. Grateful to the Africa Startup Festival team, especially Nnaemeka Clinton and Oluwaseyi Oluboba, for the opportunity and for the incredible work they’re doing to strengthen the ecosystem. #AfricaStartupFestival #ASFLagos #AfricanStartups #VentureCapital #StartupEcosystem #BuildInAfrica",
+      tags: ["#AfricaStartupFestival", "#ASFLagos", "#VentureCapital", "#BuildInAfrica"],
+      youtubeLink: "",
+      media: [
+        { type: "image", src: "MOMENTS/ASF%2025/pic_1_AVV00536.jpg" },
+        { type: "image", src: "MOMENTS/ASF%2025/pic_2_AV_05454.jpg" },
+        { type: "image", src: "MOMENTS/ASF%2025/AV_05457.jpg" },
+        { type: "image", src: "MOMENTS/ASF%2025/AV_05582.jpg" },
+        { type: "image", src: "MOMENTS/ASF%2025/AVV00548.jpg" }
+      ],
+      thumbH: 220,
+      thumbSrc: "MOMENTS/ASF%2025/pic_1_AVV00536.jpg"
+    },
+    {
+      id: 3,
+      fileName: "BC 22",
+      title: "Career Panel Discussion at Brooklyn College 2022",
+      caption: "Brooklyn College · 2022",
+      category: "Career Panel",
+      date: "2022",
+      location: "Brooklyn, New York",
+      description: "It was special returning to Brooklyn College to speak with current students about potential career opportunities in tech. During the panel, I shared a few actionable steps for those looking to enter the industry: 💡 Gain Practical Experience: Seek internship opportunities—they’re one of the best ways to build work experience while exploring different career paths. 🤝 Build Your Network: Connect with professors, recruiters, and industry professionals who can offer guidance and opportunities. 📚 Grow Your Skills & Knowledge: Use your college years wisely—learn to code, explore new technologies, and keep expanding your expertise.",
+      tags: ["#BrooklynCollege", "#CareersInTech", "#Internships", "#Networking"],
+      youtubeLink: "https://www.youtube.com/shorts/B23l90Lc7Ig",
+      media: [
+        { type: "image",   src: "MOMENTS/BC22/IG_0_DSC03898.JPG" },
+        { type: "image",   src: "MOMENTS/BC22/IG_1.5_DSC03884.JPG" },
+        { type: "image",   src: "MOMENTS/BC22/IG_2_DSC03900.JPG" },
+        { type: "image",   src: "MOMENTS/BC22/IG_3_DSC03924.JPG" },
+        { type: "image",   src: "MOMENTS/BC22/IG_5_DSC03920.JPG" },
+        { type: "youtube", src: "https://www.youtube.com/embed/B23l90Lc7Ig?autoplay=0" }
+      ],
+      thumbH: 320,
+      thumbSrc: "MOMENTS/BC22/IG_0_DSC03898.JPG"
+    },
+    {
+      id: 4,
+      fileName: "BC 25",
+      title: "Career Panel at Brooklyn College 2025",
+      caption: "Brooklyn College · 2025",
+      category: "Career Panel",
+      date: "2025",
+      location: "Brooklyn, New York",
+      description: "Had an amazing time speaking with Brooklyn College students about careers in tech. One of the key messages I shared: failure isn’t the end — it’s part of the process. When you’re trying something new, setbacks are inevitable. But each failure is a chance to learn, grow, and come back stronger. I spoke about my own journey, the challenges along the way, and how turning failure into fuel helped me grow into the engineer I am today. Always grateful for the opportunity to give back and connect with the next generation of innovators.",
+      tags: ["#BrooklynCollege", "#Careers", "#Resilience", "#Tech"],
+      youtubeLink: "https://www.youtube.com/shorts/PTeBcVQ-zDw",
+      media: [
+        { type: "image",   src: "MOMENTS/BC%2025/-6UjAJcQ.jpeg" },
+        { type: "image",   src: "MOMENTS/BC%2025/i1eV6h7A.jpeg" },
+        { type: "image",   src: "MOMENTS/BC%2025/LyfymjOw.jpeg" },
+        { type: "image",   src: "MOMENTS/BC%2025/QCsciUsg.jpeg" },
+        { type: "image",   src: "MOMENTS/BC%2025/V7483SyA.jpeg" },
+        { type: "youtube", src: "https://www.youtube.com/embed/PTeBcVQ-zDw?autoplay=0" }
+      ],
+      thumbH: 190,
+      thumbSrc: "MOMENTS/BC%2025/-6UjAJcQ.jpeg"
+    },
+    {
+      id: 5,
+      fileName: "Built NYC",
+      title: "Tech Leadership NYC",
+      caption: "BUILT NYC · Tech Leadership",
+      category: "Community",
+      date: "2025",
+      location: "New York City",
+      description: "A special inaugural event at BUILT NYC! I had the opportunity to connect with incredible tech leaders, and share my own journey—from humble beginnings to navigating the world of tech. Grateful for the insights, inspiration, and community.",
+      tags: ["#BUILTNYC", "#TechLeadership", "#NYC", "#Community"],
+      youtubeLink: "https://www.youtube.com/watch?v=MmI4DMyRiZg",
+      media: [
+        { type: "image",   src: "MOMENTS/BuiltNYC/DSC06243.jpg" },
+        { type: "image",   src: "MOMENTS/BuiltNYC/DSC06318.jpg" },
+        { type: "image",   src: "MOMENTS/BuiltNYC/DSC06321.jpg" },
+        { type: "image",   src: "MOMENTS/BuiltNYC/DSC06327.jpg" },
+        { type: "youtube", src: "https://www.youtube.com/embed/MmI4DMyRiZg?autoplay=0" }
+      ],
+      thumbH: 250,
+      thumbSrc: "MOMENTS/BuiltNYC/DSC06243.jpg"
+    },
+    {
+      id: 6,
+      fileName: "CCNY 25",
+      title: "GenAI workshop CCNY 2025",
+      caption: "City College of New York · 2025",
+      category: "Workshop",
+      date: "2025",
+      location: "New York City",
+      description: "It was truly an honor to return to The City College of New York — my alma mater, where I earned my master’s degree in Mathematics. This visit was especially meaningful because I had the opportunity to lead a Generative AI workshop and reconnect with professors who played a major role in my academic journey through scholarships, research opportunities, and mentorship. To now give back to the institution that gave me so much — that’s a full-circle moment I don’t take lightly. Special thanks to: 󰗯 Claude Brathwaite, Director of Student Resources and Services, Grove School of Engineering 󰗯 Rawlins Beharry, Assistant Dean, Undergraduate Studies and Student Affairs Grateful to the Grove School of Engineering for continuing to stay aligned with emerging industry trends and equipping students with the skills and confidence to thrive in today’s competitive job market. #GenAI #CCNY #HigherEd #AI #STEM #FutureOfWork",
+      tags: ["#GenAI", "#CCNY", "#HigherEd", "#AI"],
+      youtubeLink: "https://www.youtube.com/shorts/UEacVBIGUOY",
+      media: [
+        { type: "image",   src: "MOMENTS/CCNY%2025/Z72_9553.jpg" },
+        { type: "image",   src: "MOMENTS/CCNY%2025/Z72_9555.jpg" },
+        { type: "image",   src: "MOMENTS/CCNY%2025/Z72_9569.jpg" },
+        { type: "image",   src: "MOMENTS/CCNY%2025/Z72_9670.jpg" },
+        { type: "youtube", src: "https://www.youtube.com/embed/UEacVBIGUOY?autoplay=0" }
+      ],
+      thumbH: 300,
+      thumbSrc: "MOMENTS/CCNY%2025/Z72_9553.jpg"
+    },
+    {
+      id: 7,
+      fileName: "Essex College 25",
+      title: "Leading a GenAI Workshop at Essex County College 2025",
+      caption: "Essex County College · 2025",
+      category: "Workshop",
+      date: "2025",
+      location: "New Jersey",
+      description: "It was an incredible experience speaking to the students and leading a Generative AI workshop for the Business Division at Essex County College. As the world of work continues to evolve, it’s critical for institutions to stay aligned with emerging industry trends — ensuring students graduate with the skills, tools, and confidence needed to compete in today’s job market. In this recap, you’ll see highlights from the session and the energy of students leaning into AI, innovation, and the future of business. Special thanks to: 󰗯 Dr. John Olotewo, Assistant Professor, Business Division 󰗯 Dr. Joyce Ayim, Assistant Dean of Online Education & Resources 󰗯 Dr. Germaine Albuquerque, Chairperson, Business Division It’s inspiring to see the next generation of business leaders embrace the power of AI early.",
+      tags: ["#GenAI", "#HigherEd", "#AI", "#FutureOfWork"],
+      youtubeLink: "https://www.youtube.com/shorts/SfbdSZfufUg",
+      media: [
+        { type: "image",   src: "MOMENTS/Essex%20college/Z72_9361.jpg" },
+        { type: "image",   src: "MOMENTS/Essex%20college/Z72_9373.jpg" },
+        { type: "image",   src: "MOMENTS/Essex%20college/Z72_9388.jpg" },
+        { type: "image",   src: "MOMENTS/Essex%20college/Z72_9402.jpg" },
+        { type: "image",   src: "MOMENTS/Essex%20college/Z72_9470.jpg" },
+        { type: "image",   src: "MOMENTS/Essex%20college/Z72_9476.jpg" },
+        { type: "image",   src: "MOMENTS/Essex%20college/Z72_9519.jpg" },
+        { type: "youtube", src: "https://www.youtube.com/embed/SfbdSZfufUg?autoplay=0" }
+      ],
+      thumbH: 200,
+      thumbSrc: "MOMENTS/Essex%20college/Z72_9361.jpg"
+    },
+    {
+      id: 8,
+      fileName: "Graduation",
+      title: "Princeton PhD Graduation Walk 2020",
+      caption: "Princeton University · 2020",
+      category: "Milestone",
+      date: "2020",
+      location: "Princeton, New Jersey",
+      description: "I earned my doctorate from Princeton University during the pandemic — but like so many graduates in 2020, I never got the chance to walk across the stage. So I recreated the moment. This one is for everyone who finished strong in uncertain times. The ceremony may have been postponed, but the accomplishment was never canceled.",
+      tags: ["#Princeton", "#PhD", "#Graduation", "#2020"],
+      youtubeLink: "https://www.youtube.com/shorts/PPWHC7xJhnM",
+      media: [
+        { type: "image",   src: "MOMENTS/Graduation/299610902_186447510450870_6275534105080537953_n_17896042040604410.jpg" },
+        { type: "image",   src: "MOMENTS/Graduation/299693365_741746773789029_5476263252452032717_n_18020176990410572.jpg" },
+        { type: "image",   src: "MOMENTS/Graduation/299710691_153356950630204_2257018967682577292_n_17983441294573197.jpg" },
+        { type: "image",   src: "MOMENTS/Graduation/299792810_793838851645691_2846637166027506965_n_18249449818110911.jpg" },
+        { type: "image",   src: "MOMENTS/Graduation/299960853_431142705738910_5633745893096255215_n_17957163190943663.jpg" },
+        { type: "image",   src: "MOMENTS/Graduation/300001013_1273452953482830_220779901204060265_n_17992748467516227.jpg" },
+        { type: "youtube", src: "https://www.youtube.com/embed/PPWHC7xJhnM?autoplay=0" }
+      ],
+      thumbH: 260,
+      thumbSrc: "MOMENTS/Graduation/299610902_186447510450870_6275534105080537953_n_17896042040604410.jpg"
+    },
+    {
+      id: 9,
+      fileName: "HBS 25",
+      title: "Harvard Africa Business Conference 2025",
+      caption: "Harvard Africa Business · 2025",
+      category: "Conference",
+      date: "2025",
+      location: "Boston, Massachusetts",
+      description: "Proud to attend the 2025 Harvard Business School (HBS) Africa Business Conference — an exclusive glimpse into its 27th edition, exploring Africa’s next chapter under the theme: “Beyond Borders: A Myth or a Mandate for Africa’s Progress?” As the largest student-run Africa-focused conference in the world, the HBS Africa Business Conference has, for 27 years, convened prominent leaders, policymakers, entrepreneurs, and industry experts to examine the state of the continent and spotlight emerging opportunities across Africa.",
+      tags: ["#Harvard", "#AfricaBusiness", "#Conference", "#GenAI"],
+      youtubeLink: "https://www.youtube.com/shorts/SfbdSZfufUg",
+      media: [
+        { type: "image", src: "MOMENTS/HBS/1.IMG_1.png" },
+        { type: "image", src: "MOMENTS/HBS/2.IMG_2.png" },
+        { type: "image", src: "MOMENTS/HBS/3.IMG_3.jpg" },
+        { type: "youtube", src: "https://www.youtube.com/embed/SfbdSZfufUg?autoplay=0" }
+      ],
+      thumbH: 330,
+      thumbSrc: "MOMENTS/HBS/1.IMG_1.png"
+    },
+    {
+      id: 10,
+      fileName: "MIT 25",
+      title: "Inside the 14th MIT Africa Innovate Conference",
+      caption: "MIT Africa Innovate · 2025",
+      category: "Conference",
+      date: "2025",
+      location: "MIT / Boston",
+      description: "Get an exclusive glimpse of the energy, innovation, and groundbreaking ideas from the MIT Sloan Africa Innovate Conference! From AI breakthroughs to game-changing entrepreneurship, see how African-born solutions are shaping the future of economic sovereignty.",
+      tags: ["#MIT", "#AfricaInnovate", "#Innovation", "#Entrepreneurship"],
+      youtubeLink: "https://www.youtube.com/shorts/P5PK8f3XhQk",
+      media: [
+        { type: "image",   src: "MOMENTS/MIT25/46cd3b95-9942-4c15-9a1e-ea6439500083.JPG" },
+        { type: "image",   src: "MOMENTS/MIT25/8c9d27c4-9544-43c6-b828-2e5ea474b406.JPG" },
+        { type: "image",   src: "MOMENTS/MIT25/9b120b57-481d-4887-affd-c10bc418146c.JPG" },
+        { type: "image",   src: "MOMENTS/MIT25/f14b5f0c-2a74-474d-b584-d011dbcb9d73.JPG" },
+        { type: "youtube", src: "https://www.youtube.com/embed/P5PK8f3XhQk?autoplay=0" }
+      ],
+      thumbH: 230,
+      thumbSrc: "MOMENTS/MIT25/46cd3b95-9942-4c15-9a1e-ea6439500083.JPG"
+    },
+
+    /* ───────────── NEW / REMAINING CONTENT ───────────── */
+
+    {
+      id: 11,
+      fileName: "Culture v1",
+      title: "Representing the Culture: Proud in Igbo Heritage",
+      caption: "Cultural Pride · Igbo Heritage",
+      category: "Culture",
+      date: "2025",
+      location: "United States",
+      description: "Representing cultural fashion with pride and confidence. Rocking a traditional Nigerian kaftan outfit while proudly showcasing the rich heritage of the Igbo culture. A celebration of identity, tradition, and timeless style.",
+      tags: ["#Culture", "#Igbo", "#Nigeria", "#Heritage"],
+      youtubeLink: "",
+      media: [
+        { type: "image", src: "MOMENTS/Culture%20v1/DSC06154.jpg" },
+        { type: "image", src: "MOMENTS/Culture%20v1/DSC06155.jpg" }
+      ],
+      thumbH: 260,
+      thumbSrc: "MOMENTS/Culture%20v1/DSC06154.jpg"
+    },
+    {
+      id: 12,
+      fileName: "Culture v2",
+      title: "UIU National Convention 2025: Celebrating Nigerian Culture in Dallas",
+      caption: "UIU National Convention · Dallas",
+      category: "Culture",
+      date: "2025",
+      location: "Dallas, Texas",
+      description: "Attending the 2025 National Convention of Umu Igbo Unite (UIU) in Dallas, Texas—a vibrant celebration of Nigerian culture and Igbo heritage. UIU fosters a structured network that supports the cultural, professional, and social needs of first-generation Igbo Americans and the greater diaspora. This convention brings together leaders, families, and young professionals to honor tradition, strengthen community ties, and empower the next generation.",
+      tags: ["#UIU", "#Igbo", "#Culture", "#Dallas"],
+      youtubeLink: "",
+      media: [
+        { type: "image", src: "MOMENTS/Culture%20v2/PXL_20250810_035613189.MP.jpg" },
+        { type: "image", src: "MOMENTS/Culture%20v2/PXL_20250810_035614982.MP.jpg" }
+      ],
+      thumbH: 220,
+      thumbSrc: "MOMENTS/Culture%20v2/PXL_20250810_035613189.MP.jpg"
+    },
+    {
+      id: 13,
+      fileName: "Culture v3",
+      title: "UIU National Convention 2024: A Vibrant Celebration of Igbo Heritage in Atlanta",
+      caption: "UIU National Convention · Atlanta",
+      category: "Culture",
+      date: "2024",
+      location: "Atlanta, Georgia",
+      description: "Proud to attend the 2024 National Convention of Umu Igbo Unite (UIU) in Atlanta, Georgia—an inspiring gathering dedicated to celebrating Nigerian culture and uplifting Igbo heritage. This dynamic event unites first-generation Igbo Americans and the broader diaspora through meaningful conversations, cultural showcases, and professional networking opportunities. UIU continues to build a strong, structured community that addresses the cultural, social, and professional needs of its members—bringing together leaders, families, creatives, and young professionals to preserve tradition, foster unity, and empower future generations.",
+      tags: ["#UIU", "#Atlanta", "#IgboHeritage", "#Diaspora"],
+      youtubeLink: "",
+      media: [
+        { type: "image", src: "MOMENTS/Culture%20v3/PXL_20240804_030144016.jpg" },
+        { type: "image", src: "MOMENTS/Culture%20v3/PXL_20240804_030212517.jpg" }
+      ],
+      thumbH: 300,
+      thumbSrc: "MOMENTS/Culture%20v3/PXL_20240804_030144016.jpg"
+    },
+    {
+      id: 14,
+      fileName: "Culture v4",
+      title: "UIU National Convention 2021: Honoring Igbo Heritage in Houston",
+      caption: "UIU National Convention · Houston",
+      category: "Culture",
+      date: "2021",
+      location: "Houston, Texas",
+      description: "Honored to attend the 2021 National Convention of Umu Igbo Unite (UIU) in Houston, Texas—an empowering celebration of Nigerian culture and proud Igbo identity. This memorable gathering brought together first-generation Igbo Americans and members of the global diaspora for a weekend of cultural pride, meaningful dialogue, and impactful networking. Through vibrant showcases, community engagement, and professional development opportunities, UIU continues to cultivate a strong, supportive network that meets the cultural, social, and career-driven needs of its members—uniting families, leaders, and young professionals in preserving tradition while shaping the future.",
+      tags: ["#UIU", "#Houston", "#Igbo", "#Community"],
+      youtubeLink: "",
+      media: [
+        { type: "image", src: "MOMENTS/Culture%20v4/UIU2021-Gala-Red-Carpet-151.jpeg" },
+        { type: "image", src: "MOMENTS/Culture%20v4/UIU2021-Gala-Red-Carpet-152.jpeg" }
+      ],
+      thumbH: 240,
+      thumbSrc: "MOMENTS/Culture%20v4/UIU2021-Gala-Red-Carpet-151.jpeg"
+    },
+    {
+      id: 15,
+      fileName: "Fashion",
+      title: "Wall Street State of Mind: Embracing the Corporate Lifestyle",
+      caption: "Lifestyle · NYC",
+      category: "Lifestyle",
+      date: "2025",
+      location: "New York City",
+      description: "Stepping into a professional, Wall Street-inspired lifestyle in New York City. Dressed in a sharp gray suit, embodying confidence, ambition, and executive presence in the heart of the financial capital. The city’s vibrant energy, fast pace, and iconic skyline create the perfect backdrop for a corporate-driven mindset and success-focused journey.",
+      tags: ["#NYC", "#Lifestyle", "#Corporate", "#WallStreet"],
+      youtubeLink: "",
+      media: [
+        { type: "image", src: "MOMENTS/Fashion/DSC05995.jpg" },
+        { type: "image", src: "MOMENTS/Fashion/DSC06053.jpg" },
+        { type: "image", src: "MOMENTS/Fashion/PXL_20250706_013502287.jpg" }
+      ],
+      thumbH: 280,
+      thumbSrc: "MOMENTS/Fashion/DSC05995.jpg"
+    },
+    {
+      id: 16,
+      fileName: "Social Engagement",
+      title: "A Heartfelt Best Man Moment in New York City",
+      caption: "Celebration · NYC",
+      category: "Lifestyle",
+      date: "2025",
+      location: "New York City",
+      description: "Truly honored to deliver a heartfelt Best Man speech at a beautiful wedding in New York City. I embraced the responsibility with pride and gratitude, sharing meaningful memories, laughter, and words of encouragement for the newlyweds. It was an unforgettable moment to witness such genuine love and commitment—a celebration filled with joy, unity, and the promise of a lifetime together.",
+      tags: ["#NYC", "#Wedding", "#BestMan", "#Family"],
+      youtubeLink: "",
+      media: [
+        { type: "image", src: "MOMENTS/Social%20Speaking%20Engagement/IMG_2173.JPG" },
+        { type: "image", src: "MOMENTS/Social%20Speaking%20Engagement/IMG_2174.JPG" },
+        { type: "image", src: "MOMENTS/Social%20Speaking%20Engagement/PHOTO-2021-01-29-22-19-29.jpg" },
+        { type: "image", src: "MOMENTS/Social%20Speaking%20Engagement/PHOTO-2021-01-29-22-30-56%203.jpg" },
+        { type: "image", src: "MOMENTS/Social%20Speaking%20Engagement/PHOTO-2021-01-29-22-30-56.jpg" }
+      ],
+      thumbH: 210,
+      thumbSrc: "MOMENTS/Social%20Speaking%20Engagement/IMG_2173.JPG"
+    },
+    {
+      id: 17,
+      fileName: "post_inforweek",
+      title: "Featured in InformationWeek 2022: Insights on U.S.–China AI Chip Restrictions",
+      caption: "Media Feature · InformationWeek",
+      category: "Media Feature",
+      date: "2022",
+      location: "InformationWeek",
+      description: "Honored to be featured in InformationWeek in 2022, sharing my perspective on what U.S. restrictions on advanced chip sales to China could mean for the AI semiconductor industry. The discussion traces back to 2022, when policymakers debated limiting technology companies such as Nvidia Corporation and Advanced Micro Devices (AMD) from selling high-performance chips to China. I provided industry reaction and analysis on how these measures could reshape global supply chains, innovation cycles, and competitive dynamics within the AI ecosystem.",
+      tags: ["#InformationWeek", "#AI", "#Semiconductors", "#Geopolitics"],
+      youtubeLink: "",
+      media: [
+        { type: "image", src: "MOMENTS/post_inforweek/s1.jpg" },
+        { type: "image", src: "MOMENTS/post_inforweek/s2.jpg" },
+        { type: "image", src: "MOMENTS/post_inforweek/ss3.jpg" },
+        { type: "image", src: "MOMENTS/post_inforweek/ss4.jpg" },
+        { type: "image", src: "MOMENTS/post_inforweek/ss5.jpg" },
+        { type: "image", src: "MOMENTS/post_inforweek/ss6.jpg" }
+      ],
+      thumbH: 300,
+      thumbSrc: "MOMENTS/post_inforweek/s1.jpg"
+    }
+  ];
+
+  /* ════════════ RENDER TILES ════════════ */
+  const grid = document.getElementById('masonryGrid');
+  moments.forEach(function(m) {
+    const div = document.createElement('div');
+    div.className = 'masonry-item';
+    div.setAttribute('onclick', 'openMoment(' + m.id + ')');
+    div.innerHTML =
+      '<div class="tile-img-wrap">' +
+        '<img src="' + m.thumbSrc + '" alt="' + m.title + '" style="height:' + m.thumbH + 'px;">' +
+        '<div class="tile-overlay">' +
+          '<div class="tile-overlay-tag">' + m.category + '</div>' +
+          '<div class="tile-overlay-title">' + m.title + '</div>' +
+          '<div class="view-chip"><i class="fa fa-eye"></i>&nbsp;View Moment</div>' +
+        '</div>' +
+      '</div>' +
+      '<div class="tile-info">' +
+        '<div class="tile-info-title">' + m.title + '</div>' +
+        '<div class="tile-info-cat">' + m.category + '</div>' +
+      '</div>';
+    grid.appendChild(div);
+  });
+
+  /* ════════════ SLIDER STATE ════════════ */
+  var currentSlide = 0;
+  var currentMedia = [];
+
+  function openMoment(id) {
+    var m = moments.find(function(x) { return x.id === id; });
+    currentMedia = m.media;
+    currentSlide = 0;
+
+    document.getElementById('momentModalTitle').textContent = m.title;
+
+    document.getElementById('modalMetas').innerHTML =
+      '<span class="emeta ev"><i class="fa fa-star"></i>&nbsp;' + m.category + '</span>' +
+      '<span class="emeta dt"><i class="fa fa-calendar"></i>&nbsp;' + m.date + '</span>' +
+      '<span class="emeta loc"><i class="fa fa-map-marker"></i>&nbsp;' + m.location + '</span>';
+
+    document.getElementById('modalDesc').textContent = m.description;
+
+    document.getElementById('modalTags').innerHTML =
+      m.tags.map(function(t) { return '<span class="mtag">' + t + '</span>'; }).join('');
+
+    document.getElementById('modalYt').innerHTML = m.youtubeLink
+      ? '<div class="modal-yt-link"><a href="' + m.youtubeLink + '" target="_blank" class="yt-btn">' +
+        '<i class="fa fa-youtube-play"></i>&nbsp;Watch on YouTube</a></div>'
+      : '';
+
+    renderSlider();
+    $('#momentModal').modal('show');
+  }
+
+  function renderSlider() {
+    var inner = document.getElementById('sliderInner');
+    var dots  = document.getElementById('sliderDots');
+
+    inner.innerHTML = currentMedia.map(function(item, i) {
+      var activeClass = i === 0 ? ' active' : '';
+      if (item.type === 'youtube') {
+        var ytIdMatch = item.src.match(/embed\/([^?&]+)/);
+        var ytId = ytIdMatch ? ytIdMatch[1] : '';
+        var thumb = 'https://img.youtube.com/vi/' + ytId + '/hqdefault.jpg';
+        return '<div class="m-slide' + activeClass + '">' +
+               '<div class="yt-preview-wrap" data-ytid="' + ytId + '" onclick="loadYTIframe(this)" title="Watch on YouTube">' +
+               '<img src="' + thumb + '" alt="YouTube Video Preview" onerror="ytThumbFallback(this,\'' + ytId + '\')">' +
+               '<div class="yt-play-overlay">' +
+               '<div class="yt-play-btn"><i class="fa fa-youtube-play" style="font-size:2rem;margin-right:2px;"></i></div>' +
+               '</div>' +
+               '<div style="position:absolute;bottom:14px;left:0;right:0;text-align:center;color:rgba(255,255,255,0.85);font-size:0.78rem;font-weight:600;letter-spacing:0.5px;pointer-events:none;">Watch on YouTube</div>' +
+               '</div></div>';
+      }
+      return '<div class="m-slide' + activeClass + '" style="position:relative;">' +
+             '<img src="' + item.src + '" alt="Moment media">' +
+             '<img class="slide-logo" src="./images/logo.png" alt="Logo"></div>';
+    }).join('');
+
+    dots.innerHTML = currentMedia.map(function(_, i) {
+      return '<span class="sdot' + (i === 0 ? ' active' : '') +
+             '" onclick="goSlide(' + i + ')"></span>';
+    }).join('');
+
+    var showNav = currentMedia.length > 1;
+    document.getElementById('sPrev').style.display = showNav ? 'flex' : 'none';
+    document.getElementById('sNext').style.display = showNav ? 'flex' : 'none';
+  }
+
+  function loadYTIframe(el) {
+    var ytId = el.getAttribute('data-ytid');
+    window.open('https://www.youtube.com/watch?v=' + ytId, '_blank');
+  }
+
+  function ytThumbFallback(img, ytId) {
+    var fallbacks = ['mqdefault', 'sddefault', 'default'];
+    var tried = parseInt(img.getAttribute('data-tried') || '0');
+    if (tried < fallbacks.length) {
+      img.setAttribute('data-tried', tried + 1);
+      img.src = 'https://img.youtube.com/vi/' + ytId + '/' + fallbacks[tried] + '.jpg';
+    } else {
+      img.onerror = null;
+      img.style.display = 'none';
+    }
+  }
+
+  function goSlide(n) {
+    var slides = document.querySelectorAll('#sliderInner .m-slide');
+    var dots   = document.querySelectorAll('#sliderDots .sdot');
+
+    currentSlide = ((n % currentMedia.length) + currentMedia.length) % currentMedia.length;
+    slides.forEach(function(s, i) { s.classList.toggle('active', i === currentSlide); });
+    dots.forEach(function(d, i)   { d.classList.toggle('active', i === currentSlide); });
+  }
+
+  document.getElementById('sPrev').addEventListener('click', function() { goSlide(currentSlide - 1); });
+  document.getElementById('sNext').addEventListener('click', function() { goSlide(currentSlide + 1); });
+
+  /* clear slider on modal close */
+  $('#momentModal').on('hidden.bs.modal', function() {
+    document.getElementById('sliderInner').innerHTML = '';
+  });
+
+  /* footer form */
+  var form = document.getElementById('FooterForm');
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    Swal.fire('Submitted successfully', 'Thank you!', 'success');
+    var data = new FormData(event.target);
+    fetch(event.target.action, {
+      method: form.method,
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    }).then(function(r) { if (r.ok) form.reset(); });
+  });
+  </script>
+</body>
+</html>
