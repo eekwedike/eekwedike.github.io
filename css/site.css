@@ -1,5 +1,5 @@
-/* Site header: shared by every page so the nav looks the same everywhere,
-   whatever other stylesheets a page loads. */
+/* Site header and footer (_includes/nav.html, _includes/footer.html): shared
+   by every page so they look the same whatever else a page loads. */
 
 @font-face {
   font-family: 'SiteNav';
@@ -133,5 +133,118 @@
   .navbar.site-nav .site-nav-cta {
     font-size: 13px;
     padding: 7px 12px;
+  }
+}
+
+/* Footer */
+.site-footer {
+  background-color: #004489;
+  color: #fff;
+  font-family: 'SiteNav', 'Helvetica Neue', Arial, sans-serif;
+  text-align: center;
+  padding: 48px 0 24px;
+}
+
+.site-footer-logo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 32px;
+}
+
+.site-footer-form {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.site-footer-form .form-control,
+.site-footer-form .btn {
+  height: 44px;
+  margin: 0;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.25;
+  padding: 0 12px;
+  box-shadow: none;
+}
+
+/* Gotham doesn't render inside form fields, so inputs use a system font. */
+.site-footer-form .form-control {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.site-footer-form .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #004489;
+  text-transform: uppercase;
+  padding: 3px 16px 0; /* Gotham sits high in its line box */
+}
+
+.site-footer-form .btn:hover,
+.site-footer-form .btn:focus-visible {
+  background-color: #fff;
+  color: #004489;
+}
+
+.site-footer-copy {
+  color: #fff;
+  font-family: 'SiteNav', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 16px 0 24px;
+}
+
+.site-footer-copy a {
+  color: #fff;
+}
+
+.site-footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.site-footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #fff;
+  transition: background-color 0.2s ease;
+}
+
+.site-footer-social a:hover,
+.site-footer-social a:focus-visible {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+@media (max-width: 575.98px) {
+  .site-footer-form .input-group {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .site-footer-form .form-control,
+  .site-footer-form .input-group-append,
+  .site-footer-form .btn {
+    width: 100%;
+    border-radius: 4px !important;
+  }
+
+  .site-footer-form .input-group-append {
+    margin-left: 0;
+  }
+
+  .site-footer-copy span {
+    display: block;
+  }
+
+  .site-footer-copy .site-footer-sep {
+    display: none;
   }
 }

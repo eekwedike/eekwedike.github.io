@@ -1,3 +1,5 @@
+---
+---
 ﻿<!doctype html>
 <html lang="en">
 
@@ -26,30 +28,12 @@
     type='text/css'>
   <title>Blog | Emmanuel Ekwedike</title>
   <meta name="description" content="Emmanuel travels the world looking at different cultures for inspiration to build useful context around data. Understanding people helps to bring data to life and builds a global approach to data science.">
-  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/site.css">
 </head>
 
 <body>
   <!--navbar-->
-  <nav class="navbar navbar-expand-lg navbar-dark sticky-top site-nav">
-    <a class="navbar-brand" href="home"><img src="./images/logo.png" width="200" alt="Emmanuel Ekwedike"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#siteNavMenu"
-      aria-controls="siteNavMenu" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="siteNavMenu">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item"><a class="nav-link" href="home">HOME</a></li>
-        <li class="nav-item"><a class="nav-link" href="about">ABOUT</a></li>
-        <li class="nav-item"><a class="nav-link" href="speaker">SPEAKER</a></li>
-        <li class="nav-item"><a class="nav-link" href="moments">MOMENTS</a></li>
-        <li class="nav-item"><a class="nav-link" href="publication">RESEARCH</a></li>
-        <li class="nav-item"><a class="nav-link" href="blog" aria-current="page">BLOG</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact">CONTACT</a></li>
-      </ul>
-      <a class="site-nav-cta" href="book">BOOK EMMANUEL</a>
-    </div>
-  </nav>
+  {% include nav.html active="blog" %}
   <!--jumbotron-->
   <div style="background-color:#004489 ; color: white; border-radius: 0%;" class="jumbotron">
     <div class="container">
@@ -180,43 +164,7 @@
     </div>
   </div>
   <!--Footer-->
-  <div style="background-color: #004489;">
-    <div class="container">
-      <div style="align-items:center; text-align: center; justify-content: center;">
-        <br><br>
-        <a style="text-decoration:none ;" href="home"><img src="./images/logo.png" width="380px"></a>
-        <br> <br>
-        <center>
-          <form action="https://formspree.io/f/xnqraypl" method="POST" id="FooterForm">
-            <div class="input-group mb-3">
-              <input style="box-shadow: none;" name="Name" type="text" class="form-control" placeholder="Name" required
-                aria-describedby="basic-addon2">
-              <input name="Email" style="box-shadow: none;" type="email" class="form-control" required
-                placeholder="Email" aria-describedby="basic-addon2">
-              <div class="input-group-append">
-                <button type="submit" id="myBtn" style="background-color: #004489; font-family:MyWebFont; padding: 8px;"
-                  class="btn btn-outline-light" type="button">Suscribe</button>
-              </div>
-            </div>
-          </form>
-        </center>
-        <div style="color: white ;" class="footer-copyright text-center py-3">© 2022 Emmanuel Ekwedike. All Right
-          Reserved | Emmanuel@EmmanuelEkwedike.com</div>
-        <div style="align-items:center; text-align: center; justify-content: center;">
-          <br>
-          <a style="text-decoration: none; padding: 5px;" href="https://www.linkedin.com/in/eekwedike">
-            <img src="images/linkedin.png"></a>
-          <a style="text-decoration: none;  padding: 5px;" href="https://www.instagram.com/eekwedike_/">
-            <img src="images/insta.png"></a>
-          <a style="text-decoration: none;  padding: 5px;" href="https://github.com/eekwedike">
-            <img src="images/github.png" width="40px"></a>
-          <a style="text-decoration: none;  padding: 5px;" href="https://youtube.com/@eekwedike">
-            <img src="images/youtube.png" width="40px"></a>
-        </div>
-      </div>
-    </div>
-    <br>
-  </div>
+  {% include footer.html %}
   <!-- Optional JavaScript -->
   <script>
 

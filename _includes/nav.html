@@ -1,0 +1,22 @@
+{%- comment -%}
+  Site header. Usage: {% include nav.html active="home" %}
+  `active` is the href of the current page (home, about, speaker, moments,
+  publication, blog, contact or book) and gets the current-page highlight.
+{%- endcomment -%}
+{%- assign items = "home:HOME,about:ABOUT,speaker:SPEAKER,moments:MOMENTS,publication:RESEARCH,blog:BLOG,contact:CONTACT" | split: "," -%}
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top site-nav">
+  <a class="navbar-brand" href="home"><img src="./images/logo.png" width="200" alt="Emmanuel Ekwedike"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#siteNavMenu"
+    aria-controls="siteNavMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="siteNavMenu">
+    <ul class="navbar-nav mx-auto">
+      {%- for item in items %}
+      {%- assign parts = item | split: ":" %}
+      <li class="nav-item"><a class="nav-link" href="{{ parts[0] }}"{% if include.active == parts[0] %} aria-current="page"{% endif %}>{{ parts[1] }}</a></li>
+      {%- endfor %}
+    </ul>
+    <a class="site-nav-cta" href="book"{% if include.active == "book" %} aria-current="page"{% endif %}>BOOK EMMANUEL</a>
+  </div>
+</nav>
