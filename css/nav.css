@@ -1,0 +1,137 @@
+/* Site header: shared by every page so the nav looks the same everywhere,
+   whatever other stylesheets a page loads. */
+
+@font-face {
+  font-family: 'SiteNav';
+  src: url('./font/GothamBook.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'SiteNav';
+  src: url('./font/Gotham-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+.navbar.site-nav {
+  background-color: #004489;
+  font-family: 'SiteNav', 'Helvetica Neue', Arial, sans-serif;
+  height: auto !important; /* style.css/styles.css pin 76px, which clips the mobile menu */
+  min-height: 76px;
+  padding: 8px 16px;
+}
+
+.navbar.site-nav .navbar-nav {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.site-nav .navbar-brand img {
+  width: 200px;
+  height: auto;
+}
+
+.navbar.site-nav .navbar-nav .nav-link,
+.navbar.site-nav .site-nav-cta {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  font-family: 'SiteNav', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  padding: 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.site-nav .navbar-nav .nav-item {
+  margin-left: 15px;
+}
+
+/* Hover underline */
+.navbar.site-nav .navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 4px;
+  height: 2px;
+  background-color: #fff;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.navbar.site-nav .navbar-nav .nav-link:hover::after,
+.navbar.site-nav .navbar-nav .nav-link:focus-visible::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Current page */
+.navbar.site-nav .navbar-nav .nav-link[aria-current="page"] {
+  background-color: #0087ca;
+}
+
+.navbar.site-nav .navbar-nav .nav-link[aria-current="page"]::after {
+  display: none;
+}
+
+/* Book Emmanuel call to action */
+.navbar.site-nav .site-nav-cta {
+  border: 2px solid #fff;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.navbar.site-nav .site-nav-cta:hover,
+.navbar.site-nav .site-nav-cta:focus-visible {
+  background-color: #fff;
+  color: #004489;
+}
+
+.navbar.site-nav .site-nav-cta[aria-current="page"] {
+  background-color: #0087ca;
+  border-color: #0087ca;
+  color: #fff;
+}
+
+/* Collapsed (mobile and tablet) menu */
+@media (max-width: 991.98px) {
+  .site-nav .navbar-nav {
+    padding: 8px 0;
+  }
+
+  .site-nav .navbar-nav .nav-item {
+    margin-left: 0;
+  }
+
+  .navbar.site-nav .site-nav-cta {
+    margin: 4px 0 12px;
+  }
+}
+
+/* Between the collapse breakpoint and wide desktops, tighten spacing so the
+   eight items stay on one line. */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .site-nav .navbar-brand img {
+    width: 160px;
+  }
+
+  .site-nav .navbar-nav .nav-item {
+    margin-left: 2px;
+  }
+
+  .navbar.site-nav .navbar-nav .nav-link {
+    font-size: 13px;
+    padding: 10px 8px;
+  }
+
+  .navbar.site-nav .site-nav-cta {
+    font-size: 13px;
+    padding: 7px 12px;
+  }
+}

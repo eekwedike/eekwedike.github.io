@@ -409,52 +409,29 @@
     }
     @media (max-width: 480px) { .masonry-grid { columns: 1; } }
   </style>
+  <link rel="stylesheet" href="css/nav.css">
 </head>
 
 <body style="background-color:#F3F2F1;">
 
   <!--navbar-->
-  <nav style="background-color: #004489;" class="navbar navbar-expand-lg navbar-dark sticky-top">
-    <a class="navbar-brand" href="home"><img src="./images/logo.png" width="200px"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top site-nav">
+    <a class="navbar-brand" href="home"><img src="./images/logo.png" width="200" alt="Emmanuel Ekwedike"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#siteNavMenu"
+      aria-controls="siteNavMenu" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <div class="collapse navbar-collapse" id="siteNavMenu">
       <ul class="navbar-nav mx-auto">
-        <li style="margin-left: 15px;" class="nav-item active">
-          <a style="color:white; padding: 10px;" class="nav-link hover-underline-animation home"
-            href="home"><b>HOME</b></a>
-        </li>
-        <li style="margin-left: 15px;" class="nav-item active">
-          <a style="color:white; padding: 10px;" class="nav-link hover-underline-animation speaker"
-            href="speaker"><b>SPEAKER</b></a>
-        </li>
-        <li style="margin-left: 15px;" class="nav-item active">
-          <a style="color:white; background-color: #0087ca; border-radius: 4px; padding: 10px;"
-            class="nav-link hover-underline-animation moments" href="moments"><b>MOMENTS</b></a>
-        </li>
-        <li style="margin-left: 15px;" class="nav-item active">
-          <a style="color:white; padding: 10px;" class="nav-link hover-underline-animation blog"
-            href="blog"><b>BLOG</b></a>
-        </li>
-        <li style="margin-left: 15px;" class="nav-item active">
-          <a style="color:white; padding: 10px;" class="nav-link hover-underline-animation contact"
-            href="publication"><b>PUBLICATIONS</b></a>
-        </li>
-        <li style="margin-left: 15px;" class="nav-item active">
-          <a style="color:white; padding: 10px;" class="nav-link hover-underline-animation about"
-            href="about"><b>ABOUT</b></a>
-        </li>
-        <li style="margin-left: 15px;" class="nav-item active">
-          <a style="color:white; padding: 10px;" class="nav-link hover-underline-animation contact"
-            href="contact"><b>CONTACT</b></a>
-        </li>
+        <li class="nav-item"><a class="nav-link" href="home">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="about">ABOUT</a></li>
+        <li class="nav-item"><a class="nav-link" href="speaker">SPEAKER</a></li>
+        <li class="nav-item"><a class="nav-link" href="moments" aria-current="page">MOMENTS</a></li>
+        <li class="nav-item"><a class="nav-link" href="publication">RESEARCH</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog">BLOG</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact">CONTACT</a></li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <a style="color:white; padding: 10px;" class="nav-link hover-underline-animation contact"
-          href="book"><b>BOOK EMMANUEL</b></a>
-      </form>
+      <a class="site-nav-cta" href="book">BOOK EMMANUEL</a>
     </div>
   </nav>
 
