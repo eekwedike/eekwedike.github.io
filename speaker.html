@@ -1,315 +1,438 @@
 ---
 ---
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="css/styles.css">
-  <!-- Bootstrap CSS -->
-  <!-- Favicons -->
   <link href="./images/logoFav.png" rel="icon">
-  <title>Motivational Speaker | Emmanuel Ekwedike, Ph.D</title>
-  <meta name="description" content="Artificial intelligence has the potential to disrupt any industry; the time to get involved is now.">
-
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
-    type='text/css'>
-  <style>
-    .parallax {
-      /* The image used */
-      background-image: url("images/speakerbottom.jpg");
-
-      /* Set a specific height */
-      min-height: 500px;
-
-      /* Create the parallax scrolling effect */
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-   
-  </style>
+  <title>Speaker | Emmanuel Ekwedike, Ph.D.</title>
+  <meta name="description" content="Keynotes on AI, human capability and the future of work from Emmanuel Ekwedike, Google data scientist and Princeton Ph.D., plus a personal talk on resilience.">
   <link rel="stylesheet" href="css/site.css">
+  <style>
+    .sp {
+      --blue: #004489;
+      --blue-dark: #003168;
+      --navy: #00142d;
+      --cream: #F3F2F1;
+      --ink: #1f1f1f;
+      --body: #2b2b2b;
+      --muted: #5c5c5c;
+      --hair: #e3e6ea;
+      font-family: 'SiteNav', 'Helvetica Neue', Arial, sans-serif;
+      color: var(--body);
+    }
+    .sp h1, .sp h2, .sp h3, .sp h4, .sp p, .sp li { font-family: inherit; text-align: left; text-transform: none; letter-spacing: normal; }
+    .sp section { padding: 0; margin: 0; }
+    .sp-eyebrow { font-size: 13px; font-weight: 700; letter-spacing: .12em !important; text-transform: uppercase !important; color: var(--blue); margin: 0 0 10px; line-height: 1.4; }
+    .sp-h2 { font-size: 32px; font-weight: 700; line-height: 1.2; color: var(--ink); margin: 0 0 12px; }
+    .sp-lead { font-size: 17px; line-height: 1.6; margin: 0; max-width: 640px; }
+    .sp-btn { display: inline-flex; align-items: center; gap: 8px; height: 50px; padding: 3px 24px 0; border-radius: 4px; border: 2px solid transparent; font-size: 15px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; text-decoration: none !important; transition: background-color .2s, color .2s; }
+    .sp-btn svg { width: 16px; height: 16px; margin-top: -3px; }
+    .sp-link { display: inline-flex; align-items: center; gap: 6px; font-weight: 700; color: var(--blue); text-decoration: none; }
+    .sp-link svg { width: 15px; height: 15px; margin-top: -2px; transition: transform .2s; }
+    .sp-link:hover { color: var(--blue-dark); }
+    .sp-link:hover svg { transform: translateX(3px); }
+
+    /* 1. Hero */
+    .sp-hero { position: relative; min-height: 600px; display: flex; align-items: center; background: var(--navy); color: #fff; overflow: hidden; }
+    .sp-hero-media { position: absolute; inset: 0 0 0 30%; background: url('images/speaker/hero.jpg') 60% 40% / cover no-repeat; }
+    .sp-hero-media::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, var(--navy) 0%, rgba(0,20,45,.7) 25%, rgba(0,20,45,0) 60%); }
+    .sp-hero .container { position: relative; padding-top: 72px; padding-bottom: 72px; }
+    .sp-hero .sp-eyebrow { color: rgba(255,255,255,.8); }
+    .sp-hero h1 { font-size: 48px; font-weight: 700; line-height: 1.1; color: #fff; max-width: 560px; margin: 0 0 18px; letter-spacing: -.01em; }
+    .sp-hero-sub { font-size: 18px; line-height: 1.55; color: rgba(255,255,255,.88); max-width: 480px; margin: 0 0 28px; }
+    .sp-hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+    .sp-btn-light { background: #fff; color: var(--blue) !important; }
+    .sp-btn-light:hover { background: var(--cream); }
+    .sp-btn-outline-light { border-color: rgba(255,255,255,.85); color: #fff !important; }
+    .sp-btn-outline-light:hover { background: #fff; color: var(--blue) !important; }
+    .sp-hero-cap { position: absolute; right: 16px; bottom: 16px; font-size: 12px; letter-spacing: .04em; color: rgba(255,255,255,.75); margin: 0; }
+
+    /* 2. Showreel + intro */
+    .sp-intro .container { padding-top: 80px; padding-bottom: 80px; display: grid; grid-template-columns: 1.2fr 1fr; gap: 56px; align-items: center; }
+    .sp-video { position: relative; display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; padding: 0; border-radius: 8px; overflow: hidden; background: #000; cursor: pointer; }
+    .sp-video img { width: 100%; height: 100%; object-fit: cover; opacity: .85; transition: opacity .2s; }
+    .sp-video:hover img { opacity: 1; }
+    .sp-video-play { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 76px; height: 76px; border-radius: 50%; background: rgba(255,255,255,.95); display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 24px rgba(0,0,0,.3); }
+    .sp-video-play svg { width: 26px; height: 26px; color: var(--blue); margin-left: 4px; }
+    .sp-video-label { position: absolute; left: 16px; bottom: 14px; color: #fff; font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+    .sp-video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+    .sp-facts { list-style: none; padding: 0; margin: 26px 0 0; display: grid; gap: 14px; }
+    .sp-facts li { display: flex; gap: 12px; align-items: flex-start; font-size: 16px; line-height: 1.5; margin: 0; }
+    .sp-facts svg { width: 18px; height: 18px; color: var(--blue); flex-shrink: 0; margin-top: 2px; }
+    .sp-facts b { color: var(--ink); }
+
+    /* 3. Signature keynotes */
+    .sp-talks { background: var(--cream); }
+    .sp-talks .container { padding-top: 80px; padding-bottom: 80px; }
+    .sp-section-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 32px; flex-wrap: wrap; margin-bottom: 36px; }
+    .sp-note { font-size: 14px; line-height: 1.5; color: var(--muted); max-width: 340px; margin: 0; }
+    .sp-talk { display: grid; grid-template-columns: 1fr 1.25fr; background: #fff; border-radius: 10px; overflow: hidden; margin-bottom: 24px; box-shadow: 0 1px 2px rgba(0,30,60,.04); }
+    .sp-talk:nth-child(even) { grid-template-columns: 1.25fr 1fr; }
+    .sp-talk:nth-child(even) .sp-talk-media { order: 2; }
+    .sp-talk-media { min-height: 300px; background-size: cover; background-position: center; }
+    .sp-talk-body { padding: 36px 40px; }
+    .sp-talk-num { font-size: 13px; font-weight: 700; color: var(--blue); letter-spacing: .08em; margin: 0 0 10px; }
+    .sp-talk h3 { font-size: 24px; font-weight: 700; line-height: 1.25; color: var(--ink); margin: 0 0 12px; }
+    .sp-talk-sum { font-size: 16px; line-height: 1.6; margin: 0 0 18px; }
+    .sp-talk h4 { font-size: 12px; font-weight: 700; letter-spacing: .1em !important; text-transform: uppercase !important; color: var(--muted); margin: 0 0 8px; }
+    .sp-talk ul { list-style: none; padding: 0; margin: 0 0 18px; }
+    .sp-talk ul li { position: relative; padding-left: 20px; font-size: 15px; line-height: 1.55; margin: 0 0 6px; }
+    .sp-talk ul li::before { content: ''; position: absolute; left: 2px; top: 8px; width: 7px; height: 7px; border-radius: 50%; background: var(--blue); }
+    .sp-talk-for { font-size: 14px; line-height: 1.5; color: var(--muted); margin: 0; padding-top: 14px; border-top: 1px solid var(--hair); }
+    .sp-talk-for b { color: var(--ink); }
+    .sp-talk-flag { grid-template-columns: 1fr 1fr !important; background: var(--blue); }
+    .sp-talk-flag .sp-talk-body, .sp-talk-flag h3, .sp-talk-flag .sp-talk-sum, .sp-talk-flag ul li { color: #fff; }
+    .sp-talk-flag .sp-talk-num, .sp-talk-flag h4, .sp-talk-flag .sp-talk-for { color: rgba(255,255,255,.75); }
+    .sp-talk-flag .sp-talk-for { border-color: rgba(255,255,255,.2); }
+    .sp-talk-flag .sp-talk-for b { color: #fff; }
+    .sp-talk-flag ul li::before { background: #fff; }
+    .sp-talk-flag h3 { font-size: 28px; }
+    .sp-custom { font-size: 15px; color: var(--body); margin: 8px 0 0; }
+    .sp-custom a { color: var(--blue); text-decoration: underline; text-underline-offset: 3px; }
+
+
+    /* Talk title cards: each keynote gets its own poster-style art. */
+    .sp-talk-media { position: relative; display: flex; align-items: flex-end; }
+    .sp-talk-media::before { content: ''; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(0,20,45,.92) 0%, rgba(0,20,45,.55) 45%, rgba(0,20,45,.15) 100%); }
+    .sp-card-art { position: relative; padding: 28px 30px; color: #fff; }
+    .sp .sp-card-art .sp-card-kicker { font-size: 11px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: #7fb8ea; margin: 0 0 8px; }
+    .sp .sp-card-art .sp-card-name { font-size: 34px; font-weight: 700; line-height: 1.02; text-transform: uppercase; letter-spacing: -.005em; color: #fff; margin: 0; }
+    .sp-card-art .sp-card-rule { display: block; width: 44px; height: 3px; background: #7fb8ea; margin-top: 14px; }
+    .sp-talk-flag .sp-card-art .sp-card-name { font-size: 46px; }
+    .sp-talk-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 10px 20px; margin-top: 20px; }
+    .sp-btn-sm { height: 44px; padding: 3px 18px 0; font-size: 14px; }
+    .sp-btn-blue { background: var(--blue); color: #fff !important; }
+    .sp-btn-blue:hover { background: var(--blue-dark); }
+    .sp-talk-flag .sp-btn-blue, .sp-story .sp-btn-blue { background: #fff; color: var(--blue) !important; }
+    .sp-talk-flag .sp-btn-blue:hover, .sp-story .sp-btn-blue:hover { background: var(--cream); }
+
+    /* 4. Personal story */
+    .sp-story { background: var(--navy); color: #fff; }
+    .sp-story .container { padding-top: 88px; padding-bottom: 88px; display: grid; grid-template-columns: 1fr 1.1fr; gap: 64px; align-items: center; }
+    .sp-story .sp-eyebrow { color: #7fb8ea; }
+    .sp-story h2 { font-size: 36px; font-weight: 700; line-height: 1.15; color: #fff; margin: 0 0 18px; }
+    .sp-story p { font-size: 17px; line-height: 1.65; color: rgba(255,255,255,.88); margin: 0 0 16px; }
+    .sp-story figure { margin: 0; position: relative; }
+    .sp .sp-story img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: 55% 30%; border-radius: 8px; display: block; }
+    .sp-story blockquote { position: absolute; left: -32px; bottom: 32px; max-width: 330px; margin: 0; background: #fff; color: var(--ink); border-radius: 8px; padding: 20px 22px 18px; box-shadow: 0 16px 40px rgba(0,0,0,.3); }
+    .sp-story blockquote svg { width: 22px; height: 22px; color: var(--blue); margin-bottom: 6px; }
+    .sp-story blockquote p { color: var(--ink); font-size: 19px; font-weight: 700; line-height: 1.35; margin: 0; }
+    .sp-story blockquote cite { display: block; margin-top: 12px; font-size: 13px; font-style: normal; font-weight: 700; letter-spacing: .04em; color: var(--blue); }
+    .sp-story blockquote cite::before { content: "— "; }
+    .sp-story-take { border-top: 1px solid rgba(255,255,255,.2); padding-top: 20px; margin-top: 24px; }
+    .sp-story-take h4 { font-size: 12px; font-weight: 700; letter-spacing: .1em !important; text-transform: uppercase !important; color: rgba(255,255,255,.7); margin: 0 0 10px; }
+    .sp-story-take ul { list-style: none; padding: 0; margin: 0 0 16px; }
+    .sp-story-take li { position: relative; padding-left: 20px; font-size: 15px; line-height: 1.55; color: #fff; margin: 0 0 6px; }
+    .sp-story-take li::before { content: ''; position: absolute; left: 2px; top: 8px; width: 7px; height: 7px; border-radius: 50%; background: #7fb8ea; }
+    .sp-story .sp-story-for { font-size: 14px; color: rgba(255,255,255,.75); margin: 0; }
+    .sp-story .sp-story-for b { color: #fff; }
+
+    /* 5. Where Emmanuel has spoken: a slow logo tape, like the home page */
+    .sp-spoken { background: var(--blue); color: #fff; overflow: hidden; }
+    .sp-spoken .container { padding-top: 56px; padding-bottom: 24px; display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap; }
+    .sp-spoken .sp-eyebrow { color: rgba(255,255,255,.75); }
+    .sp-spoken .sp-h2 { color: #fff; margin: 0; }
+    .sp-spoken .sp-link { color: #fff; }
+    .sp-spoken .sp-link:hover { color: rgba(255,255,255,.85); }
+    .sp-tape { position: relative; padding: 16px 0 64px; -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
+    .sp-tape-track { display: flex; width: max-content; animation: sp-tape 60s linear infinite; }
+    .sp-tape:hover .sp-tape-track { animation-play-state: paused; }
+    .sp-tape ul { display: flex; align-items: center; gap: 64px; list-style: none; padding: 0 32px; margin: 0; }
+    .sp-tape li { flex-shrink: 0; margin: 0; display: flex; align-items: center; height: 64px; }
+    .sp .sp-tape img { height: calc(var(--h) * 1px); width: auto; max-width: none; display: block; }
+    .sp .sp-tape .sp-tape-word { font-size: 20px; font-weight: 700; letter-spacing: .02em; color: #fff; white-space: nowrap; margin: 0; line-height: 1.1; }
+    .sp-tape-word small { display: block; font-size: 11px; font-weight: 400; letter-spacing: .14em; text-transform: uppercase; color: rgba(255,255,255,.75); }
+    @keyframes sp-tape { to { transform: translateX(-50%); } }
+    /* Respect reduced motion: show every name, wrapped, with no movement. */
+    @media (prefers-reduced-motion: reduce) {
+      .sp-tape { -webkit-mask-image: none; mask-image: none; }
+      .sp-tape-track { animation: none; width: auto; }
+      .sp-tape ul { flex-wrap: wrap; justify-content: center; gap: 24px 48px; }
+      .sp-tape ul[aria-hidden] { display: none; }
+    }
+
+    @media (max-width: 991.98px) {
+      .sp-hero { min-height: 520px; }
+      .sp-hero-media { inset: 0 0 0 15%; }
+      .sp-hero h1 { font-size: 38px; max-width: 460px; }
+      .sp-intro .container, .sp-story .container { grid-template-columns: 1fr; gap: 40px; }
+      .sp-talk, .sp-talk:nth-child(even), .sp-talk-flag { grid-template-columns: 1fr !important; }
+      .sp-talk:nth-child(even) .sp-talk-media { order: 0; }
+      .sp-talk-media { min-height: 240px; }
+      .sp-story figure { max-width: 520px; }
+      .sp .sp-story img { aspect-ratio: 4 / 3; }
+      .sp-story blockquote { left: 16px; bottom: -28px; }
+      .sp-story .container > div { order: 2; }
+      .sp-story figure { margin-bottom: 28px; }
+    }
+    @media (max-width: 575.98px) {
+      .sp-hero { min-height: 0; align-items: flex-end; }
+      .sp-hero-media { inset: 0 0 35% 0; background-position: 70% 30%; }
+      .sp-hero-media::after { background: linear-gradient(0deg, var(--navy) 0%, rgba(0,20,45,.6) 30%, rgba(0,20,45,0) 60%); }
+      .sp-hero .container { padding-top: 260px; padding-bottom: 48px; }
+      .sp-hero h1 { font-size: 32px; }
+      .sp-hero-sub { font-size: 16px; }
+      .sp-hero-actions .sp-btn { width: 100%; justify-content: center; }
+      .sp-hero-cap { display: none; }
+      .sp-h2, .sp-story h2 { font-size: 26px; }
+      .sp-intro .container, .sp-talks .container { padding-top: 56px; padding-bottom: 56px; }
+      .sp-story .container { padding-top: 56px; padding-bottom: 56px; }
+      .sp-talk-body { padding: 26px 22px; }
+      .sp-talk h3, .sp-talk-flag h3 { font-size: 21px; }
+      .sp-talk-media { min-height: 200px; }
+      .sp .sp-card-art .sp-card-name { font-size: 28px; }
+      .sp-talk-flag .sp-card-art .sp-card-name { font-size: 32px; }
+      .sp-talk-actions .sp-btn { width: 100%; justify-content: center; }
+          .sp-tape ul { gap: 44px; }
+      .sp .sp-tape img { height: calc(var(--h) * 0.75px); }
+          }
+  </style>
 </head>
-
-<body style="background-color:#F3F2F1 ;">
-  <!--navbar-->
+<body>
   {% include nav.html active="speaker" %}
-  <div style="background-color:#004489;" class="img-fluid"  alt="Responsive image">
-  
-    <div id="carouselExampleIndicators" class="carousel slide img-fluid" >
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <center>
-        <div class="carousel-inner" style="height:560px;">
-          <div class="carousel-item active" style="height:560px;">
-            <video style="height:560px; " playsinline autoplay muted loop>
-              <source src="./images/speakerpageVideo.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="carousel-item" style="height:560px;">
-            <img src="./images/speakerpageBanner.png" alt="First slide"
-              style="height:560px; ">
-          </div>
-          <div class="carousel-item" style="height:560px;">
-            <a href="https://www.youtube.com/watch?v=8uQQDno0Djs" target="_blank" rel="noopener"
-              style="display:flex; align-items:center; justify-content:center; height:560px; background:#000; border-radius:12px; overflow:hidden; position:relative;">
-              <img src="https://img.youtube.com/vi/8uQQDno0Djs/maxresdefault.jpg"
-                onerror="this.src='https://img.youtube.com/vi/8uQQDno0Djs/hqdefault.jpg'"
-                alt="Watch on YouTube"
-                style="height:560px; width:auto; max-width:100%; display:block; opacity:0.85;">
-              <div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px;">
-                <div style="width:80px; height:80px; background:rgba(255,0,0,0.92); border-radius:50%;
-                  display:flex; align-items:center; justify-content:center;
-                  box-shadow:0 4px 24px rgba(0,0,0,0.5);">
-                  <i class="fa fa-youtube-play" style="font-size:2.2rem; color:#fff; margin-right:2px;"></i>
-                </div>
-                <span style="color:#fff; font-size:0.95rem; font-weight:600; letter-spacing:0.5px;
-                  background:rgba(0,0,0,0.45); padding:5px 16px; border-radius:20px;">Watch on YouTube</span>
-              </div>
-            </a>
-          </div>
 
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </center>
-    </div>
-    <br>
-  </div>
-  <div class="container-fluid" style="width: 95%;">
-    <br><br><br>
-    <center>
-      <h1><b>Speaker Topics</b></h1>
-    </center>
-    <br>
-    <h5 style="text-align:center ;">“Artificial intelligence has the potential to disrupt any industry; the time to get involved is now."
-    </h5>
-    <h5 style="text-align:center; color: #989898;">by Emmanuel Ekwedike</h5>
-    <br><br>
-    <div class="shadow p-3 mb-5 bg-white rounded">
-      <br><br>
-      <div class="container" style="width: 100%; " data-aos="fade-up">
-      </div>
-      <h2 style="text-align: center; ">Personal Topic</h2>
-      <br><br>
-      <div class="row">
-        <div style="padding-left:40px; padding-right: 40px;" class="col-lg-6">
-          <h4>1. THE EMMANUEL STORY: Resilience, Goals, and Motivation</h4>
-          <p style="padding:20px; text-align: justify; font-family: 'MyWebFont';">Dr. Emmanuel Ekwedike’s life story is
-            a heartening tale of struggle, resilience, tenacity, and success. After migrating to the US at a young age,
-            he managed to achieve the higher education he had always dreamed of without a single student loan. The
-            Artificial Intelligence (AI) and Machine Learning guru shares inspiring personal experiences, thrilling
-            international adventures, and invaluable lessons that have brought him to where he is today.</p>
+  <main class="sp">
+    <!-- 1. Hero -->
+    <section class="sp-hero">
+      <div class="sp-hero-media" role="img" aria-label="Emmanuel speaking on the AfroTech 2025 main stage"></div>
+      <div class="container">
+        <p class="sp-eyebrow">Keynote speaker</p>
+        <h1>Talks that turn uncertainty about AI into confident action.</h1>
+        <p class="sp-hero-sub">Dr. Emmanuel Ekwedike is a Google data scientist and Princeton-trained AI researcher who makes AI practical and human for students, professionals and leaders.</p>
+        <div class="sp-hero-actions">
+          <a class="sp-btn sp-btn-light" href="#talks">Explore the talks <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M1.013 8Q1.013 7.787 1.147 7.653Q1.28 7.52 1.493 7.52H13.28L10.133 4.373Q9.973 4.213 9.973 4Q9.973 3.787 10.133 3.653Q10.293 3.52 10.507 3.52Q10.72 3.52 10.88 3.627L14.88 7.627Q14.987 7.787 14.987 8Q14.987 8.213 14.88 8.373L10.88 12.373Q10.72 12.48 10.507 12.48Q10.293 12.48 10.133 12.347Q9.973 12.213 9.973 12Q9.973 11.787 10.133 11.627L13.28 8.48H1.493Q1.28 8.48 1.147 8.347Q1.013 8.213 1.013 8Z"/></svg></a>
+          <a class="sp-btn sp-btn-outline-light" href="#showreel"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M11.573 8.693 5.227 12.373Q4.8 12.64 4.4 12.4Q4 12.16 4 11.68V4.32Q4 3.84 4.4 3.6Q4.8 3.36 5.227 3.627L11.573 7.307Q12 7.52 12 8Q12 8.48 11.573 8.693Z"/></svg> Watch the showreel</a>
         </div>
-        <div class="col-lg-6">
-          <center>
-            <img src="./images/s4.png" width="70%" class="img-thumbnail">
-          </center>
-          <center> <br>
-            <!-- Button trigger modal -->
-            <button data-toggle="modal" data-target="#exampleModalCenter"
-              style="background-color: #004489; color: white;" type="button" class="btn  btn-sm">
-              Download Speaker Kit</button>
-            <!-- Modal -->
-            <div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog"
-              aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-              <div class="modal-dialog modal-lg" style="width:90%" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Speaker Kit</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div style="height:600px; " class="modal-body">
-                    <iframe src="./images/pdf/speakerKit.pdf" style="width: 100%;height: 100%;border: none;"></iframe>
-                  </div>
-                </div>
-              </div>
+      </div>
+    </section>
+
+    <!-- 2. Showreel + intro -->
+    <section class="sp-intro" id="showreel">
+      <div class="container">
+        <button class="sp-video" type="button" data-id="8uQQDno0Djs" aria-label="Play Emmanuel's speaker showreel">
+          <img src="https://img.youtube.com/vi/8uQQDno0Djs/hqdefault.jpg" alt="">
+          <span class="sp-video-play"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M11.573 8.693 5.227 12.373Q4.8 12.64 4.4 12.4Q4 12.16 4 11.68V4.32Q4 3.84 4.4 3.6Q4.8 3.36 5.227 3.627L11.573 7.307Q12 7.52 12 8Q12 8.48 11.573 8.693Z"/></svg></span>
+          <span class="sp-video-label">Speaker showreel</span>
+        </button>
+        <div>
+          <p class="sp-eyebrow">Why Emmanuel</p>
+          <h2 class="sp-h2">Deep expertise, made practical for every audience.</h2>
+          <p class="sp-lead">Emmanuel builds with AI every day, and he speaks the same way he works: clear, practical and honest about what AI can and cannot do. Audiences leave knowing what to try next.</p>
+          <ul class="sp-facts">
+            <li><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M16 8Q16 10.187 14.933 12.027Q13.867 13.867 12.027 14.933Q10.187 16 8 16Q5.813 16 3.973 14.933Q2.133 13.867 1.067 12.027Q0 10.187 0 8Q0 5.813 1.067 3.973Q2.133 2.133 3.973 1.067Q5.813 0 8 0Q10.187 0 12.027 1.067Q13.867 2.133 14.933 3.973Q16 5.813 16 8ZM12.053 4.96Q11.787 4.747 11.467 4.747Q11.147 4.747 10.933 5.013L7.467 9.44L5.387 7.307Q5.173 7.093 4.853 7.12Q4.533 7.147 4.32 7.36Q4.107 7.573 4.107 7.867Q4.107 8.16 4.32 8.373L6.987 11.04Q7.2 11.253 7.52 11.253Q7.84 11.253 8.053 10.987L12.053 6.027Q12.267 5.813 12.267 5.493Q12.267 5.173 12.053 4.96Z"/></svg><span><b>Practitioner, not commentator.</b> Data scientist at Google, with a Ph.D. from Princeton.</span></li>
+            <li><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M16 8Q16 10.187 14.933 12.027Q13.867 13.867 12.027 14.933Q10.187 16 8 16Q5.813 16 3.973 14.933Q2.133 13.867 1.067 12.027Q0 10.187 0 8Q0 5.813 1.067 3.973Q2.133 2.133 3.973 1.067Q5.813 0 8 0Q10.187 0 12.027 1.067Q13.867 2.133 14.933 3.973Q16 5.813 16 8ZM12.053 4.96Q11.787 4.747 11.467 4.747Q11.147 4.747 10.933 5.013L7.467 9.44L5.387 7.307Q5.173 7.093 4.853 7.12Q4.533 7.147 4.32 7.36Q4.107 7.573 4.107 7.867Q4.107 8.16 4.32 8.373L6.987 11.04Q7.2 11.253 7.52 11.253Q7.84 11.253 8.053 10.987L12.053 6.027Q12.267 5.813 12.267 5.493Q12.267 5.173 12.053 4.96Z"/></svg><span><b>A framework to get more out of AI.</b> Every signature keynote draws on the AI Value Pyramid: AI generates, then accelerates, then automates.</span></li>
+            <li><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M16 8Q16 10.187 14.933 12.027Q13.867 13.867 12.027 14.933Q10.187 16 8 16Q5.813 16 3.973 14.933Q2.133 13.867 1.067 12.027Q0 10.187 0 8Q0 5.813 1.067 3.973Q2.133 2.133 3.973 1.067Q5.813 0 8 0Q10.187 0 12.027 1.067Q13.867 2.133 14.933 3.973Q16 5.813 16 8ZM12.053 4.96Q11.787 4.747 11.467 4.747Q11.147 4.747 10.933 5.013L7.467 9.44L5.387 7.307Q5.173 7.093 4.853 7.12Q4.533 7.147 4.32 7.36Q4.107 7.573 4.107 7.867Q4.107 8.16 4.32 8.373L6.987 11.04Q7.2 11.253 7.52 11.253Q7.84 11.253 8.053 10.987L12.053 6.027Q12.267 5.813 12.267 5.493Q12.267 5.173 12.053 4.96Z"/></svg><span><b>Rooms of every kind.</b> Top conferences such as AfroTech, Ai4 and ICML, companies like Google, and universities from Princeton to community colleges.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Signature keynotes -->
+    <section class="sp-talks" id="talks">
+      <div class="container">
+        <div class="sp-section-head">
+          <div>
+            <p class="sp-eyebrow">Signature keynotes</p>
+            <h2 class="sp-h2">Four talks on AI and the people who use it.</h2>
+          </div>
+          <p class="sp-note">Each one can run as a keynote, workshop or fireside chat, and is tailored to your audience in advance.</p>
+        </div>
+
+        <div class="sp-talk-list">
+          <article class="sp-talk sp-talk-flag">
+            <div class="sp-talk-media" style="background-image:url('images/speaker/edge.jpg');background-position:40% 30%" role="img" aria-label="The Human Edge"><div class="sp-card-art" aria-hidden="true"><p class="sp-card-kicker">Flagship keynote</p><p class="sp-card-name">The Human Edge</p><span class="sp-card-rule"></span></div></div>
+            <div class="sp-talk-body">
+              <p class="sp-talk-num">01</p>
+              <h3>The Human Edge: How to Thrive, Stay Relevant and Win in the AI Era</h3>
+              <p class="sp-talk-sum">In the age of AI, your greatest advantage isn’t outcompeting machines. It’s what they can’t replace. This talk shows which human strengths grow more valuable as AI advances, and how to build them on purpose.</p>
+              <h4>Your audience will</h4>
+              <ul>
+                <li>See the difference between using AI and creating value with it</li>
+                <li>Name the human strengths their work depends on: judgment, creativity and the ability to learn</li>
+                <li>Leave with a plan to stay relevant without chasing every new tool</li>
+              </ul>
+              <p class="sp-talk-for"><b>Best for:</b> conference openers, company all-hands and audiences of students and professionals</p>
+              <div class="sp-talk-actions"><a class="sp-btn sp-btn-sm sp-btn-blue" href="book?talk=human-edge">Book this talk <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M1.013 8Q1.013 7.787 1.147 7.653Q1.28 7.52 1.493 7.52H13.28L10.133 4.373Q9.973 4.213 9.973 4Q9.973 3.787 10.133 3.653Q10.293 3.52 10.507 3.52Q10.72 3.52 10.88 3.627L14.88 7.627Q14.987 7.787 14.987 8Q14.987 8.213 14.88 8.373L10.88 12.373Q10.72 12.48 10.507 12.48Q10.293 12.48 10.133 12.347Q9.973 12.213 9.973 12Q9.973 11.787 10.133 11.627L13.28 8.48H1.493Q1.28 8.48 1.147 8.347Q1.013 8.213 1.013 8Z"/></svg></a></div>
             </div>
-          </center>
+          </article>
+
+          <article class="sp-talk">
+            <div class="sp-talk-media" style="background-image:url('images/speaker/humanai.jpg')" role="img" aria-label="Human + AI"><div class="sp-card-art" aria-hidden="true"><p class="sp-card-kicker">Signature keynote</p><p class="sp-card-name">Human + AI</p><span class="sp-card-rule"></span></div></div>
+            <div class="sp-talk-body">
+              <p class="sp-talk-num">02</p>
+              <h3>Human + AI: Where People Lead and Machines Help</h3>
+              <p class="sp-talk-sum">How people and AI work best together. Using the AI Value Pyramid, Emmanuel shows where to lean on the machine, where human judgment has to lead and when not to automate at all.</p>
+              <h4>Your audience will</h4>
+              <ul>
+                <li>Place their own tasks on the pyramid: generate, accelerate or automate</li>
+                <li>Know which decisions should stay with people</li>
+                <li>Leave with one workflow they can change the next day</li>
+              </ul>
+              <p class="sp-talk-for"><b>Best for:</b> teams adopting AI, professional associations and hands-on workshops</p>
+              <div class="sp-talk-actions"><a class="sp-btn sp-btn-sm sp-btn-blue" href="book?talk=human-ai">Book this talk <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M1.013 8Q1.013 7.787 1.147 7.653Q1.28 7.52 1.493 7.52H13.28L10.133 4.373Q9.973 4.213 9.973 4Q9.973 3.787 10.133 3.653Q10.293 3.52 10.507 3.52Q10.72 3.52 10.88 3.627L14.88 7.627Q14.987 7.787 14.987 8Q14.987 8.213 14.88 8.373L10.88 12.373Q10.72 12.48 10.507 12.48Q10.293 12.48 10.133 12.347Q9.973 12.213 9.973 12Q9.973 11.787 10.133 11.627L13.28 8.48H1.493Q1.28 8.48 1.147 8.347Q1.013 8.213 1.013 8Z"/></svg></a></div>
+            </div>
+          </article>
+
+          <article class="sp-talk">
+            <div class="sp-talk-media" style="background-image:url('images/speaker/work.jpg')" role="img" aria-label="AI and the Future of Work"><div class="sp-card-art" aria-hidden="true"><p class="sp-card-kicker">Signature keynote</p><p class="sp-card-name">AI and the Future of Work</p><span class="sp-card-rule"></span></div></div>
+            <div class="sp-talk-body">
+              <p class="sp-talk-num">03</p>
+              <h3>AI and the Future of Work</h3>
+              <p class="sp-talk-sum">What is really changing in jobs and teams, without the hype or the fear. A clear look at which skills matter now and how individuals and managers can adapt with confidence.</p>
+              <h4>Your audience will</h4>
+              <ul>
+                <li>Separate what is changing in their role from what is not</li>
+                <li>Identify the skills worth building next</li>
+                <li>Learn how managers can guide teams through the change</li>
+              </ul>
+              <p class="sp-talk-for"><b>Best for:</b> HR and learning teams, managers and career-focused events</p>
+              <div class="sp-talk-actions"><a class="sp-btn sp-btn-sm sp-btn-blue" href="book?talk=future-of-work">Book this talk <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M1.013 8Q1.013 7.787 1.147 7.653Q1.28 7.52 1.493 7.52H13.28L10.133 4.373Q9.973 4.213 9.973 4Q9.973 3.787 10.133 3.653Q10.293 3.52 10.507 3.52Q10.72 3.52 10.88 3.627L14.88 7.627Q14.987 7.787 14.987 8Q14.987 8.213 14.88 8.373L10.88 12.373Q10.72 12.48 10.507 12.48Q10.293 12.48 10.133 12.347Q9.973 12.213 9.973 12Q9.973 11.787 10.133 11.627L13.28 8.48H1.493Q1.28 8.48 1.147 8.347Q1.013 8.213 1.013 8Z"/></svg></a></div>
+            </div>
+          </article>
+
+          <article class="sp-talk">
+            <div class="sp-talk-media" style="background-image:url('images/speaker/business.jpg');background-position:82% 45%" role="img" aria-label="Making AI Make Business Sense"><div class="sp-card-art" aria-hidden="true"><p class="sp-card-kicker">Signature keynote</p><p class="sp-card-name">Making AI Make Business Sense</p><span class="sp-card-rule"></span></div></div>
+            <div class="sp-talk-body">
+              <p class="sp-talk-num">04</p>
+              <h3>Making AI Make Business Sense</h3>
+              <p class="sp-talk-sum">A practical way for leaders to find where AI creates real value, move past interesting experiments and decide what to expand, revise or stop.</p>
+              <h4>Your audience will</h4>
+              <ul>
+                <li>Tell a worthwhile AI opportunity from one that’s merely interesting</li>
+                <li>Weigh costs and risks before they build</li>
+                <li>Know when to expand, revise or stop an initiative</li>
+              </ul>
+              <p class="sp-talk-for"><b>Best for:</b> executives, leadership offsites, founders and business schools</p>
+              <div class="sp-talk-actions"><a class="sp-btn sp-btn-sm sp-btn-blue" href="book?talk=business-sense">Book this talk <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M1.013 8Q1.013 7.787 1.147 7.653Q1.28 7.52 1.493 7.52H13.28L10.133 4.373Q9.973 4.213 9.973 4Q9.973 3.787 10.133 3.653Q10.293 3.52 10.507 3.52Q10.72 3.52 10.88 3.627L14.88 7.627Q14.987 7.787 14.987 8Q14.987 8.213 14.88 8.373L10.88 12.373Q10.72 12.48 10.507 12.48Q10.293 12.48 10.133 12.347Q9.973 12.213 9.973 12Q9.973 11.787 10.133 11.627L13.28 8.48H1.493Q1.28 8.48 1.147 8.347Q1.013 8.213 1.013 8Z"/></svg></a></div>
+            </div>
+          </article>
+        </div>
+        <p class="sp-custom">Have a different theme in mind? <a href="book">Tell Emmanuel about your event</a> and he’ll shape a session around it.</p>
+      </div>
+    </section>
+
+    <!-- 4. Personal story -->
+    <section class="sp-story" id="story">
+      <div class="container">
+        <div>
+          <p class="sp-eyebrow">Personal keynote</p>
+          <h2>Begin Right Here: Finding Your Why When the Answer Is No</h2>
+          <p>At 18, Emmanuel left Nigeria for Queens, New York, with one goal: the education he had always wanted.</p>
+          <p>The road was full of setbacks. The first time he applied to Ph.D. programs, twenty of them turned him down. What kept him going was his why: to make an impact beyond himself, in Africa and around the world.</p>
+          <p>Scholarships and fellowships carried him through four degrees in eleven years without a single student loan, ending with a Ph.D. from Princeton. Today he applies AI at Google.</p>
+          <p>This talk is the story behind the credentials: the rejections, the people who opened doors and the habits that carried him through. Its message to anyone who feels behind is simple: you don’t have to catch up. You can begin right here.</p>
+          <div class="sp-story-take">
+            <h4>Your audience will</h4>
+            <ul>
+              <li>Find their why and use it to push through setbacks</li>
+              <li>Treat rejection as a step forward, not a final answer</li>
+              <li>Learn how mentors, scholarships and fellowships open doors, and how to find them</li>
+            </ul>
+            <p class="sp-story-for"><b>Best for:</b> universities, student organizations, graduations, scholarship programs and employee resource groups</p>
+            <div class="sp-talk-actions"><a class="sp-btn sp-btn-sm sp-btn-blue" href="book?talk=begin-right-here">Book this talk <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M1.013 8Q1.013 7.787 1.147 7.653Q1.28 7.52 1.493 7.52H13.28L10.133 4.373Q9.973 4.213 9.973 4Q9.973 3.787 10.133 3.653Q10.293 3.52 10.507 3.52Q10.72 3.52 10.88 3.627L14.88 7.627Q14.987 7.787 14.987 8Q14.987 8.213 14.88 8.373L10.88 12.373Q10.72 12.48 10.507 12.48Q10.293 12.48 10.133 12.347Q9.973 12.213 9.973 12Q9.973 11.787 10.133 11.627L13.28 8.48H1.493Q1.28 8.48 1.147 8.347Q1.013 8.213 1.013 8Z"/></svg></a></div>
+          </div>
+        </div>
+        <figure>
+          <img src="images/speaker/story.jpg" alt="Emmanuel speaking to students at Essex County College" loading="lazy">
+          <blockquote><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M12 12Q12.427 12 12.72 11.707Q13.013 11.413 13.013 10.987V8.533Q13.013 8.16 12.72 7.867Q12.427 7.573 12 7.573H10.613Q10.613 7.04 10.693 6.507Q10.773 5.973 10.987 5.52Q11.2 5.067 11.547 4.8Q11.893 4.533 12.427 4.533V2.987Q11.52 2.987 10.88 3.36Q10.24 3.733 9.813 4.4Q9.387 5.067 9.2 5.867Q9.013 6.667 9.013 7.573V10.987Q9.013 11.413 9.307 11.707Q9.6 12 10.027 12ZM6.027 12Q6.4 12 6.693 11.707Q6.987 11.413 6.987 10.987V8.533Q6.987 8.16 6.693 7.867Q6.4 7.573 5.973 7.573H4.587Q4.587 7.04 4.667 6.507Q4.747 5.973 4.987 5.52Q5.227 5.067 5.547 4.8Q5.867 4.533 6.4 4.533V2.987Q5.547 2.987 4.88 3.36Q4.213 3.733 3.787 4.4Q3.36 5.067 3.173 5.867Q2.987 6.667 2.987 7.573V10.987Q2.987 11.413 3.28 11.707Q3.573 12 4 12Z"/></svg><p>Twenty programs said no. My why kept me going.</p><cite>Dr. Emmanuel Ekwedike</cite></blockquote>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 5. Where Emmanuel has spoken -->
+    <section class="sp-spoken" aria-labelledby="spSpoken">
+      <div class="container">
+        <div>
+          <p class="sp-eyebrow">Stages &amp; press</p>
+          <h2 class="sp-h2" id="spSpoken">Where Emmanuel has spoken and been featured.</h2>
+        </div>
+        <a class="sp-link" href="moments">See photos in Moments <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M1.013 8Q1.013 7.787 1.147 7.653Q1.28 7.52 1.493 7.52H13.28L10.133 4.373Q9.973 4.213 9.973 4Q9.973 3.787 10.133 3.653Q10.293 3.52 10.507 3.52Q10.72 3.52 10.88 3.627L14.88 7.627Q14.987 7.787 14.987 8Q14.987 8.213 14.88 8.373L10.88 12.373Q10.72 12.48 10.507 12.48Q10.293 12.48 10.133 12.347Q9.973 12.213 9.973 12Q9.973 11.787 10.133 11.627L13.28 8.48H1.493Q1.28 8.48 1.147 8.347Q1.013 8.213 1.013 8Z"/></svg></a>
+      </div>
+      <div class="sp-tape">
+        <div class="sp-tape-track">
+          <ul>
+            <li><img src="images/organizations/strip/google.png" alt="Google" style="--h:40"></li>
+            <li><img src="images/organizations/strip/afrotech.png" alt="AfroTech" style="--h:50"></li>
+            <li><img src="images/organizations/strip/wayfair.png" alt="Wayfair" style="--h:39"></li>
+            <li><img src="images/organizations/strip/built.png" alt="BUILT" style="--h:38"></li>
+            <li><img src="images/organizations/strip/ai4.png" alt="Ai4" style="--h:40"></li>
+            <li><img src="images/organizations/strip/icml.png" alt="ICML" style="--h:45"></li>
+            <li><img src="images/organizations/strip/princeton.png" alt="Princeton University" style="--h:45"></li>
+            <li><img src="images/organizations/strip/daily-princetonian.png" alt="The Daily Princetonian" style="--h:33"></li>
+            <li><img src="images/organizations/strip/insight.png" alt="Insight" style="--h:54"></li>
+            <li><img src="images/organizations/strip/africa-startup-festival.png" alt="Africa Startup Festival" style="--h:54"></li>
+            <li><img src="images/organizations/strip/informs.png" alt="INFORMS" style="--h:39"></li>
+            <li><img src="images/organizations/strip/informationweek.png" alt="InformationWeek" style="--h:27"></li>
+            <li><img src="images/organizations/strip/ccny.png" alt="The City College of New York" style="--h:47"></li>
+            <li><img src="images/organizations/strip/brooklyn-college.png" alt="Brooklyn College" style="--h:52"></li>
+            <li><img src="images/organizations/strip/essex-county-college.png" alt="Essex County College" style="--h:41"></li>
+            <li><img src="images/organizations/strip/miles-college.png" alt="Miles College" style="--h:54"></li>
+            <li><img src="images/organizations/strip/dimacs.png" alt="DIMACS" style="--h:39"></li>
+            <li><img src="images/organizations/strip/caarms.png" alt="CAARMS" style="--h:44"></li>
+          </ul>
+          <ul aria-hidden="true">
+            <li><img src="images/organizations/strip/google.png" alt="" style="--h:40"></li>
+            <li><img src="images/organizations/strip/afrotech.png" alt="" style="--h:50"></li>
+            <li><img src="images/organizations/strip/wayfair.png" alt="" style="--h:39"></li>
+            <li><img src="images/organizations/strip/built.png" alt="" style="--h:38"></li>
+            <li><img src="images/organizations/strip/ai4.png" alt="" style="--h:40"></li>
+            <li><img src="images/organizations/strip/icml.png" alt="" style="--h:45"></li>
+            <li><img src="images/organizations/strip/princeton.png" alt="" style="--h:45"></li>
+            <li><img src="images/organizations/strip/daily-princetonian.png" alt="" style="--h:33"></li>
+            <li><img src="images/organizations/strip/insight.png" alt="" style="--h:54"></li>
+            <li><img src="images/organizations/strip/africa-startup-festival.png" alt="" style="--h:54"></li>
+            <li><img src="images/organizations/strip/informs.png" alt="" style="--h:39"></li>
+            <li><img src="images/organizations/strip/informationweek.png" alt="" style="--h:27"></li>
+            <li><img src="images/organizations/strip/ccny.png" alt="" style="--h:47"></li>
+            <li><img src="images/organizations/strip/brooklyn-college.png" alt="" style="--h:52"></li>
+            <li><img src="images/organizations/strip/essex-county-college.png" alt="" style="--h:41"></li>
+            <li><img src="images/organizations/strip/miles-college.png" alt="" style="--h:54"></li>
+            <li><img src="images/organizations/strip/dimacs.png" alt="" style="--h:39"></li>
+            <li><img src="images/organizations/strip/caarms.png" alt="" style="--h:44"></li>
+          </ul>
         </div>
       </div>
-      <div class="row">
-        <div style="padding-left:40px; padding-right: 40px;" class="col-lg-12">
-          <h4>2. How to Become a Leader Right Here, Right Now</h4>
-          <p style="padding:20px; text-align: justify;">No matter what role you may be in currently, you have an
-            opportunity to influence your professional environment and emerge as a leader. It is all about cultivating
-            your ability to recognize opportunities, daring to step outside of your comfort zone, taking the initiative,
-            and perpetually leveling up your potential, expertise, and innovation. Emmanuel presents specific
-            techniques, methods, and foundational concepts for excelling in leadership and maximizing the impact and
-            reach of your influence. You can consider these tools for achieving your dream career.</p>
-          <h4>3. How Technology Drives Generational Wealth</h4>
-          <p style="padding:20px ;  text-align: justify;">While we all define “financial freedom” dierently, plentiful
-            advantages are unlocked when you identify what it means to you. In 2021, the average annual salary for
-            American tech professionals reached a record high of nearly $105,000 and is expected to continue increasing.
-            A career in this field could be the dierence between merely surviving and truly thriving as you enjoy the
-            perks of financial liberation and generational wealth accumulation. Dr. Ekwedike shares an encouraging
-            account of how his professional pursuits and victories in artificial intelligence and machine learning
-            technologies have powered his journey to financial freedom.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div style="padding-left:40px; padding-right: 40px;" class="col-lg-12">
-          <h4>4. My Zero-Debt Education Strategy</h4>
-          <p style="padding:20px ; text-align: justify;">The STEM career path often requires extensive education. For
-            Dr. Ekwedike, it was an eleven-year journey through four college degrees that he managed to accomplish
-            without accruing any debt. Now, he shares his personal strategy for achieving debt-free education. He shares
-            tips for securing scholarships and fellowships and developing eective communication skills for navigating
-            institutions. Dr. Ekwedike also offers essential guidance on procuring mentorships, improving leadership
-            skills, networking, and acquiring practical experience to position yourself for game-changing opportunities
-            on academic and professional levels.</p>
-        </div>
-      </div>
-    </div>
-    <div class="shadow p-3 mb-5 bg-white rounded">
-      <br><br>
-      <h2 style="text-align: center;">INDUSTRY TOPICS</h2>
-      <br><br>
-      <div class="row">
-        <div style="padding-left:40px; padding-right: 40px;" class="col-lg-6">
-          <br><br>
-          <h4>1. The Power of Artificial Intelligence (AI)</h4>
-          <p style="padding:20px ;  text-align: justify;">Artificial intelligence (AI) continues to be one of the
-            fastest-growing and most complex fields in the tech industry. Although it is not without its challenges,
-            astonishing advancements continue to redefine its limits. As our understanding of AI and its potential
-            expands, we consistently discover new and diversified applications that can enhance real-world settings. Dr.
-            Ekwedike uses his fourteen years of scientific expertise to break down the ins and outs of artificial
-            intelligence, discuss its critical role in the digital world, and share how this vital tool can be leveraged
-            for good.</p>
-        </div>
-        <div class="col-lg-6">
-          <center> <img src="./images/s2.png" width="70%" class="img-thumbnail"></center>
-          <center> <br><a style="text-decoration: none ; color: white;" href="book"><button
-                style="background-color: #004489; color: white;" type="button" class="btn  btn-sm">Book Emmanuel
-              </button></a></center>
-        </div>
-      </div>
-      <div class="row">
-        <div style="padding-left:40px; padding-right: 40px;" class="col-lg-12">
-          <h4>2. The Future of Business According to AI</h4>
-          <p style="padding:20px;  text-align: justify;">The impact artificial intelligence has had on business is
-            undeniable. With infinite solutions for modern challenges, this technology is actively shaping the future of
-            commerce both within and beyond the digital world. Emmanuel explains what this future looks like, as well as
-            which fields will be most aected and how. His presentation wouldn’t be complete without exploring the
-            measures and strategies ventures can employ to stay relevant in this rapidly evolving landscape.</p>
-          <h4>3. Are Human Employees Becoming Obsolete in the Age of Automation?</h4>
-          <p style="padding:20px ; text-align: justify;">Adaptability and innovation are imperative in surviving and
-            navigating any impending change, such as what we’re seeing as the new digital world unfolds around us.
-            Despite the expansive and ongoing shift to full automation, you’ll find yourself in high demand amidst this
-            burgeoning economy if you have the right skills. This new frontier in technology belongs to those willing to
-            redefine the term “career”. Dr. Ekwedike’s unique insight oers guidance for personal optimization in this
-            flourishing industry and fuels the audience’s innovative curiosity about the future.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div style="padding-left:40px; padding-right: 40px;" class="col-lg-12">
-          <h4>4. AI and the Fourth Industrial Revolution</h4>
-          <p style="padding:20px ; text-align: justify;">Amidst complex and rapid evolution, few technologies are more
-            disruptive than the progress-booster that is artificial intelligence. Experts predict it will be the
-            catalyst for the “Fourth Industrial Revolution”. The time to get involved is now. Emmanuel dives into the
-            disruptive potential of emerging technologies and presents many inherent challenges that will need
-            solutions. This translates to endless opportunities, which this clever professional enthusiastically reviews
-            for his audience.</p>
-        </div>
-      </div>
-    </div>
-    <div class="shadow p-3 mb-5 bg-white rounded">
-      <br><br>
-      <h2 style="text-align: center;">ADDITIONAL TOPICS</h2>
-      <br><br>
-      <div style="padding-left:40px; padding-right: 40px;" class="row">
-        <div style="text-align: justify; padding:20px " class="col-lg-6">
-          <ol>
-            <li style="text-align: justify; padding:6px ">Why Authenticity Should Be Your Best Foot Forward</li>
-            <li style="text-align: justify; padding:6px ">The Relationship Between Travel & Problem-Solving</li>
-            <li style="text-align: justify; padding:6px ">Quantum Growth:The Life-Changing Power of Compatible Mentors &
-              Sponsors</li>
-            <li style="text-align: justify; padding:6px ">A Practical Guide to Breaking into the Tech Industry</li>
-            <li style="text-align: justify; padding:6px "> Everything You Need to Know to Scale Your Career</li>
-            <li style="text-align: justify; padding:6px ">Data-Informed Decision-Making:The One Skill You Need to Secure
-              Your Future</li>
-            <li style="text-align: justify; padding:6px ">The Emerging Technologies Takeover</li>
-            <li style="text-align: justify; padding:6px ">The Art of Spinning Data into a Captivating Story</li>
-            <li style="text-align: justify; padding:6px ">Maximizing Your Innovation for a Successful Future in Tech
-            </li>
-            <li style="text-align: justify; padding:6px ">Under Pressure:Eective Problem-Solving Amidst Looming
-              Uncertainty</li>
-            <li style="text-align: justify; padding:6px ">AI & Productivity: How Automation is Transforming the Digital
-              World</li>
-          </ol>
-        </div>
-        <div class="col-lg-6">
-          <br><br>
-          <img src="./images/s1.png" width="70%" class="img-thumbnail">
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="parallax"></div>
+    </section>
+  </main>
+
   {% include footer.html %}
-  <!-- Optional JavaScript -->
+
+  <script>
+    /* Load the YouTube player only when asked, so the page stays light. */
+    document.querySelectorAll('.sp-video').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var f = document.createElement('iframe');
+        f.src = 'https://www.youtube-nocookie.com/embed/' + btn.dataset.id + '?autoplay=1&rel=0';
+        f.title = 'Emmanuel Ekwedike speaker showreel';
+        f.allow = 'autoplay; encrypted-media; picture-in-picture';
+        f.allowFullscreen = true;
+        btn.replaceChildren(f);
+      });
+    });
+  </script>
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script>
+    /* footer form */
+    var form = document.getElementById('FooterForm');
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      Swal.fire('Submitted successfully', 'Thank you!', 'success');
+      fetch(event.target.action, {
+        method: form.method,
+        body: new FormData(event.target),
+        headers: { 'Accept': 'application/json' }
+      }).then(function (r) { if (r.ok) form.reset(); });
+    });
+  </script>
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-  <script>
-    var form = document.getElementById("FooterForm");
-    async function handleSubmit(event) {
-      Swal.fire(
-        'Submitted successfully',
-        'Thank you!',
-        'success'
-      )
-      event.preventDefault();
-
-      var data = new FormData(event.target);
-      fetch(event.target.action, {
-        method: form.method,
-        body: data,
-        headers: {
-          'Accept': 'application/json'
-        }
-      }).then(response => {
-        if (response.ok) {
-
-          form.reset()
-        } else {
-          response.json().then(data => {
-            if (Object.hasOwn(data, 'errors')) {
-              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-            } else {
-              status.innerHTML = "Oops! There was a problem submitting your form"
-            }
-          })
-        }
-      }).catch(error => {
-        status.innerHTML = "Oops! There was a problem submitting your form"
-      });
-    }
-    form.addEventListener("submit", handleSubmit)
-  </script>
 </body>
-
 </html>
