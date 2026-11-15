@@ -2,223 +2,234 @@
 ---
 <!doctype html>
 <html lang="en">
-
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="css/styles.css">
-  <!-- Bootstrap CSS -->
-  <!-- Favicons -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-89DRW502ZN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-89DRW502ZN');
+  </script>
+  <meta name="google-site-verification" content="IIULoi-GMYoy1dDCHDwX-UMMfDg0VY5VbVrcZJvrYEU" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Emmanuel Ekwedike, Ph.D.",
+    "alternateName": "Motivational Speaker",
+    "url": "https://emmanuelekwedike.com/",
+    "logo": "https://emmanuelekwedike.com/images/logo.png",
+    "sameAs": [
+      "https://www.instagram.com/eekwedike_/",
+      "https://github.com/eekwedike"
+    ]
+  }
+  </script>
   <link href="./images/logoFav.png" rel="icon">
-  <title>Contact</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
-    type='text/css'>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Contact | Emmanuel Ekwedike, Ph.D.</title>
+  <meta name="description" content="Get in touch with Dr. Emmanuel Ekwedike about speaking, media requests or working together.">
+  <link rel="stylesheet" href="css/site.css">
   <style>
-    input[type=text] {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      box-sizing: border-box;
-      border: 1px solid #ccc;
-      -webkit-transition: 0.5s;
-      transition: 0.5s;
-      outline: none;
+    .ct {
+      --blue: #004489;
+      --blue-dark: #003168;
+      --cream: #F3F2F1;
+      --ink: #1f1f1f;
+      --body: #2b2b2b;
+      --muted: #5c5c5c;
+      --hair: #dfe4ea;
+      font-family: 'SiteNav', 'Helvetica Neue', Arial, sans-serif;
+      color: var(--body);
     }
+    .ct h1, .ct h2, .ct h3, .ct p, .ct li, .ct b, .ct label { font-family: inherit; text-align: left; text-transform: none; letter-spacing: normal; }
+    .ct-eyebrow { font-size: 13px; font-weight: 700; letter-spacing: .12em !important; text-transform: uppercase !important; color: var(--blue); margin: 0 0 10px; }
 
-    input[type=text]:focus {
-      border: 3px solid #45a8FC;
+    /* Heading */
+    .ct-head { background: var(--cream); }
+    .ct-head .container { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; padding-top: 64px; padding-bottom: 64px; }
+    .ct-head figure { margin: 0; }
+    .ct .ct-head img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; object-position: 55% 35%; border-radius: 8px; }
+    .ct-head h1 { font-size: 46px; font-weight: 700; line-height: 1.1; letter-spacing: -.015em; color: var(--ink); margin: 0 0 16px; }
+    .ct .ct-sub { font-size: 19px; line-height: 1.55; margin: 0; max-width: 600px; }
+
+    /* Ways to reach him, then the form */
+    .ct-body .container { display: grid; grid-template-columns: .85fr 1.15fr; gap: 64px; align-items: start; padding-top: 72px; padding-bottom: 88px; }
+    .ct-ways { display: grid; gap: 16px; }
+    .ct-way { display: flex; gap: 16px; padding: 22px 24px; border: 1px solid var(--hair); border-radius: 10px; background: #fff; }
+    .ct-way > svg { flex-shrink: 0; width: 22px; height: 22px; color: var(--blue); margin-top: 2px; }
+    .ct .ct-way h2 { font-size: 18px; font-weight: 700; color: var(--ink); margin: 0 0 4px; }
+    .ct .ct-way p { font-size: 15px; line-height: 1.5; color: var(--muted); margin: 0; }
+    .ct-way a { font-weight: 700; color: var(--blue); }
+    .ct-way-book { background: var(--blue); border-color: var(--blue); }
+    .ct-way-book > svg, .ct .ct-way-book h2, .ct .ct-way-book p { color: #fff; }
+    .ct .ct-way-book p { opacity: .85; margin-bottom: 14px; }
+    .ct-way-book .ct-btn-light { display: inline-flex; align-items: center; gap: 8px; height: 44px; padding: 3px 18px 0; border-radius: 4px; background: #fff; color: var(--blue); font-size: 14px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; text-decoration: none; }
+    .ct-way-book .ct-btn-light svg { width: 15px; height: 15px; margin-top: -3px; }
+
+    .ct-form-card { border: 1px solid var(--hair); border-radius: 10px; padding: 36px; background: #fff; box-shadow: 0 12px 32px rgba(0,30,60,.06); }
+    .ct .ct-form-card h2 { font-size: 26px; font-weight: 700; color: var(--ink); margin: 0 0 10px; }
+    .ct .ct-form-note { font-size: 15px; line-height: 1.5; color: var(--muted); margin: 0 0 24px; }
+    .ct-form-note b { color: var(--ink); }
+    .ct-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .ct-field { margin: 0 0 18px; }
+    .ct .ct-field label { display: block; font-size: 14px; font-weight: 700; color: var(--ink); margin: 0 0 6px; }
+    /* SiteNav does not render inside text fields, so fields use a standard font */
+    .ct-field input, .ct-field select, .ct-field textarea { display: block; width: 100%; margin: 0; padding: 12px 14px; border: 1px solid #c9d3e0; border-radius: 6px; background: #fff; font: 400 16px 'Helvetica Neue', Arial, sans-serif; color: var(--ink); }
+    .ct-field input, .ct-field select { height: 50px; }
+    .ct-field textarea { min-height: 150px; resize: vertical; }
+    .ct-field input:focus, .ct-field select:focus, .ct-field textarea:focus { outline: none; border-color: var(--blue); box-shadow: 0 0 0 3px rgba(0,68,137,.15); }
+    .ct-send { display: inline-flex; align-items: center; justify-content: center; gap: 8px; width: 100%; height: 52px; padding-top: 3px; border: 0; border-radius: 4px; background: var(--blue); color: #fff; font-family: inherit; font-size: 15px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; cursor: pointer; }
+    .ct-send svg { width: 16px; height: 16px; margin-top: -3px; }
+    .ct-send:hover { background: var(--blue-dark); }
+    .ct-send[disabled] { opacity: .7; cursor: default; }
+    .ct .ct-status { margin: 14px 0 0; font-size: 15px; color: #a4262c; }
+    .ct .ct-status:empty { display: none; }
+    .ct-done { text-align: left; }
+    .ct-done svg { width: 40px; height: 40px; color: var(--blue); margin-bottom: 14px; }
+    .ct .ct-done p { font-size: 17px; line-height: 1.55; margin: 0; }
+
+    @media (max-width: 991.98px) {
+      .ct-head .container, .ct-body .container { grid-template-columns: 1fr; gap: 40px; }
     }
-
-    input[type=Email] {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      box-sizing: border-box;
-      border: 1px solid #ccc;
-      -webkit-transition: 0.5s;
-      transition: 0.5s;
-      outline: none;
-    }
-
-    input[type=Email]:focus {
-      border: 3px solid #45a8FC;
+    @media (max-width: 575.98px) {
+      .ct-head .container { padding-top: 44px; padding-bottom: 40px; }
+      .ct-head h1 { font-size: 36px; }
+      .ct .ct-sub { font-size: 17px; }
+      .ct-body .container { padding-top: 40px; padding-bottom: 56px; }
+      .ct-row { grid-template-columns: 1fr; gap: 0; }
+      .ct-form-card { padding: 24px 20px; }
     }
   </style>
-  <link rel="stylesheet" href="css/site.css">
 </head>
-
 <body>
-
-  <!--navbar-->
   {% include nav.html active="contact" %}
-  <br><br>
-  <!--contact Form-->
-  <div class="container ">
-    <br>
-    <center>
-      <h2><b>Contact US</b></h2>
-    </center>
-    <br><br>
-    <div class="row">
-      <div id="divglass" class="col-lg-6">
-        <br><br>
-        <p>
-          <b> <i style="padding: 10px;" class="fa fa-location-arrow fa-lg" aria-hidden="true"></i>New York </b>
-        </p>
-   <!--      <p>
-          <b> <i style="padding: 10px;" class="fa fa-phone fa-lg" aria-hidden="true"></i> 555-555-5555</b>
-        </p> -->
-        <p>
-          <b><i style="padding: 10px;" class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>
-            emmanuel@emmanuelekwedike.com</b>
-        </p>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a style="text-decoration: none; padding: 5px;" href="https://www.linkedin.com/in/eekwedike"><img
-            src="images/c1.png" width="34px"></a>
-        <a style="text-decoration: none; padding: 5px;" href="https://www.instagram.com/eekwedike_/"><img
-            src="images/c2.png"></a>
-        <a style="text-decoration: none; padding: 5px;" href="https://github.com/eekwedike"><img src="images/c3.png"
-            width="40px"></a>
-        <a style="text-decoration: none; padding: 5px;" href="https://www.youtube.com/@eekwedike"><img
-            src="images/c4.png" width="34px"></a>
+
+  <main class="ct">
+    <header class="ct-head">
+      <div class="container">
+        <div>
+          <p class="ct-eyebrow">Contact</p>
+          <h1>Get in touch</h1>
+          <p class="ct-sub">Questions, media requests or ideas for working together. Send a message and it goes straight to Emmanuel’s inbox.</p>
+        </div>
+        <figure>
+          <img src="images/contact/conversation.jpg" alt="Emmanuel talking with attendees at a BuiltNYC event" width="1200" height="800">
+        </figure>
       </div>
-      <div class="col-lg-6">
-        <form id="ContactForm" action="https://formspree.io/f/mqkjznwd" method="POST">
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="inputEmail4">First Name</label>
-              <input type="text" name="First Name" class="form-control" id="first" placeholder="First Name" required>
-            </div>
-            <div class="form-group col-md-6">
-              <label for="inputEmail4">Last Name</label>
-              <input type="text" name="Last Name" class="form-control" id="last" placeholder="Last Name" required>
+    </header>
+
+    <section class="ct-body">
+      <div class="container">
+        <div class="ct-ways">
+          <div class="ct-way ct-way-book">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5.5" y="1.5" width="5" height="8" rx="2.5"/><path d="M3 7.5a5 5 0 0 0 10 0M8 12.5v2M5.5 14.5h5"/></svg>
+            <div>
+              <h2>Booking a talk?</h2>
+              <p>Use the booking form to share your event, audience and date.</p>
+              <a class="ct-btn-light" href="book">Book Emmanuel <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M1.013 8Q1.013 7.787 1.147 7.653Q1.28 7.52 1.493 7.52H13.28L10.133 4.373Q9.973 4.213 9.973 4Q9.973 3.787 10.133 3.653Q10.293 3.52 10.507 3.52Q10.72 3.52 10.88 3.627L14.88 7.627Q14.987 7.787 14.987 8Q14.987 8.213 14.88 8.373L10.88 12.373Q10.72 12.48 10.507 12.48Q10.293 12.48 10.133 12.347Q9.973 12.213 9.973 12Q9.973 11.787 10.133 11.627L13.28 8.48H1.493Q1.28 8.48 1.147 8.347Q1.013 8.213 1.013 8Z"/></svg></a>
             </div>
           </div>
-          <div class="form-group">
-            <label for="inputAddress">Email</label>
-            <input type="Email" name="Email" class="form-control" id="email" placeholder="Email" required>
+          <div class="ct-way">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1.5" y="3" width="13" height="10" rx="1.5"/><path d="M2 4l6 5 6-5"/></svg>
+            <div>
+              <h2>Email</h2>
+              <p><a href="mailto:emmanuel@emmanuelekwedike.com">emmanuel@emmanuelekwedike.com</a></p>
+            </div>
           </div>
-          <div class="form-group">
-            <label for="inputAddress">Address</label>
-            <input type="text" name="Address" class="form-control" id="address" placeholder="1234 Main St" required>
+          <div class="ct-way">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 14.5s5-4.6 5-8.5a5 5 0 0 0-10 0c0 3.9 5 8.5 5 8.5z"/><circle cx="8" cy="6" r="1.8"/></svg>
+            <div>
+              <h2>Based in</h2>
+              <p>New York, speaking worldwide</p>
+            </div>
           </div>
-          <div class="form-group">
-            <label for="exampleFormControlTextarea1">Message</label>
-            <textarea class="form-control" name="Message" id="message" rows="4" required></textarea>
-          </div>
-          <button style="background-color: #004489;" type="submit" id="myBtn"
-            class="btn btn-primary  btn-block">SEND</button> <br>
+        </div>
 
-        </form>
+        <div class="ct-form-card">
+          <h2>Send a message</h2>
+          <p class="ct-form-note"><b>Helpful to include:</b> for speaking, your event date, location and audience; for media, your outlet and deadline.</p>
+          <form id="ContactForm" action="https://formspree.io/f/mqkjznwd" method="POST">
+            <div class="ct-row">
+              <div class="ct-field">
+                <label for="ctName">Name</label>
+                <input id="ctName" type="text" name="Name" autocomplete="name" required>
+              </div>
+              <div class="ct-field">
+                <label for="ctEmail">Email</label>
+                <input id="ctEmail" type="email" name="Email" autocomplete="email" required>
+              </div>
+            </div>
+            <div class="ct-field">
+              <label for="ctTopic">What is this about?</label>
+              <select id="ctTopic" name="Topic">
+                <option>General question</option>
+                <option>Speaking</option>
+                <option>Media or press</option>
+                <option>Collaboration</option>
+                <option>Something else</option>
+              </select>
+            </div>
+            <div class="ct-field">
+              <label for="ctMessage">Message</label>
+              <textarea id="ctMessage" name="Message" required></textarea>
+            </div>
+            <button class="ct-send" type="submit">Send message <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M1.013 8Q1.013 7.787 1.147 7.653Q1.28 7.52 1.493 7.52H13.28L10.133 4.373Q9.973 4.213 9.973 4Q9.973 3.787 10.133 3.653Q10.293 3.52 10.507 3.52Q10.72 3.52 10.88 3.627L14.88 7.627Q14.987 7.787 14.987 8Q14.987 8.213 14.88 8.373L10.88 12.373Q10.72 12.48 10.507 12.48Q10.293 12.48 10.133 12.347Q9.973 12.213 9.973 12Q9.973 11.787 10.133 11.627L13.28 8.48H1.493Q1.28 8.48 1.147 8.347Q1.013 8.213 1.013 8Z"/></svg></button>
+            <p class="ct-status" id="ctStatus" role="alert"></p>
+          </form>
+        </div>
       </div>
-    </div>
-  </div>
-  <br><br><br>
-  <!--Google map-->
-  <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
-    <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"></iframe>
-  </div>
-  <!--Google Maps-->
-  <!--Footer-->
-  {% include footer.html %}
-  <!-- Optional JavaScript -->
+    </section>
+  </main>
 
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-    crossorigin="anonymous"></script>
+  {% include footer.html band="false" %}
+
+  <script>
+    /* Contact form: send with Formspree and say "sent" only once it actually went through. */
+    (function () {
+      var form = document.getElementById('ContactForm');
+      var status = document.getElementById('ctStatus');
+      var button = form.querySelector('.ct-send');
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        status.textContent = '';
+        button.disabled = true;
+        fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } })
+          .then(function (r) {
+            if (!r.ok) throw new Error();
+            form.outerHTML = '<div class="ct-done" role="status"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="8" r="6.5"/><path d="M5 8.2l2 2 4-4.2"/></svg><p><b>Thanks, your message is on its way.</b><br>Emmanuel will reply to the email you gave.</p></div>';
+          })
+          .catch(function () {
+            button.disabled = false;
+            status.textContent = 'Sorry, your message did not send. Please try again, or email emmanuel@emmanuelekwedike.com.';
+          });
+      });
+    })();
+  </script>
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  <script>
+    /* footer form */
+    var form = document.getElementById('FooterForm');
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      Swal.fire('Submitted successfully', 'Thank you!', 'success');
+      fetch(event.target.action, {
+        method: form.method,
+        body: new FormData(event.target),
+        headers: { 'Accept': 'application/json' }
+      }).then(function (r) { if (r.ok) form.reset(); });
+    });
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-  <script>
-
-
-
-    var form = document.getElementById("FooterForm");
-    async function handleSubmit(event) {
-      Swal.fire(
-        'Submitted successfully',
-        'Thank you!',
-        'success'
-      )
-      event.preventDefault();
-
-      var data = new FormData(event.target);
-      fetch(event.target.action, {
-        method: form.method,
-        body: data,
-        headers: {
-          'Accept': 'application/json'
-        }
-      }).then(response => {
-        if (response.ok) {
-
-          form.reset()
-        } else {
-          response.json().then(data => {
-            if (Object.hasOwn(data, 'errors')) {
-              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-            } else {
-              status.innerHTML = "Oops! There was a problem submitting your form"
-            }
-          })
-        }
-      }).catch(error => {
-        status.innerHTML = "Oops! There was a problem submitting your form"
-      });
-    }
-    form.addEventListener("submit", handleSubmit)
-
-
-
-    var form = document.getElementById("ContactForm");
-    async function handleSubmit(event) {
-      Swal.fire(
-        'Submitted successfully',
-        'Thank you!',
-        'success'
-      )
-      event.preventDefault();
-      var data = new FormData(event.target);
-      fetch(event.target.action, {
-        method: form.method,
-        body: data,
-        headers: {
-          'Accept': 'application/json'
-        }
-      }).then(response => {
-        if (response.ok) {
-
-          form.reset()
-        } else {
-          response.json().then(data => {
-            if (Object.hasOwn(data, 'errors')) {
-              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-            } else {
-              status.innerHTML = "Oops! There was a problem submitting your form"
-            }
-          })
-        }
-      }).catch(error => {
-        status.innerHTML = "Oops! There was a problem submitting your form"
-      });
-
-    }
-    form.addEventListener("submit", handleSubmit)
-
-
-
-
-  </script>
 </body>
-
 </html>
