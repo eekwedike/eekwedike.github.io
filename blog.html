@@ -27,63 +27,74 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
     type='text/css'>
   <title>Blog | Emmanuel Ekwedike</title>
-  <meta name="description" content="Emmanuel travels the world looking at different cultures for inspiration to build useful context around data. Understanding people helps to bring data to life and builds a global approach to data science.">
+  <meta name="description" content="Articles by Dr. Emmanuel Ekwedike with practical ideas for students, professionals and leaders on working with AI, building a career in tech and making good decisions with data.">
   <link rel="stylesheet" href="css/site.css">
+  <style>
+    .bl-head { background: #F3F2F1; font-family: 'SiteNav', 'Helvetica Neue', Arial, sans-serif; }
+    .bl-head .container { padding-top: 72px; padding-bottom: 64px; }
+    .bl-head p, .bl-head h1 { font-family: inherit; text-align: left; text-transform: none; letter-spacing: normal; }
+    .bl-head .bl-eyebrow { font-size: 13px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #004489; margin: 0 0 10px; }
+    .bl-head h1 { font-size: 42px; font-weight: 700; line-height: 1.1; letter-spacing: -.015em; color: #1f1f1f; margin: 0 0 16px; }
+    @media (max-width: 1199.98px) { .bl-head h1 { font-size: 34px; } }
+    @media (max-width: 991.98px) { .bl-head h1 { font-size: 38px; } }
+    .bl-head .bl-sub { font-size: 19px; line-height: 1.55; color: #2b2b2b; margin: 0; max-width: 640px; }
+    .bl-tools { padding: 40px 30px 0; font-family: 'SiteNav', 'Helvetica Neue', Arial, sans-serif; }
+    .bl-search { position: relative; display: block; max-width: 560px; margin: 0 0 16px; }
+    .bl-search svg { position: absolute; left: 16px; top: 50%; width: 18px; height: 18px; margin-top: -9px; color: #5c5c5c; pointer-events: none; }
+    .bl-search input { width: 100%; height: 52px; padding: 0 16px 0 46px; border: 1px solid #c9d3e0; border-radius: 6px; background: #fff; font: 400 17px 'Helvetica Neue', Arial, sans-serif; color: #1f1f1f; } /* SiteNav does not render inside text fields */
+    .bl-search input:focus { outline: none; border-color: #004489; box-shadow: 0 0 0 3px rgba(0,68,137,.15); }
+    .bl-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+    .bl-filters { display: flex; flex-wrap: wrap; gap: 8px; }
+    .bl-filter { padding: 8px 16px 6px; border: 1px solid #c9d3e0; border-radius: 999px; background: #fff; font: inherit; font-size: 14px; font-weight: 700; color: #004489; cursor: pointer; }
+    .bl-filter:hover { border-color: #004489; }
+    .bl-filter[aria-pressed="true"] { background: #004489; border-color: #004489; color: #fff; }
+    .bl-tools .bl-empty { margin: 32px 0 0; font-size: 17px; color: #5c5c5c; text-align: left; }
+    .bl-tags { list-style: none; padding: 0; margin: 0 0 10px; display: flex; flex-wrap: wrap; gap: 6px; }
+    .bl-tags li { margin: 0; padding: 4px 10px 2px; border-radius: 999px; background: #e8eef6; font-family: 'SiteNav', 'Helvetica Neue', Arial, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: #004489; }
+    @media (max-width: 575.98px) {
+      .bl-tools { padding: 28px 0 0; }
+      .bl-head .container { padding-top: 44px; padding-bottom: 40px; }
+      .bl-head h1 { font-size: 34px; }
+      .bl-head .bl-sub { font-size: 17px; }
+    }
+  </style>
 </head>
 
 <body>
   <!--navbar-->
   {% include nav.html active="blog" %}
-  <!--jumbotron-->
-  <div style="background-color:#004489 ; color: white; border-radius: 0%;" class="jumbotron">
+  <!--page heading-->
+  <header class="bl-head">
     <div class="container">
-      <div class="row">
-
-        <div style="align-items:center; text-align: center; justify-content: center; " class="col-lg-6 ">
-          <img src="./images/bb1.jpg" width="430px" height="490px">
-        </div>
-        <div class="col-lg-6">
-          <br><br>
-          <h1 class="display-4">Hello!</h1>
-          <p style="text-align: justify;" class="lead">Emmanuel travels the world looking at different cultures for
-            inspiration to build useful context around data. Understanding people helps to bring data to life and builds
-            a global approach to data science. </p>
-          <hr class="my-4">
-          <p style="text-align: justify;" class="lead">His passion for data science stems from the ability to create
-            tools, products, and services that solve interdisciplinary real-world problems.</p>
-          <p class="lead">
-            <a href="about"> <button style="background-color: #004489; border: solid white 1px ;" type="button"
-                class="btn btn-main btn-small">Read More</button></a>
-
-          </p>
-        </div>
-      </div>
+      <p class="bl-eyebrow">Blog</p>
+      <h1>Practical AI. Smarter careers. Better decisions.</h1>
+      <p class="bl-sub">Practical ideas for students, professionals and leaders on working with AI, growing a career in tech and deciding with data.</p>
     </div>
-  </div>
+  </header>
   <!--cards-->
   <div class="container-fluid" style="width: 95%;">
-    <br><br><br>
-    <center>
-      <h2><b>BLOGS</b></h2>
-    </center>
-    <div class="main">
-      <!-- Another variation with a button -->
-      <div class="input-group mb-2">
-        <input style="  background-color: #eee;" type="text" class="form-control" placeholder="Search..."
-          aria-label="Recipient's username" aria-describedby="basic-addon2">
-        <div class="input-group-append">
-          <span style="cursor:pointer ;" class="input-group-text" id="basic-addon2">Click me</span>
-        </div>
+    <div class="bl-tools">
+      <label class="bl-search">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="7" cy="7" r="5"/><path d="M11 11l3.5 3.5"/></svg>
+        <span class="bl-sr">Search the blog</span>
+        <input type="search" id="blSearch" placeholder="Search articles" autocomplete="off">
+      </label>
+      <div class="bl-filters" role="group" aria-label="Filter by topic">
+          <button type="button" class="bl-filter" data-tag="" aria-pressed="true">All</button>
+          <button type="button" class="bl-filter" data-tag="AI" aria-pressed="false">AI</button>
+          <button type="button" class="bl-filter" data-tag="Careers" aria-pressed="false">Careers</button>
+          <button type="button" class="bl-filter" data-tag="Future of work" aria-pressed="false">Future of work</button>
+          <button type="button" class="bl-filter" data-tag="Personal story" aria-pressed="false">Personal story</button>
       </div>
-      <p class="mt-4 text-center"><a style="color: #004489; text-decoration: none;" href="#">See how it's done on my
-          blog</a></p>
+      <p class="bl-empty" id="blEmpty" hidden>No articles match. Try another word or topic.</p>
     </div>
     <div style="padding:30px;" class="row">
-      <div style="margin-top:40px ;" class="col-lg-4 col-md-6 col-sm-12">
+      <div style="margin-top:40px ;" class="col-lg-4 col-md-6 col-sm-12 bl-post" data-tags="Careers">
 
         <div class="card shadow p-3 mb-5  rounded">
           <img style="padding: 10px; " class="card-img-top" src="./images/b1.png" alt="Card image cap">
           <div class="card-body">
+            <ul class="bl-tags"><li>Careers</li></ul>
             <h5 class="card-title">A Practical Guide to Breaking into the Tech Industry<span style="color:white  ;">for
                 card
                 header</span></h5>
@@ -95,10 +106,11 @@
           </div>
         </div>
       </div>
-      <div style="margin-top:40px ;" class="col-lg-4 col-md-6 col-sm-12">
+      <div style="margin-top:40px ;" class="col-lg-4 col-md-6 col-sm-12 bl-post" data-tags="AI">
         <div class="card shadow p-3 mb-5 ">
           <img style="padding: 10px; " class="card-img-top" src="./images/b2.png" alt="Card image cap">
           <div class="card-body">
+            <ul class="bl-tags"><li>AI</li></ul>
             <h5 class="card-title">Artificial Intelligence (AI): What It Is and Why It is Important</h5>
             <p class="card-text">In recent years, artificial intelligence has taken over in different industries as an
               alternative to human intelligence due to continue reading....</p>
@@ -108,10 +120,11 @@
           </div>
         </div>
       </div>
-      <div style="margin-top:40px ;" class="col-lg-4 col-md-6 col-sm-12">
+      <div style="margin-top:40px ;" class="col-lg-4 col-md-6 col-sm-12 bl-post" data-tags="AI|Future of work">
         <div class="card shadow p-3 mb-5 ">
           <img class="card-img-top" src="./images/b3.png" alt="Card image cap">
           <div class="card-body">
+            <ul class="bl-tags"><li>AI</li><li>Future of work</li></ul>
             <h5 class="card-title">Are Human Employees Becoming Obsolete in the Age of Automation?</h5>
             <p class="card-text">If the industrial revolution taught us anything, is that disruptive paradigm-shifting
               business models do not only make continue reading....</p>
@@ -121,10 +134,11 @@
           </div>
         </div>
       </div>
-      <div style="margin-top:40px ;" class="col-lg-4 col-md-6 col-sm-12">
+      <div style="margin-top:40px ;" class="col-lg-4 col-md-6 col-sm-12 bl-post" data-tags="AI|Future of work">
         <div class="card shadow p-3 mb-5 ">
           <img style="padding: 10px; " class="card-img-top" src="./images/b4.png" alt="Card image cap">
           <div class="card-body">
+            <ul class="bl-tags"><li>AI</li><li>Future of work</li></ul>
             <h5 class="card-title">The jobs that could be taken over by AI <span style="color:white  ;">for card
                 header</span></h5>
             <p class="card-text">Every new revolutionary technology usually has benefits and a couple of challenges.
@@ -135,10 +149,11 @@
           </div>
         </div>
       </div>
-      <div style="margin-top:40px;" class="col-lg-4 col-md-6 col-sm-12">
+      <div style="margin-top:40px;" class="col-lg-4 col-md-6 col-sm-12 bl-post" data-tags="Careers|Personal story">
         <div class="card shadow p-3 mb-5 ">
           <img style="padding: 10px;" class="card-img-top" src="./images/b5.png" alt="Card image cap">
           <div class="card-body">
+            <ul class="bl-tags"><li>Careers</li><li>Personal story</li></ul>
             <h5 class="card-title">My Journey to Technology Career</h5>
             <p class="card-text"><br>Create a blog post subtitle that summarizes your post in a few short, punchy
               sentences and entices your audience to continue reading....</p>
@@ -148,10 +163,11 @@
           </div>
         </div>
       </div>
-      <div style="margin-top:40px ;" class="col-lg-4 col-md-6 col-sm-12">
+      <div style="margin-top:40px ;" class="col-lg-4 col-md-6 col-sm-12 bl-post" data-tags="Careers">
         <div class="card shadow p-3 mb-5  ">
           <img style="padding: 10px;  " class="card-img-top" src="./images/b6.png" alt="Card image cap">
           <div class="card-body">
+            <ul class="bl-tags"><li>Careers</li></ul>
             <h5 class="card-title">Advice to current students: What i wish i knew while i was in school</h5>
             <p class="card-text">Create a blog post subtitle that summarizes your post in a few short, punchy
               sentences and entices your audience to continue reading....</p>
@@ -165,6 +181,36 @@
   </div>
   <!--Footer-->
   {% include footer.html %}
+
+  <script>
+    /* Blog search and topic filters: show the cards whose text or tags match. */
+    (function () {
+      var input = document.getElementById('blSearch');
+      var posts = document.querySelectorAll('.bl-post');
+      var buttons = document.querySelectorAll('.bl-filter');
+      var empty = document.getElementById('blEmpty');
+      var tag = '';
+      function update() {
+        var q = input.value.trim().toLowerCase();
+        var shown = 0;
+        posts.forEach(function (p) {
+          var tags = p.getAttribute('data-tags').split('|');
+          var ok = (!tag || tags.indexOf(tag) > -1) && (!q || p.textContent.toLowerCase().indexOf(q) > -1);
+          p.hidden = !ok;
+          if (ok) shown++;
+        });
+        empty.hidden = shown > 0;
+      }
+      input.addEventListener('input', update);
+      buttons.forEach(function (b) {
+        b.addEventListener('click', function () {
+          tag = b.getAttribute('data-tag');
+          buttons.forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+          update();
+        });
+      });
+    })();
+  </script>
   <!-- Optional JavaScript -->
   <script>
 
