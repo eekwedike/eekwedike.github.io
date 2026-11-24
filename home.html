@@ -67,20 +67,16 @@
     .hm-link:hover { color: var(--blue-dark); }
     .hm-link:hover svg { transform: translateX(3px); }
 
-    /* 1. Hero: the AfroTech main stage. Emmanuel stands left of centre, so the
-       text sits on the right, over the darkened end of the stage and the crowd. */
-    .hm-hero { position: relative; min-height: min(86vh, 800px); display: flex; align-items: center; background: var(--stage); color: #fff; overflow: hidden; }
-    .hm-hero-media { position: absolute; inset: 0 36% 0 0; background: url('images/home/hero.jpg') 42% 40% / cover no-repeat; }
-    .hm-hero-media::after { content: ''; position: absolute; inset: 0 -1px 0 0; background:
-      linear-gradient(270deg, var(--stage) 0%, rgba(5,7,12,.8) 16%, rgba(5,7,12,0) 38%),
-      linear-gradient(0deg, rgba(5,7,12,.45) 0%, rgba(5,7,12,0) 26%); }
-    .hm-hero .container { position: relative; display: flex; justify-content: flex-end; padding-top: 80px; padding-bottom: 80px; }
-    .hm-hero-copy { width: 42%; max-width: 480px; }
-    .hm-hero-actions .hm-btn { padding: 3px 20px 0; }
-    .hm-hero .hm-eyebrow { color: rgba(255,255,255,.75); }
-    .hm-hero h1 { font-size: 46px; font-weight: 700; line-height: 1.07; color: #fff; margin: 0 0 20px; letter-spacing: -.015em; }
-    .hm-hero-sub { font-size: 18px; line-height: 1.55; color: rgba(255,255,255,.86); margin: 0 0 30px; }
-    .hm-hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+    /* 1. Hero: a short muted clip from the AfroTech main stage. The poster shows
+       until it loads, and visitors who prefer less motion get the still. */
+    .hm-hero { position: relative; background: var(--stage); overflow: hidden; }
+    .hm-hero-video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; max-height: calc(100vh - 80px); object-fit: cover; background: var(--stage); }
+    .hm-hero-toggle { position: absolute; right: 16px; bottom: 16px; width: 40px; height: 40px; border: 1px solid rgba(255,255,255,.5); border-radius: 50%; background: rgba(5,7,12,.55); color: #fff; display: flex; align-items: center; justify-content: center; padding: 0; cursor: pointer; transition: background .2s; }
+    .hm-hero-toggle:hover { background: rgba(5,7,12,.8); }
+    .hm-hero-toggle svg { width: 16px; height: 16px; }
+    .hm-hero-toggle .hm-icon-play { display: none; margin-left: 2px; }
+    .hm-hero-toggle.is-paused .hm-icon-play { display: block; }
+    .hm-hero-toggle.is-paused .hm-icon-pause { display: none; }
 
     /* 2. Logo tape (same as the Speaker page) */
     .hm-spoken { background: var(--blue); color: #fff; overflow: hidden; }
@@ -178,11 +174,6 @@
     .hm .hm-milestones b { display: block; font-family: inherit; font-weight: 700; color: var(--ink); font-size: 17px; }
 
     @media (max-width: 991.98px) {
-      .hm-hero { min-height: 560px; }
-      .hm-hero-media { inset: 0 42% 0 0; }
-      .hm-hero-copy { width: 46%; }
-      .hm-hero h1 { font-size: 38px; }
-      .hm-hero-sub { font-size: 16px; }
       .hm-idea-top, .hm-story .container { grid-template-columns: 1fr; gap: 40px; }
       .hm-talk-grid { grid-template-columns: repeat(2, 1fr); }
       .hm-personal { grid-template-columns: 1fr; gap: 14px; }
@@ -193,14 +184,6 @@
       .hm-stats li:nth-child(3) { padding-left: 0; border-left: 0; }
     }
     @media (max-width: 575.98px) {
-      .hm-hero { min-height: 0; align-items: flex-end; }
-      .hm-hero-media { inset: 0 0 auto 0; height: 360px; background-size: cover; background-position: 42% 45%; }
-      .hm-hero-copy { width: 100%; }
-      .hm-hero-media::after { background: linear-gradient(0deg, var(--stage) 0%, rgba(5,7,12,0) 45%); }
-      .hm-hero .container { padding-top: 300px; padding-bottom: 48px; }
-      .hm-hero h1 { font-size: 34px; }
-      .hm-hero-sub { font-size: 16px; }
-      .hm-hero-actions .hm-btn { width: 100%; justify-content: center; }
       .hm-h2, .hm-story h2 { font-size: 26px; }
       .hm-idea .container, .hm-talks .container, .hm-story .container { padding-top: 56px; padding-bottom: 56px; }
       .hm-who, .hm-talk-grid, .hm-milestones { grid-template-columns: 1fr; }
@@ -225,16 +208,14 @@
   <main class="hm">
     <!-- 1. Hero -->
     <section class="hm-hero">
-      <div class="hm-hero-media" role="img" aria-label="Emmanuel speaking to a full room on the AfroTech 2025 main stage"></div>
-      <div class="container"><div class="hm-hero-copy">
-        <p class="hm-eyebrow">Keynote speaker on AI and human potential</p>
-        <h1>Bring your humanity to AI. Use AI to multiply your impact.</h1>
-        <p class="hm-hero-sub">Dr. Emmanuel Ekwedike is an AI strategist with a Princeton Ph.D. who helps students, professionals and leaders thrive in the AI era.</p>
-        <div class="hm-hero-actions">
-          <a class="hm-btn hm-btn-light" href="book">Book Emmanuel <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M1.013 8Q1.013 7.787 1.147 7.653Q1.28 7.52 1.493 7.52H13.28L10.133 4.373Q9.973 4.213 9.973 4Q9.973 3.787 10.133 3.653Q10.293 3.52 10.507 3.52Q10.72 3.52 10.88 3.627L14.88 7.627Q14.987 7.787 14.987 8Q14.987 8.213 14.88 8.373L10.88 12.373Q10.72 12.48 10.507 12.48Q10.293 12.48 10.133 12.347Q9.973 12.213 9.973 12Q9.973 11.787 10.133 11.627L13.28 8.48H1.493Q1.28 8.48 1.147 8.347Q1.013 8.213 1.013 8Z"/></svg></a>
-          <a class="hm-btn hm-btn-outline-light" href="speaker#talks">Explore the talks</a>
-        </div>
-      </div></div>
+      <h1 class="sr-only">Dr. Emmanuel Ekwedike: bring your humanity to AI. Use AI to multiply your impact.</h1>
+      <video class="hm-hero-video" autoplay muted loop playsinline preload="auto" poster="images/home/hero-poster.jpg" aria-label="Emmanuel speaking on the AfroTech main stage">
+        <source src="images/home/hero.mp4" type="video/mp4">
+      </video>
+      <button class="hm-hero-toggle" type="button" aria-label="Pause video">
+        <svg class="hm-icon-pause" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M5 3h2v10H5zM9 3h2v10H9z"/></svg>
+        <svg class="hm-icon-play" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M11.573 8.693 5.227 12.373Q4.8 12.64 4.4 12.4Q4 12.16 4 11.68V4.32Q4 3.84 4.4 3.6Q4.8 3.36 5.227 3.627L11.573 7.307Q12 7.52 12 8Q12 8.48 11.573 8.693Z"/></svg>
+      </button>
     </section>
 
     <!-- 2. Stages and press -->
@@ -444,6 +425,26 @@
   {% include footer.html %}
 
   <script>
+    /* Hero clip: pause control, and the still image for reduced motion. */
+    (function () {
+      var video = document.querySelector('.hm-hero-video');
+      var toggle = document.querySelector('.hm-hero-toggle');
+      function sync() {
+        toggle.classList.toggle('is-paused', video.paused);
+        toggle.setAttribute('aria-label', video.paused ? 'Play video' : 'Pause video');
+      }
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        video.removeAttribute('autoplay');
+        video.pause();
+      }
+      toggle.addEventListener('click', function () {
+        if (video.paused) video.play(); else video.pause();
+      });
+      video.addEventListener('play', sync);
+      video.addEventListener('pause', sync);
+      sync();
+    })();
+
     /* Load the YouTube player only when asked, so the page stays light. */
     document.querySelectorAll('.hm-video').forEach(function (btn) {
       btn.addEventListener('click', function () {
